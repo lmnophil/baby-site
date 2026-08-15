@@ -1,0 +1,6 @@
+interface:
+  display_name: "Write Baby Page"
+  short_description: "Research and complete one Baby Site topic"
+  default_prompt: "Use $write-page to research and complete the page named {page-name}."
+policy:
+  allow_implicit_invocation: false
