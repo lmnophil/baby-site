@@ -5,296 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="A small, public reference for baby milestones, routines, and trusted resources."
+      content="A quick-reference directory for newborn feeding, sleep, care, safety, and what comes next."
     >
-    <title>Little Notes — A Baby Knowledge Reference</title>
-    <style>
-      :root {
-        color-scheme: light;
-        --ink: #30302f;
-        --muted: #68635e;
-        --paper: #fffdf8;
-        --peach: #f4c9b8;
-        --rose: #b85f66;
-        --sage: #b9c9b7;
-        --line: #e8e0d6;
-        --shadow: 0 1.25rem 3rem rgb(73 56 44 / 10%);
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        margin: 0;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at 8% 4%, rgb(244 201 184 / 38%), transparent 24rem),
-          radial-gradient(circle at 94% 88%, rgb(185 201 183 / 32%), transparent 22rem),
-          #f7f2ea;
-        font-family: ui-rounded, "Avenir Next", "Segoe UI", sans-serif;
-        line-height: 1.65;
-      }
-
-      a {
-        color: #87434a;
-        text-underline-offset: 0.2em;
-      }
-
-      a:hover {
-        text-decoration-thickness: 0.14em;
-      }
-
-      a:focus-visible {
-        outline: 0.2rem solid var(--rose);
-        outline-offset: 0.25rem;
-        border-radius: 0.15rem;
-      }
-
-      .skip-link {
-        position: absolute;
-        top: 0.75rem;
-        left: 0.75rem;
-        z-index: 1;
-        padding: 0.6rem 0.85rem;
-        border-radius: 999px;
-        background: var(--ink);
-        color: white;
-        transform: translateY(-200%);
-      }
-
-      .skip-link:focus {
-        transform: translateY(0);
-      }
-
-      .page {
-        width: min(100% - 2rem, 68rem);
-        margin: 0 auto;
-        padding: 5rem 0 3rem;
-      }
-
-      header {
-        position: relative;
-        max-width: 44rem;
-        padding: 1rem 0 3.5rem;
-      }
-
-      header::after {
-        position: absolute;
-        top: 0;
-        right: -8rem;
-        width: 10rem;
-        aspect-ratio: 1;
-        border: 1.25rem solid rgb(255 255 255 / 60%);
-        border-radius: 50%;
-        content: "";
-      }
-
-      .eyebrow {
-        margin: 0 0 0.9rem;
-        color: #87434a;
-        font-size: 0.78rem;
-        font-weight: 750;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-      }
-
-      h1,
-      h2 {
-        font-family: Georgia, "Times New Roman", serif;
-        font-weight: 500;
-        line-height: 1.08;
-      }
-
-      h1 {
-        max-width: 12ch;
-        margin: 0;
-        font-size: clamp(3rem, 9vw, 6rem);
-        letter-spacing: -0.045em;
-      }
-
-      .intro {
-        max-width: 37rem;
-        margin: 1.5rem 0 0;
-        color: var(--muted);
-        font-size: clamp(1.05rem, 2.5vw, 1.3rem);
-      }
-
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-      }
-
-      .card {
-        min-height: 16rem;
-        padding: 1.6rem;
-        border: 1px solid var(--line);
-        border-radius: 1.25rem;
-        background: rgb(255 253 248 / 88%);
-        box-shadow: var(--shadow);
-      }
-
-      .card:nth-child(2) {
-        background: #f9e7de;
-      }
-
-      .card:nth-child(3) {
-        background: #e8efe7;
-      }
-
-      .number {
-        display: grid;
-        width: 2.5rem;
-        height: 2.5rem;
-        margin-bottom: 3.5rem;
-        border: 1px solid currentColor;
-        border-radius: 50%;
-        place-items: center;
-        font: 700 0.75rem/1 ui-monospace, monospace;
-      }
-
-      h2 {
-        margin: 0 0 0.75rem;
-        font-size: 1.9rem;
-        letter-spacing: -0.02em;
-      }
-
-      .card p {
-        margin: 0;
-        color: var(--muted);
-      }
-
-      .sources {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      .sources li + li {
-        margin-top: 0.45rem;
-      }
-
-      .notice {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 1rem;
-        align-items: start;
-        margin-top: 1rem;
-        padding: 1.35rem 1.5rem;
-        border: 1px solid #d8b9a9;
-        border-radius: 1rem;
-        background: var(--paper);
-      }
-
-      .notice-mark {
-        display: grid;
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
-        background: var(--peach);
-        font-weight: 800;
-        place-items: center;
-      }
-
-      .notice strong,
-      .notice p {
-        display: block;
-        margin: 0;
-      }
-
-      .notice p {
-        color: var(--muted);
-      }
-
-      footer {
-        padding: 2.25rem 0 0;
-        color: var(--muted);
-        font-size: 0.85rem;
-      }
-
-      @media (max-width: 48rem) {
-        .page {
-          padding-top: 3rem;
-        }
-
-        header::after {
-          right: 0;
-          width: 6rem;
-        }
-
-        .grid {
-          grid-template-columns: 1fr;
-        }
-
-        .card {
-          min-height: auto;
-        }
-
-        .number {
-          margin-bottom: 2rem;
-        }
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        html {
-          scroll-behavior: auto;
-        }
-      }
-    </style>
+    <title>Little Notes — Newborn Quick Reference</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <a class="skip-link" href="#content">Skip to content</a>
+
     <div class="page">
-      <header>
-        <p class="eyebrow">Baby knowledge reference</p>
-        <h1>Little notes for big days.</h1>
-        <p class="intro">
-          A calm, concise place to organize general information about early growth,
-          everyday rhythms, and reliable places to learn more.
-        </p>
+      <header class="site-header">
+        <p class="eyebrow">Newborn quick reference</p>
+        <h1>Little notes for right now.</h1>
+        <p class="intro">Choose a topic for a quick answer.</p>
+
+        <nav class="category-nav" aria-label="Jump to a topic group">
+          <a href="#feeding">Feeding</a>
+          <a href="#sleep">Sleep</a>
+          <a href="#comfort">Comfort &amp; connection</a>
+          <a href="#daily-care">Diapers &amp; daily care</a>
+          <a href="#health-safety">Health &amp; safety</a>
+          <a href="#whats-next">What’s next</a>
+        </nav>
       </header>
 
       <main id="content">
-        <div class="grid">
-          <section class="card" aria-labelledby="milestones-title">
-            <span class="number" aria-hidden="true">01</span>
-            <h2 id="milestones-title">Milestones</h2>
-            <p>A future home for age-based development notes and questions to discuss with a pediatrician.</p>
+        <div class="topic-grid">
+          <section class="topic-group" id="feeding" aria-labelledby="feeding-title">
+            <p class="section-number" aria-hidden="true">01</p>
+            <h2 id="feeding-title">Feeding</h2>
+            <ul class="topic-list">
+              <li><a href="topics/hunger-and-fullness-cues.html">Hunger and fullness cues</a></li>
+              <li><a href="topics/feeding-frequency-and-waking.html">How often should baby eat—and when should I wake them?</a></li>
+              <li><a href="topics/breastfeeding-and-latch.html">Breastfeeding and latch</a></li>
+              <li><a href="topics/bottle-feeding.html">Bottle feeding</a></li>
+              <li><a href="topics/formula-preparation-and-storage.html">Formula preparation and storage</a></li>
+              <li><a href="topics/getting-enough.html">Is baby getting enough?</a></li>
+              <li><a href="topics/burping-gas-and-spit-up.html">Burping, gas, and spit-up</a></li>
+            </ul>
           </section>
 
-          <section class="card" aria-labelledby="routines-title">
-            <span class="number" aria-hidden="true">02</span>
-            <h2 id="routines-title">Routines</h2>
-            <p>A future home for flexible notes about sleep, feeding, play, and daily care.</p>
+          <section class="topic-group topic-group--peach" id="sleep" aria-labelledby="sleep-title">
+            <p class="section-number" aria-hidden="true">02</p>
+            <h2 id="sleep-title">Sleep</h2>
+            <ul class="topic-list">
+              <li><a href="topics/normal-newborn-sleep.html">What is normal newborn sleep?</a></li>
+              <li><a href="topics/day-and-night.html">Do newborns know day from night?</a></li>
+              <li><a href="topics/safe-sleep-setup.html">Safe sleep setup</a></li>
+              <li><a href="topics/swaddling-safely.html">Swaddling safely</a></li>
+            </ul>
           </section>
 
-          <section class="card" aria-labelledby="sources-title">
-            <span class="number" aria-hidden="true">03</span>
-            <h2 id="sources-title">Trusted sources</h2>
-            <ul class="sources">
-              <li><a href="https://www.cdc.gov/act-early/" rel="noreferrer">CDC: Learn the Signs. Act Early.</a></li>
-              <li><a href="https://www.healthychildren.org/" rel="noreferrer">American Academy of Pediatrics</a></li>
-              <li><a href="https://www.who.int/health-topics/child-health" rel="noreferrer">World Health Organization</a></li>
+          <section class="topic-group topic-group--sage" id="comfort" aria-labelledby="comfort-title">
+            <p class="section-number" aria-hidden="true">03</p>
+            <h2 id="comfort-title">Comfort &amp; connection</h2>
+            <ul class="topic-list">
+              <li><a href="topics/pacifiers.html">Pacifiers</a></li>
+              <li><a href="topics/skin-to-skin.html">Skin-to-skin</a></li>
+              <li><a href="topics/crying-and-soothing.html">Crying and soothing</a></li>
+              <li><a href="topics/tummy-time-and-awake-play.html">Tummy time and awake play</a></li>
+            </ul>
+          </section>
+
+          <section class="topic-group topic-group--sage" id="daily-care" aria-labelledby="daily-care-title">
+            <p class="section-number" aria-hidden="true">04</p>
+            <h2 id="daily-care-title">Diapers &amp; daily care</h2>
+            <ul class="topic-list">
+              <li><a href="topics/wet-diapers.html">Wet diapers</a></li>
+              <li><a href="topics/newborn-poop.html">Newborn poop</a></li>
+              <li><a href="topics/umbilical-cord-care.html">Umbilical cord care</a></li>
+              <li><a href="topics/bathing-a-newborn.html">Bathing a newborn</a></li>
+              <li><a href="topics/newborn-skin.html">Newborn skin</a></li>
+              <li><a href="topics/diaper-rash.html">Diaper rash</a></li>
+              <li><a href="topics/clothing-and-room-temperature.html">Clothing and room temperature</a></li>
+            </ul>
+          </section>
+
+          <section class="topic-group topic-group--peach" id="health-safety" aria-labelledby="health-safety-title">
+            <p class="section-number" aria-hidden="true">05</p>
+            <h2 id="health-safety-title">Health &amp; safety</h2>
+            <ul class="topic-list">
+              <li><a href="topics/when-to-get-medical-help.html">When to get medical help</a></li>
+              <li><a href="topics/fever-and-temperature.html">Fever and taking a temperature</a></li>
+              <li><a href="topics/jaundice.html">Jaundice</a></li>
+              <li><a href="topics/breathing-and-congestion.html">Breathing and congestion</a></li>
+              <li><a href="topics/car-seat-safety.html">Car seat safety</a></li>
+            </ul>
+          </section>
+
+          <section class="topic-group" id="whats-next" aria-labelledby="whats-next-title">
+            <p class="section-number" aria-hidden="true">06</p>
+            <h2 id="whats-next-title">What’s next</h2>
+            <ul class="topic-list">
+              <li><a href="topics/rest-of-the-first-week.html">What to expect in the rest of the first week</a></li>
+              <li><a href="topics/weeks-two-to-four.html">What changes in weeks 2–4?</a></li>
+              <li><a href="topics/two-month-milestones.html">A preview of 2-month milestones</a></li>
             </ul>
           </section>
         </div>
-
-        <aside class="notice" aria-label="Medical disclaimer">
-          <span class="notice-mark" aria-hidden="true">i</span>
-          <div>
-            <strong>This reference is not medical advice.</strong>
-            <p>For questions about a child’s health or development, consult a qualified health professional.</p>
-          </div>
-        </aside>
       </main>
 
-      <footer>
-        General reference only. No personal or identifying information is stored here.
+      <footer class="site-footer">
+        <span>Trusted starting points:</span>
+        <a href="https://www.healthychildren.org/" rel="noreferrer">American Academy of Pediatrics</a>
+        <a href="https://safetosleep.nichd.nih.gov/" rel="noreferrer">NIH Safe to Sleep</a>
+        <a href="https://www.cdc.gov/act-early/milestones/" rel="noreferrer">CDC milestones</a>
       </footer>
     </div>
   </body>
