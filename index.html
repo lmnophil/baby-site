@@ -3,34 +3,299 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Baby Site</title>
+    <meta
+      name="description"
+      content="A small, public reference for baby milestones, routines, and trusted resources."
+    >
+    <title>Little Notes — A Baby Knowledge Reference</title>
     <style>
-      body {
-        max-width: 42rem;
-        margin: 4rem auto;
-        padding: 0 1rem;
-        color: #2d2930;
-        background: #fffaf7;
-        font-family: system-ui, sans-serif;
-        line-height: 1.6;
+      :root {
+        color-scheme: light;
+        --ink: #30302f;
+        --muted: #68635e;
+        --paper: #fffdf8;
+        --peach: #f4c9b8;
+        --rose: #b85f66;
+        --sage: #b9c9b7;
+        --line: #e8e0d6;
+        --shadow: 0 1.25rem 3rem rgb(73 56 44 / 10%);
       }
 
-      main {
-        padding: 2rem;
-        border: 1px solid #eadfd9;
-        border-radius: 0.75rem;
-        background: #ffffff;
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 8% 4%, rgb(244 201 184 / 38%), transparent 24rem),
+          radial-gradient(circle at 94% 88%, rgb(185 201 183 / 32%), transparent 22rem),
+          #f7f2ea;
+        font-family: ui-rounded, "Avenir Next", "Segoe UI", sans-serif;
+        line-height: 1.65;
+      }
+
+      a {
+        color: #87434a;
+        text-underline-offset: 0.2em;
+      }
+
+      a:hover {
+        text-decoration-thickness: 0.14em;
+      }
+
+      a:focus-visible {
+        outline: 0.2rem solid var(--rose);
+        outline-offset: 0.25rem;
+        border-radius: 0.15rem;
+      }
+
+      .skip-link {
+        position: absolute;
+        top: 0.75rem;
+        left: 0.75rem;
+        z-index: 1;
+        padding: 0.6rem 0.85rem;
+        border-radius: 999px;
+        background: var(--ink);
+        color: white;
+        transform: translateY(-200%);
+      }
+
+      .skip-link:focus {
+        transform: translateY(0);
+      }
+
+      .page {
+        width: min(100% - 2rem, 68rem);
+        margin: 0 auto;
+        padding: 5rem 0 3rem;
+      }
+
+      header {
+        position: relative;
+        max-width: 44rem;
+        padding: 1rem 0 3.5rem;
+      }
+
+      header::after {
+        position: absolute;
+        top: 0;
+        right: -8rem;
+        width: 10rem;
+        aspect-ratio: 1;
+        border: 1.25rem solid rgb(255 255 255 / 60%);
+        border-radius: 50%;
+        content: "";
+      }
+
+      .eyebrow {
+        margin: 0 0 0.9rem;
+        color: #87434a;
+        font-size: 0.78rem;
+        font-weight: 750;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2 {
+        font-family: Georgia, "Times New Roman", serif;
+        font-weight: 500;
+        line-height: 1.08;
       }
 
       h1 {
-        margin-top: 0;
+        max-width: 12ch;
+        margin: 0;
+        font-size: clamp(3rem, 9vw, 6rem);
+        letter-spacing: -0.045em;
+      }
+
+      .intro {
+        max-width: 37rem;
+        margin: 1.5rem 0 0;
+        color: var(--muted);
+        font-size: clamp(1.05rem, 2.5vw, 1.3rem);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+
+      .card {
+        min-height: 16rem;
+        padding: 1.6rem;
+        border: 1px solid var(--line);
+        border-radius: 1.25rem;
+        background: rgb(255 253 248 / 88%);
+        box-shadow: var(--shadow);
+      }
+
+      .card:nth-child(2) {
+        background: #f9e7de;
+      }
+
+      .card:nth-child(3) {
+        background: #e8efe7;
+      }
+
+      .number {
+        display: grid;
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-bottom: 3.5rem;
+        border: 1px solid currentColor;
+        border-radius: 50%;
+        place-items: center;
+        font: 700 0.75rem/1 ui-monospace, monospace;
+      }
+
+      h2 {
+        margin: 0 0 0.75rem;
+        font-size: 1.9rem;
+        letter-spacing: -0.02em;
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .sources {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .sources li + li {
+        margin-top: 0.45rem;
+      }
+
+      .notice {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1rem;
+        align-items: start;
+        margin-top: 1rem;
+        padding: 1.35rem 1.5rem;
+        border: 1px solid #d8b9a9;
+        border-radius: 1rem;
+        background: var(--paper);
+      }
+
+      .notice-mark {
+        display: grid;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background: var(--peach);
+        font-weight: 800;
+        place-items: center;
+      }
+
+      .notice strong,
+      .notice p {
+        display: block;
+        margin: 0;
+      }
+
+      .notice p {
+        color: var(--muted);
+      }
+
+      footer {
+        padding: 2.25rem 0 0;
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+
+      @media (max-width: 48rem) {
+        .page {
+          padding-top: 3rem;
+        }
+
+        header::after {
+          right: 0;
+          width: 6rem;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .card {
+          min-height: auto;
+        }
+
+        .number {
+          margin-bottom: 2rem;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
       }
     </style>
   </head>
   <body>
-    <main>
-      <h1>Baby Site</h1>
-      <p>The repository is initialized and ready for a personal baby-reference website.</p>
-    </main>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <div class="page">
+      <header>
+        <p class="eyebrow">Baby knowledge reference</p>
+        <h1>Little notes for big days.</h1>
+        <p class="intro">
+          A calm, concise place to organize general information about early growth,
+          everyday rhythms, and reliable places to learn more.
+        </p>
+      </header>
+
+      <main id="content">
+        <div class="grid">
+          <section class="card" aria-labelledby="milestones-title">
+            <span class="number" aria-hidden="true">01</span>
+            <h2 id="milestones-title">Milestones</h2>
+            <p>A future home for age-based development notes and questions to discuss with a pediatrician.</p>
+          </section>
+
+          <section class="card" aria-labelledby="routines-title">
+            <span class="number" aria-hidden="true">02</span>
+            <h2 id="routines-title">Routines</h2>
+            <p>A future home for flexible notes about sleep, feeding, play, and daily care.</p>
+          </section>
+
+          <section class="card" aria-labelledby="sources-title">
+            <span class="number" aria-hidden="true">03</span>
+            <h2 id="sources-title">Trusted sources</h2>
+            <ul class="sources">
+              <li><a href="https://www.cdc.gov/act-early/" rel="noreferrer">CDC: Learn the Signs. Act Early.</a></li>
+              <li><a href="https://www.healthychildren.org/" rel="noreferrer">American Academy of Pediatrics</a></li>
+              <li><a href="https://www.who.int/health-topics/child-health" rel="noreferrer">World Health Organization</a></li>
+            </ul>
+          </section>
+        </div>
+
+        <aside class="notice" aria-label="Medical disclaimer">
+          <span class="notice-mark" aria-hidden="true">i</span>
+          <div>
+            <strong>This reference is not medical advice.</strong>
+            <p>For questions about a child’s health or development, consult a qualified health professional.</p>
+          </div>
+        </aside>
+      </main>
+
+      <footer>
+        General reference only. No personal or identifying information is stored here.
+      </footer>
+    </div>
   </body>
 </html>
