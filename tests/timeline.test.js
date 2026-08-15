@@ -7,6 +7,8 @@ const test = require("node:test");
 
 const timeline = require("../timeline.js");
 const data = require("../timeline-data.js");
+const reviewProgress = require("../timeline-review-progress.json");
+const timelineItems = require("../scripts/timeline-items.js");
 
 const projectRoot = path.resolve(__dirname, "..");
 
@@ -116,6 +118,58 @@ test("all timeline stages are ordered, complete, and cite known sources", functi
       }
     }
   }
+});
+
+test("source registry entries have renderable titles and secure URLs", function () {
+  for (const [sourceId, source] of Object.entries(data.sources)) {
+    assert.equal(typeof source.title, "string", `${sourceId} should have a title`);
+    assert.ok(source.title.trim(), `${sourceId} should have a nonempty title`);
+    assert.equal(typeof source.url, "string", `${sourceId} should have a URL`);
+    const parsed = new URL(source.url);
+    assert.equal(parsed.protocol, "https:", `${sourceId} should use HTTPS`);
+    assert.ok(parsed.hostname, `${sourceId} should have a hostname`);
+    assert.equal(parsed.username, "", `${sourceId} should not contain URL credentials`);
+    assert.equal(parsed.password, "", `${sourceId} should not contain URL credentials`);
+  }
+});
+
+test("timeline editorial review progress uses stable current item IDs", function () {
+  const inventory = timelineItems.buildInventory(data);
+  const currentIds = new Set([
+    ...Object.keys(data.topicTimelines).map(function (slug) { return `topic/${slug}`; }),
+    ...data.homeStages.map(function (stage) { return `home/${stage.key}`; })
+  ]);
+  const completedIds = new Set();
+
+  assert.equal(reviewProgress.version, 1);
+  assert.equal(inventory.length, currentIds.size);
+  assert.deepEqual(new Set(inventory.map(function (item) { return item.id; })), currentIds);
+  assert.equal(inventory.findIndex(function (item) { return item.kind === "home"; }), Object.keys(data.topicTimelines).length);
+  assert.ok(Array.isArray(reviewProgress.completed));
+  for (const entry of reviewProgress.completed) {
+    assert.deepEqual(Object.keys(entry).sort(), ["id", "result", "reviewedOn"]);
+    assert.ok(currentIds.has(entry.id), `${entry.id} should identify a current timeline item`);
+    assert.equal(completedIds.has(entry.id), false, `${entry.id} should be recorded only once`);
+    completedIds.add(entry.id);
+    assert.equal(timelineItems.isIsoDate(entry.reviewedOn), true);
+    assert.ok(["updated", "confirmed"].includes(entry.result));
+  }
+
+  assert.throws(function () {
+    timelineItems.readProgressText(JSON.stringify({
+      version: 1,
+      completed: [{ id: "home/birth", reviewedOn: "2026-02-29", result: "confirmed" }]
+    }), inventory);
+  }, /real YYYY-MM-DD date/);
+  assert.throws(function () {
+    timelineItems.readProgressText(JSON.stringify({
+      version: 1,
+      completed: [
+        { id: "home/birth", reviewedOn: "2026-08-15", result: "confirmed" },
+        { id: "home/birth", reviewedOn: "2026-08-15", result: "updated" }
+      ]
+    }), inventory);
+  }, /duplicated/);
 });
 
 test("homepage stages reference real directory topics and known sources", function () {

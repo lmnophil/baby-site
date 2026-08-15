@@ -19,5 +19,18 @@ dependency-free checks with:
 ```sh
 node --check timeline.js
 node --check timeline-data.js
-node --test tests/timeline.test.js
+node --test tests/*.test.js
 ```
+
+The dated cards began as researched starter copy and have an explicit,
+item-by-item editorial review queue. To inspect or run it:
+
+```sh
+./scripts/write-baby-timeline-items.sh --list
+./scripts/write-baby-timeline-items.sh
+```
+
+Each Codex session handles one complete topic timeline or one homepage card,
+records completion in `timeline-review-progress.json`, commits to `main`, and
+pushes before the next session starts. See `TIMELINE.md` for the review contract
+and recovery options.

@@ -41,7 +41,8 @@ authorities include the [AAP 3–5 day visit guide](https://www.aap.org/en/patie
 [CDC newborn feeding and diaper guidance](https://www.cdc.gov/infant-toddler-nutrition/breastfeeding/newborn-basics.html),
 [CDC milestones by 2 months](https://www.cdc.gov/act-early/milestones/2-months.html),
 and [NIH tummy-time guidance](https://safetosleep.nichd.nih.gov/reduce-risk/tummy-time).
-The timeline research was reviewed on 2026-08-15.
+The initial framework research was reviewed on 2026-08-15. Editorial completion
+of each starter item is tracked separately as described below.
 
 ## Topic timelines
 
@@ -68,6 +69,42 @@ Each stage contains:
 Keep stages short enough to scan while holding a baby. Add a date only when the
 source supports a real timing change. Put fixed safety rules and warning signs
 in the full guide, not behind a dated card.
+
+## Editorial review queue
+
+The original timeline pass deliberately created useful starter copy. A tracked
+review queue now distinguishes structurally valid starter text from a timeline
+item that has received a focused, current evidence audit.
+
+There are two work-item shapes:
+
+- `topic/<slug>` covers every dated card for one topic and reconciles those
+  cards with the matching full HTML guide. The cards form one sequence, so they
+  are researched together rather than in disconnected card-by-card sessions.
+- `home/<stage-key>` covers one dated homepage card, including its boundary,
+  featured topics, notes, and overview sources.
+
+Topic items run before homepage items so the final homepage summaries can be
+checked against reviewed topic guidance. `timeline-review-progress.json` stores
+the stable item ID, local review date, and whether the audit updated published
+content or confirmed it without an editorial change. It is authoring metadata
+and is not loaded by the website.
+
+Use the checked-in runner:
+
+```sh
+./scripts/write-baby-timeline-items.sh --list
+./scripts/write-baby-timeline-items.sh --limit 1
+./scripts/write-baby-timeline-items.sh --item topic/getting-enough
+./scripts/write-baby-timeline-items.sh --resume
+```
+
+The runner uses one persisted Codex session per item, enables current web
+research, logs outside the repository, and stops on the first failed session or
+postcondition. It requires clean, synchronized `main`; verifies that only the
+target item was marked complete; reruns the dependency-free checks; and confirms
+the result was pushed before continuing. `--resume` continues the same session
+after an interruption instead of silently starting a second audit.
 
 ## Conditions that override dates
 
