@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="A quick-reference directory for newborn feeding, sleep, care, safety, and what comes next."
+      content="A dated, quick-reference guide to feeding, sleep, care, safety, and development across a baby's first three months."
     >
     <title>Little Notes — Newborn Quick Reference</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="timeline-data.js" defer></script>
+    <script src="timeline.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#content">Skip to content</a>
 
     <div class="page">
       <header class="site-header">
-        <p class="eyebrow">Newborn quick reference</p>
-        <h1>Little notes for right now.</h1>
-        <p class="intro">Choose a topic for a quick answer.</p>
+        <p class="eyebrow">Birth through three months</p>
+        <h1>Little notes for every next.</h1>
+        <p class="intro">Today is selected automatically. Choose another dated card to look back or preview what is ahead.</p>
 
         <nav class="category-nav" aria-label="Jump to a topic group">
           <a href="#feeding">Feeding</a>
@@ -30,79 +32,102 @@
       </header>
 
       <main id="content">
-        <div class="topic-grid">
-          <section class="topic-group" id="feeding" aria-labelledby="feeding-title">
+        <section class="timeline-explorer timeline-explorer--home" data-home-timeline aria-label="Guidance by date">
+          <noscript>
+            <p class="no-script-note">The dated view needs JavaScript. Every guide remains available in the directory below.</p>
+          </noscript>
+        </section>
+
+        <aside class="quick-safety" aria-labelledby="quick-safety-title">
+          <div>
+            <p class="eyebrow">Always within reach</p>
+            <h2 id="quick-safety-title">Safety does not age out.</h2>
+          </div>
+          <nav class="quick-safety__links" aria-label="Quick safety guides">
+            <a href="topics/when-to-get-medical-help.html">When to get medical help</a>
+            <a href="topics/fever-and-temperature.html">Fever &amp; temperature</a>
+            <a href="topics/safe-sleep-setup.html">Safe sleep setup</a>
+          </nav>
+        </aside>
+
+        <details class="all-guides" id="all-guides" open>
+          <summary>Browse all 30 guides</summary>
+          <p class="all-guides__intro">The dated view changes what is featured. This full directory never removes a topic.</p>
+
+          <div class="topic-grid">
+            <section class="topic-group" id="feeding" aria-labelledby="feeding-title">
             <p class="section-number" aria-hidden="true">01</p>
             <h2 id="feeding-title">Feeding</h2>
             <ul class="topic-list">
-              <li><a href="topics/hunger-and-fullness-cues.html">Hunger and fullness cues</a></li>
-              <li><a href="topics/feeding-frequency-and-waking.html">How often should baby eat—and when should I wake them?</a></li>
-              <li><a href="topics/breastfeeding-and-latch.html">Breastfeeding and latch</a></li>
-              <li><a href="topics/bottle-feeding.html">Bottle feeding</a></li>
-              <li><a href="topics/formula-preparation-and-storage.html">Formula preparation and storage</a></li>
-              <li><a href="topics/getting-enough.html">Is baby getting enough?</a></li>
-              <li><a href="topics/burping-gas-and-spit-up.html">Burping, gas, and spit-up</a></li>
+              <li data-topic="hunger-and-fullness-cues"><a href="topics/hunger-and-fullness-cues.html">Hunger and fullness cues</a></li>
+              <li data-topic="feeding-frequency-and-waking"><a href="topics/feeding-frequency-and-waking.html">How often should baby eat—and when should I wake them?</a></li>
+              <li data-topic="breastfeeding-and-latch"><a href="topics/breastfeeding-and-latch.html">Breastfeeding and latch</a></li>
+              <li data-topic="bottle-feeding"><a href="topics/bottle-feeding.html">Bottle feeding</a></li>
+              <li data-topic="formula-preparation-and-storage"><a href="topics/formula-preparation-and-storage.html">Formula preparation and storage</a></li>
+              <li data-topic="getting-enough"><a href="topics/getting-enough.html">Is baby getting enough?</a></li>
+              <li data-topic="burping-gas-and-spit-up"><a href="topics/burping-gas-and-spit-up.html">Burping, gas, and spit-up</a></li>
             </ul>
-          </section>
+            </section>
 
-          <section class="topic-group topic-group--peach" id="sleep" aria-labelledby="sleep-title">
+            <section class="topic-group topic-group--peach" id="sleep" aria-labelledby="sleep-title">
             <p class="section-number" aria-hidden="true">02</p>
             <h2 id="sleep-title">Sleep</h2>
             <ul class="topic-list">
-              <li><a href="topics/normal-newborn-sleep.html">What is normal newborn sleep?</a></li>
-              <li><a href="topics/day-and-night.html">Do newborns know day from night?</a></li>
-              <li><a href="topics/safe-sleep-setup.html">Safe sleep setup</a></li>
-              <li><a href="topics/swaddling-safely.html">Swaddling safely</a></li>
+              <li data-topic="normal-newborn-sleep"><a href="topics/normal-newborn-sleep.html">What is normal newborn sleep?</a></li>
+              <li data-topic="day-and-night"><a href="topics/day-and-night.html">Do newborns know day from night?</a></li>
+              <li data-topic="safe-sleep-setup"><a href="topics/safe-sleep-setup.html">Safe sleep setup</a></li>
+              <li data-topic="swaddling-safely"><a href="topics/swaddling-safely.html">Swaddling safely</a></li>
             </ul>
-          </section>
+            </section>
 
-          <section class="topic-group topic-group--sage" id="comfort" aria-labelledby="comfort-title">
+            <section class="topic-group topic-group--sage" id="comfort" aria-labelledby="comfort-title">
             <p class="section-number" aria-hidden="true">03</p>
             <h2 id="comfort-title">Comfort &amp; connection</h2>
             <ul class="topic-list">
-              <li><a href="topics/pacifiers.html">Pacifiers</a></li>
-              <li><a href="topics/skin-to-skin.html">Skin-to-skin</a></li>
-              <li><a href="topics/crying-and-soothing.html">Crying and soothing</a></li>
-              <li><a href="topics/tummy-time-and-awake-play.html">Tummy time and awake play</a></li>
+              <li data-topic="pacifiers"><a href="topics/pacifiers.html">Pacifiers</a></li>
+              <li data-topic="skin-to-skin"><a href="topics/skin-to-skin.html">Skin-to-skin</a></li>
+              <li data-topic="crying-and-soothing"><a href="topics/crying-and-soothing.html">Crying and soothing</a></li>
+              <li data-topic="tummy-time-and-awake-play"><a href="topics/tummy-time-and-awake-play.html">Tummy time and awake play</a></li>
             </ul>
-          </section>
+            </section>
 
-          <section class="topic-group topic-group--sage" id="daily-care" aria-labelledby="daily-care-title">
+            <section class="topic-group topic-group--sage" id="daily-care" aria-labelledby="daily-care-title">
             <p class="section-number" aria-hidden="true">04</p>
             <h2 id="daily-care-title">Diapers &amp; daily care</h2>
             <ul class="topic-list">
-              <li><a href="topics/wet-diapers.html">Wet diapers</a></li>
-              <li><a href="topics/newborn-poop.html">Newborn poop</a></li>
-              <li><a href="topics/umbilical-cord-care.html">Umbilical cord care</a></li>
-              <li><a href="topics/bathing-a-newborn.html">Bathing a newborn</a></li>
-              <li><a href="topics/newborn-skin.html">Newborn skin</a></li>
-              <li><a href="topics/diaper-rash.html">Diaper rash</a></li>
-              <li><a href="topics/clothing-and-room-temperature.html">Clothing and room temperature</a></li>
+              <li data-topic="wet-diapers"><a href="topics/wet-diapers.html">Wet diapers</a></li>
+              <li data-topic="newborn-poop"><a href="topics/newborn-poop.html">Newborn poop</a></li>
+              <li data-topic="umbilical-cord-care"><a href="topics/umbilical-cord-care.html">Umbilical cord care</a></li>
+              <li data-topic="bathing-a-newborn"><a href="topics/bathing-a-newborn.html">Bathing a newborn</a></li>
+              <li data-topic="newborn-skin"><a href="topics/newborn-skin.html">Newborn skin</a></li>
+              <li data-topic="diaper-rash"><a href="topics/diaper-rash.html">Diaper rash</a></li>
+              <li data-topic="clothing-and-room-temperature"><a href="topics/clothing-and-room-temperature.html">Clothing and room temperature</a></li>
             </ul>
-          </section>
+            </section>
 
-          <section class="topic-group topic-group--peach" id="health-safety" aria-labelledby="health-safety-title">
+            <section class="topic-group topic-group--peach" id="health-safety" aria-labelledby="health-safety-title">
             <p class="section-number" aria-hidden="true">05</p>
             <h2 id="health-safety-title">Health &amp; safety</h2>
             <ul class="topic-list">
-              <li><a href="topics/when-to-get-medical-help.html">When to get medical help</a></li>
-              <li><a href="topics/fever-and-temperature.html">Fever and taking a temperature</a></li>
-              <li><a href="topics/jaundice.html">Jaundice</a></li>
-              <li><a href="topics/breathing-and-congestion.html">Breathing and congestion</a></li>
-              <li><a href="topics/car-seat-safety.html">Car seat safety</a></li>
+              <li data-topic="when-to-get-medical-help"><a href="topics/when-to-get-medical-help.html">When to get medical help</a></li>
+              <li data-topic="fever-and-temperature"><a href="topics/fever-and-temperature.html">Fever and taking a temperature</a></li>
+              <li data-topic="jaundice"><a href="topics/jaundice.html">Jaundice</a></li>
+              <li data-topic="breathing-and-congestion"><a href="topics/breathing-and-congestion.html">Breathing and congestion</a></li>
+              <li data-topic="car-seat-safety"><a href="topics/car-seat-safety.html">Car seat safety</a></li>
             </ul>
-          </section>
+            </section>
 
-          <section class="topic-group" id="whats-next" aria-labelledby="whats-next-title">
+            <section class="topic-group" id="whats-next" aria-labelledby="whats-next-title">
             <p class="section-number" aria-hidden="true">06</p>
             <h2 id="whats-next-title">What’s next</h2>
             <ul class="topic-list">
-              <li><a href="topics/rest-of-the-first-week.html">What to expect in the rest of the first week</a></li>
-              <li><a href="topics/weeks-two-to-four.html">What changes in weeks 2–4?</a></li>
-              <li><a href="topics/two-month-milestones.html">A preview of 2-month milestones</a></li>
+              <li data-topic="rest-of-the-first-week"><a href="topics/rest-of-the-first-week.html">What to expect in the rest of the first week</a></li>
+              <li data-topic="weeks-two-to-four"><a href="topics/weeks-two-to-four.html">What changes in weeks 2–4?</a></li>
+              <li data-topic="two-month-milestones"><a href="topics/two-month-milestones.html">Early development and 2-month milestones</a></li>
             </ul>
-          </section>
-        </div>
+            </section>
+          </div>
+        </details>
       </main>
 
       <footer class="site-footer">

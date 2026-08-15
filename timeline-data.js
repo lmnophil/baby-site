@@ -1,0 +1,1687 @@
+(function (root, factory) {
+  "use strict";
+
+  const data = factory();
+
+  if (typeof module === "object" && module.exports) {
+    module.exports = data;
+  }
+
+  root.LittleNotesData = data;
+})(typeof globalThis !== "undefined" ? globalThis : this, function () {
+  "use strict";
+
+  return {
+    // This is intentionally the only public copy of the birth date. It drives the
+    // static site's dated cards; do not add names, health records, or other family data.
+    birthDate: "2026-08-12",
+    // The 3-month card remains current until the 4-month anniversary, when this
+    // deliberately scoped framework ends.
+    scopeEnd: { months: 4 },
+    researchReviewed: "2026-08-15",
+
+    sources: {
+      aapBathing: {
+        title: "American Academy of Pediatrics: Bathing Your Baby",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Bathing-Your-Newborn.aspx"
+      },
+      aapBreastfeedingQuestions: {
+        title: "American Academy of Pediatrics: Breastfeeding Questions",
+        url: "https://www.healthychildren.org/English/tips-tools/symptom-checker/Pages/symptomviewer.aspx?symptom=Breast-Feeding+Questions"
+      },
+      aapBreathingTrouble: {
+        title: "American Academy of Pediatrics: Breathing Trouble",
+        url: "https://www.healthychildren.org/English/tips-tools/Symptom-Checker/Pages/symptomviewer.aspx?symptom=Breathing%2BTrouble"
+      },
+      aapBurping: {
+        title: "American Academy of Pediatrics: Baby Burping, Hiccups & Spit-Up",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/baby-burping-hiccups-and-spit-up.aspx"
+      },
+      aapCarSeat: {
+        title: "American Academy of Pediatrics: Car Seats—Information for Families",
+        url: "https://www.healthychildren.org/English/safety-prevention/on-the-go/Pages/Car-Safety-Seats-Information-for-Families.aspx"
+      },
+      aapColic: {
+        title: "American Academy of Pediatrics: Colic Relief Tips for Parents",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/crying-colic/pages/Colic.aspx"
+      },
+      aapCommonNewbornConditions: {
+        title: "American Academy of Pediatrics: 11 Common Conditions in Newborns",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/Pages/Common-Conditions-in-Newborns.aspx"
+      },
+      aapCorrectedAge: {
+        title: "American Academy of Pediatrics: Developmental Milestones for Preterm Babies",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/preemie/Pages/Preemie-Milestones.aspx"
+      },
+      aapCord: {
+        title: "American Academy of Pediatrics: Umbilical Cord Care in Newborns",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Umbilical-Cord-Care.aspx"
+      },
+      aapCryingSupport: {
+        title: "American Academy of Pediatrics: How to Cope With Challenges of Being a New Parent",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/Pages/Challenges-of-Being-a-New-Mom.aspx"
+      },
+      aapCryingUnder3: {
+        title: "American Academy of Pediatrics: Crying Baby—Before 3 Months Old",
+        url: "https://www.healthychildren.org/English/tips-tools/Symptom-Checker/Pages/symptomviewer.aspx?symptom=Crying+Baby+-+Before+3+Months+Old"
+      },
+      aapDehydration: {
+        title: "American Academy of Pediatrics: Signs of Dehydration in Infants & Children",
+        url: "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/dehydration.aspx"
+      },
+      aapDiaperRash: {
+        title: "American Academy of Pediatrics: Common Diaper Rashes & Treatments",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/diapers-clothing/Pages/Diaper-Rash.aspx"
+      },
+      aapFever: {
+        title: "American Academy of Pediatrics: Fever and Your Baby",
+        url: "https://www.healthychildren.org/English/health-issues/conditions/fever/Pages/Fever-and-Your-Baby.aspx"
+      },
+      aapFirstMonthDevelopment: {
+        title: "American Academy of Pediatrics: Developmental Milestones at 1 Month Old",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones-1-Month.aspx"
+      },
+      aapFirstMonthGrowth: {
+        title: "American Academy of Pediatrics: Your Baby’s First Month—Growth & Physical Appearance",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/Pages/First-Month-Physical-Appearance-and-Growth.aspx"
+      },
+      aapFirstWeekVisit: {
+        title: "American Academy of Pediatrics: First Week Visit (3 to 5 Days)",
+        url: "https://www.aap.org/en/patient-care/newborn-infant-and-early-childhood-nutrition/newborn-and-infant-health-assessment-and-promotion/first-office-visit-3-5-days/"
+      },
+      aapJaundice: {
+        title: "American Academy of Pediatrics: Jaundice in Newborns",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/Pages/jaundice.aspx"
+      },
+      aapMedicalHelp: {
+        title: "American Academy of Pediatrics: Urgent Care, ER or Pediatrician?",
+        url: "https://www.healthychildren.org/English/family-life/health-management/Pages/urgent-care-ER-or-pediatrician-a-parent-guide.aspx"
+      },
+      aapNewbornAppearance: {
+        title: "American Academy of Pediatrics: How Your Newborn Looks",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/Pages/How-Your-Newborn-Looks.aspx"
+      },
+      aapNewbornBehavior: {
+        title: "American Academy of Pediatrics: Newborn Reflexes and Behavior",
+        url: "https://www.healthychildren.org/English/tips-tools/Symptom-Checker/Pages/symptomviewer.aspx?symptom=Newborn%2BReflexes%2Band%2BBehavior"
+      },
+      aapNewbornIllness: {
+        title: "American Academy of Pediatrics: Newborn Illness—How to Recognize",
+        url: "https://www.healthychildren.org/English/tips-tools/Symptom-Checker/Pages/symptomviewer.aspx?symptom=Newborn%2BIllness%2B-%2BHow%2Bto%2BRecognize"
+      },
+      aapNewbornPoop: {
+        title: "American Academy of Pediatrics: Baby’s First Days—Bowel Movements & Urination",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/Pages/Babys-First-Days-Bowel-Movements-and-Urination.aspx"
+      },
+      aapPacifier: {
+        title: "American Academy of Pediatrics: Pacifiers and Thumb Sucking",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/crying-colic/Pages/Pacifiers-and-Thumb-Sucking.aspx?lang=en"
+      },
+      aapReflux: {
+        title: "American Academy of Pediatrics: Gastroesophageal Reflux in Infants",
+        url: "https://www.healthychildren.org/English/health-issues/conditions/abdominal/Pages/GERD-Reflux.aspx"
+      },
+      aapSafeSleep: {
+        title: "American Academy of Pediatrics: How to Keep Your Sleeping Baby Safe",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/A-Parents-Guide-to-Safe-Sleep.aspx"
+      },
+      aapSleep: {
+        title: "American Academy of Pediatrics: Getting Your Baby to Sleep",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/getting-your-baby-to-sleep.aspx"
+      },
+      aapSkinToSkin: {
+        title: "American Academy of Pediatrics: Skin-to-Skin Contact",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/preemie/Pages/About-Skin-to-Skin-Care.aspx"
+      },
+      aapSwaddle: {
+        title: "American Academy of Pediatrics: Swaddling—Is It Safe?",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/diapers-clothing/Pages/Swaddling-Is-it-Safe.aspx"
+      },
+      aapTemperature: {
+        title: "American Academy of Pediatrics: How to Take a Child’s Temperature",
+        url: "https://www.healthychildren.org/English/health-issues/conditions/fever/Pages/How-to-Take-a-Childs-Temperature.aspx"
+      },
+      aapTummyTime: {
+        title: "American Academy of Pediatrics: Back to Sleep, Tummy to Play",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/Back-to-Sleep-Tummy-to-Play.aspx"
+      },
+      aapWaterSafety: {
+        title: "American Academy of Pediatrics: Infant Drowning Prevention & Water Safety",
+        url: "https://www.healthychildren.org/English/safety-prevention/at-play/Pages/Infant-Water-Safety.aspx"
+      },
+      cdcBottleFeeding: {
+        title: "CDC: About Feeding From a Bottle",
+        url: "https://www.cdc.gov/infant-toddler-nutrition/bottle-feeding/index.html"
+      },
+      cdcBreastfeedingBasics: {
+        title: "CDC: Newborn Breastfeeding Basics",
+        url: "https://www.cdc.gov/infant-toddler-nutrition/breastfeeding/newborn-basics.html"
+      },
+      cdcBreastfeedingFrequency: {
+        title: "CDC: How Much and How Often to Breastfeed",
+        url: "https://www.cdc.gov/infant-toddler-nutrition/breastfeeding/how-much-and-how-often.html"
+      },
+      cdcBreastfeedingTransition: {
+        title: "CDC: What to Expect While Breastfeeding",
+        url: "https://www.cdc.gov/infant-toddler-nutrition/breastfeeding/what-to-expect-while-breastfeeding.html"
+      },
+      cdcCleaning: {
+        title: "CDC: How to Clean, Sanitize, and Store Infant Feeding Items",
+        url: "https://www.cdc.gov/hygiene/faq/"
+      },
+      cdcFormulaPrep: {
+        title: "CDC: Infant Formula Preparation and Storage",
+        url: "https://www.cdc.gov/infant-toddler-nutrition/formula-feeding/preparation-and-storage.html"
+      },
+      cdcFormulaFrequency: {
+        title: "CDC: How Much and How Often to Feed Infant Formula",
+        url: "https://www.cdc.gov/infant-toddler-nutrition/formula-feeding/how-much-and-how-often.html"
+      },
+      cdcHungerCues: {
+        title: "CDC: Signs Your Child Is Hungry or Full",
+        url: "https://www.cdc.gov/infant-toddler-nutrition/mealtime/signs-your-child-is-hungry-or-full.html"
+      },
+      cdcMilestones2: {
+        title: "CDC: Milestones by 2 Months",
+        url: "https://www.cdc.gov/act-early/milestones/2-months.html"
+      },
+      cdcMilestones4: {
+        title: "CDC: Milestones by 4 Months",
+        url: "https://www.cdc.gov/act-early/milestones/4-months.html"
+      },
+      cdcSafeSleep: {
+        title: "CDC: Providing Care for Babies to Sleep Safely",
+        url: "https://www.cdc.gov/sudden-infant-death/sleep-safely/"
+      },
+      cdcSkinToSkin: {
+        title: "CDC: Safety in Maternity Care",
+        url: "https://www.cdc.gov/breastfeeding/php/guidelines-recommendations/safety-in-maternity-care.html"
+      },
+      medlineDiaperRash: {
+        title: "MedlinePlus: Diaper Rash",
+        url: "https://medlineplus.gov/ency/article/000964.htm"
+      },
+      nhtsaRearFacing: {
+        title: "NHTSA: How to Install Rear-Facing Car Seats",
+        url: "https://www.nhtsa.gov/car-seats-and-booster-seats/how-install-rear-facing-car-seats"
+      },
+      nihSafeSleep: {
+        title: "NIH Safe to Sleep: Ways to Reduce Baby’s Risk",
+        url: "https://safetosleep.nichd.nih.gov/reduce-risk/reduce"
+      },
+      nihTummyTime: {
+        title: "NIH Safe to Sleep: Tummy Time for a Healthy Baby",
+        url: "https://safetosleep.nichd.nih.gov/reduce-risk/tummy-time"
+      },
+      nhsBabySleep: {
+        title: "NHS: Helping Your Baby to Sleep",
+        url: "https://www.nhs.uk/baby/caring-for-a-newborn/helping-your-baby-to-sleep/"
+      },
+      whoPostnatal: {
+        title: "World Health Organization: Recommendations on Maternal and Newborn Care",
+        url: "https://www.who.int/publications/i/item/9789240045989"
+      }
+    },
+
+    homeStages: [
+      {
+        key: "birth",
+        at: { days: 0 },
+        label: "Birth · day 0",
+        title: "Start with the essentials",
+        summary: "Feed responsively, keep baby warm and close, and set up every sleep safely. Early patterns change quickly.",
+        topics: [
+          { id: "skin-to-skin", note: "Warmth, calm, connection, and early feeding support." },
+          { id: "feeding-frequency-and-waking", note: "Frequent feeds and an individualized waking plan." },
+          { id: "hunger-and-fullness-cues", note: "Respond to early cues before crying begins." },
+          { id: "breastfeeding-and-latch", note: "Get help early when latch or milk transfer hurts or worries you." },
+          { id: "bottle-feeding", note: "Use responsive positioning and pacing when a bottle is used." },
+          { id: "formula-preparation-and-storage", note: "If formula is used, prepare and store it safely from the first bottle." },
+          { id: "clothing-and-room-temperature", note: "Balance newborn warmth with avoiding overheating." },
+          { id: "car-seat-safety", note: "Check the setup before the first trip home." }
+        ],
+        sources: ["cdcBreastfeedingFrequency", "cdcHungerCues", "aapSafeSleep", "cdcFormulaPrep"]
+      },
+      {
+        key: "day-3",
+        at: { days: 3 },
+        label: "Day 3",
+        title: "Watch the first trends",
+        summary: "Milk, feeding, diapers, stool, and jaundice often shift now. Look at the whole pattern and ask early when something feels off.",
+        topics: [
+          { id: "getting-enough", note: "Judge intake through feeding, output, behavior, and weight together." },
+          { id: "wet-diapers", note: "The expected pattern rises quickly during the first days." },
+          { id: "newborn-poop", note: "Stool should begin changing away from dark meconium." },
+          { id: "jaundice", note: "Yellowing commonly becomes noticeable during the first few days." },
+          { id: "breastfeeding-and-latch", note: "Increasing milk volume may make transfer concerns clearer." },
+          { id: "formula-preparation-and-storage", note: "Correct mixing, handling, and storage reduce risk." },
+          { id: "rest-of-the-first-week", note: "Prepare for the 3–5 day check and the next few days." }
+        ],
+        sources: ["aapFirstWeekVisit", "cdcBreastfeedingBasics", "aapJaundice", "cdcFormulaPrep"]
+      },
+      {
+        key: "week-1",
+        at: { days: 7 },
+        label: "Week 1 · day 7",
+        title: "One week together",
+        summary: "Review feeding and follow-up, care for the cord and skin, and expect sleep to remain fragmented.",
+        topics: [
+          { id: "jaundice", note: "Keep following the measured bilirubin and feeding plan." },
+          { id: "umbilical-cord-care", note: "The stump is drying but may normally remain attached." },
+          { id: "bathing-a-newborn", note: "Bathing guidance still depends on cord healing." },
+          { id: "newborn-skin", note: "Peeling, spots, and transient rashes prompt common questions." },
+          { id: "normal-newborn-sleep", note: "Short, irregular sleep is expected—not a schedule problem." },
+          { id: "getting-enough", note: "Review feeding, output, and the weight trend." },
+          { id: "wet-diapers", note: "Output remains a practical clue to hydration and intake." }
+        ],
+        sources: ["aapCord", "aapBathing", "aapSleep", "cdcBreastfeedingBasics", "aapJaundice"]
+      },
+      {
+        key: "week-2",
+        at: { days: 14 },
+        label: "Week 2 · day 14",
+        title: "New patterns are showing up",
+        summary: "Review birth-weight recovery and jaundice while crying, spit-up, and soothing needs become more noticeable. Normal ranges remain broad.",
+        topics: [
+          { id: "weeks-two-to-four", note: "Frame the next stretch without expecting a fixed schedule." },
+          { id: "crying-and-soothing", note: "Crying often begins increasing during the early weeks." },
+          { id: "burping-gas-and-spit-up", note: "Spit-up and feeding discomfort may become more apparent." },
+          { id: "umbilical-cord-care", note: "Many cords separate around now, but timing varies." },
+          { id: "getting-enough", note: "Use the measured trend to confirm birth-weight recovery." },
+          { id: "swaddling-safely", note: "Reinforce safe technique and back sleeping." },
+          { id: "jaundice", note: "Persistent yellowing now has feeding-method-specific follow-up points." }
+        ],
+        sources: ["aapFirstWeekVisit", "aapJaundice", "aapCryingSupport", "aapReflux"]
+      },
+      {
+        key: "month-1",
+        at: { months: 1 },
+        label: "1 month",
+        title: "More awake, still unpredictable",
+        summary: "Baby may be more alert and interactive while sleep and crying remain irregular. Offer connection and play without testing performance.",
+        topics: [
+          { id: "feeding-frequency-and-waking", note: "Intervals may shift, but cues and the growth plan still lead." },
+          { id: "tummy-time-and-awake-play", note: "Expand short, supervised play as alert time grows." },
+          { id: "crying-and-soothing", note: "Crying may still be increasing; caregiver support matters." },
+          { id: "day-and-night", note: "Use gentle light and activity cues, without expecting a schedule." },
+          { id: "newborn-skin", note: "Baby acne and other benign changes may appear now." },
+          { id: "pacifiers", note: "Use can be reconsidered once feeding is going well." },
+          { id: "jaundice", note: "Yellowing that remains at 4 weeks needs a feeding-specific review." }
+        ],
+        sources: ["aapFirstMonthDevelopment", "nihTummyTime", "aapCryingSupport", "cdcBreastfeedingFrequency", "aapJaundice"]
+      },
+      {
+        key: "week-6",
+        at: { days: 42 },
+        label: "Week 6 · day 42",
+        title: "The fussy stretch",
+        summary: "Crying is often near its high period around 4–6 weeks. Build in caregiver relief, keep play gentle, and prepare for the 2-month check-in.",
+        topics: [
+          { id: "crying-and-soothing", note: "This is a common high-crying window, not a guaranteed peak." },
+          { id: "tummy-time-and-awake-play", note: "Gradually increase supervised play as baby tolerates it." },
+          { id: "swaddling-safely", note: "Rolling signs—not this date—are the stop signal; recheck now." },
+          { id: "two-month-milestones", note: "Preview observations to discuss with the pediatrician." },
+          { id: "getting-enough", note: "Breastfed stool frequency may change while wet-diaper expectations do not." },
+          { id: "burping-gas-and-spit-up", note: "Reflux and spit-up commonly continue." },
+          { id: "normal-newborn-sleep", note: "Frequent waking remains normal." }
+        ],
+        sources: ["aapColic", "nihTummyTime", "cdcMilestones2", "cdcBreastfeedingBasics", "aapSwaddle"]
+      },
+      {
+        key: "month-2",
+        at: { months: 2 },
+        label: "2 months",
+        title: "Check in, don’t grade",
+        summary: "Use 2-month milestones as conversation prompts, revisit swaddling before rolling attempts, and keep safe-sleep practices unchanged.",
+        topics: [
+          { id: "two-month-milestones", note: "Notice what baby does; use corrected age after prematurity." },
+          { id: "tummy-time-and-awake-play", note: "Observe head lifting and movement through play." },
+          { id: "swaddling-safely", note: "Rolling signs override age—stop as soon as they appear." },
+          { id: "day-and-night", note: "Night sleep may lengthen, but a schedule is not required." },
+          { id: "crying-and-soothing", note: "Crying may be near its high point or beginning to ease." },
+          { id: "hunger-and-fullness-cues", note: "Let changing feed size or spacing remain cue-led." },
+          { id: "car-seat-safety", note: "Growth makes harness fit worth rechecking." }
+        ],
+        sources: ["cdcMilestones2", "aapCorrectedAge", "aapSwaddle", "aapSafeSleep"]
+      },
+      {
+        key: "month-3",
+        at: { months: 3 },
+        label: "3 months",
+        title: "Rhythms may be emerging",
+        summary: "Longer alert periods and clearer day-night patterns may appear, while feeding, reflux, crying, and sleep still vary widely.",
+        topics: [
+          { id: "tummy-time-and-awake-play", note: "Floor play can grow with stamina while staying supervised." },
+          { id: "day-and-night", note: "A day-night rhythm may be clearer without being dependable." },
+          { id: "normal-newborn-sleep", note: "Regular sleep cycles generally remain a later development." },
+          { id: "burping-gas-and-spit-up", note: "Normal reflux may continue and can increase beyond 3 months." },
+          { id: "crying-and-soothing", note: "Many babies ease, but continued crying is not automatically abnormal." },
+          { id: "two-month-milestones", note: "Review progress and preview what comes next without grading." },
+          { id: "hunger-and-fullness-cues", note: "Keep changing feed size and spacing led by baby’s cues." },
+          { id: "car-seat-safety", note: "Recheck fit as length, weight, and head control change." }
+        ],
+        sources: ["aapSleep", "aapColic", "cdcMilestones4", "aapReflux", "aapCarSeat", "cdcHungerCues"]
+      }
+    ],
+
+    topicTimelines: {
+      "hunger-and-fullness-cues": {
+        heading: "Feeding cues for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Catch the early cues",
+            summary: "Feeding is easier before crying, which is often a late hunger cue. Respond to the whole pattern rather than waiting for a schedule.",
+            points: [
+              "Hunger may look like hands to mouth, rooting, lip-smacking, or clenched hands.",
+              "Fullness may look like a closed mouth, turning away, or relaxed hands.",
+              "Offer while baby is calm and stop when baby says they are done."
+            ],
+            sources: ["cdcHungerCues"]
+          },
+          {
+            key: "month-2",
+            at: { months: 2 },
+            label: "2 months",
+            title: "Not every cry means hunger",
+            summary: "Crying is often near its high point now, so first look for a cluster of feeding cues. Tiredness, a diaper, temperature, or overstimulation may be the need instead.",
+            points: [
+              "Consider when and how effectively baby last fed.",
+              "Look for rooting or lip-smacking rather than treating crying alone as proof.",
+              "Never pressure baby to finish a breast or bottle."
+            ],
+            sources: ["cdcHungerCues", "aapCryingUnder3"]
+          }
+        ]
+      },
+      "feeding-frequency-and-waking": {
+        heading: "Feeding rhythm for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Feed around the clock",
+            summary: "Newborn stomachs are small, and frequent feeding builds intake and milk supply. A sleepy newborn may need waking according to the discharge or pediatric plan.",
+            points: [
+              "Breastfed newborns commonly feed 8–12 times in 24 hours, sometimes every 1–3 hours.",
+              "Formula-fed newborns commonly start with 1–2 ounces every 2–3 hours, led by cues.",
+              "Count from the start of one feed to the start of the next."
+            ],
+            sources: ["cdcBreastfeedingFrequency", "cdcFormulaFrequency"]
+          },
+          {
+            key: "week-2",
+            at: { weeks: 2 },
+            label: "2 weeks",
+            title: "Check growth before changing the plan",
+            summary: "Many babies regain birth weight within 7–14 days. Confirmation of effective feeding and weight gain—not age alone—should control whether scheduled waking continues.",
+            points: [
+              "Keep the current waking plan until weight recovery is confirmed.",
+              "Call for poor intake, difficult waking, falling output, or continued weight loss."
+            ],
+            sources: ["aapFirstWeekVisit"]
+          },
+          {
+            key: "month-1",
+            at: { months: 1 },
+            label: "1 month",
+            title: "Intervals may begin to stretch",
+            summary: "Breastfed babies may average every 2–4 hours with cluster feeding; formula-fed babies may move toward every 3–4 hours. Variation remains normal.",
+            points: [
+              "Continue feeding by hunger and fullness cues.",
+              "If growth is good, ask whether overnight waking is still needed.",
+              "Do not force a longer interval or a larger feed."
+            ],
+            sources: ["cdcBreastfeedingFrequency", "cdcFormulaFrequency"]
+          }
+        ]
+      },
+      "breastfeeding-and-latch": {
+        heading: "Latch and milk transfer for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Build a deep, comfortable latch",
+            summary: "Breastfeeding is a learned skill for parent and baby. A deep latch improves milk transfer and should become comfortable after the initial attachment.",
+            points: [
+              "Look for a wide mouth, lips turned out, chin against the breast, and straight head and body.",
+              "Listen or watch for regular swallowing.",
+              "If it pinches or hurts, break suction gently and relatch."
+            ],
+            sources: ["cdcBreastfeedingBasics"]
+          },
+          {
+            key: "day-3",
+            at: { days: 3 },
+            label: "Day 3",
+            title: "Milk volume is changing",
+            summary: "Colostrum gives way to larger milk volumes over the first several days. Frequent effective removal and a comfortable latch matter more than timing a feed.",
+            points: [
+              "Feed often and listen for swallowing.",
+              "Use diaper and weight trends—not breast fullness alone—to judge intake.",
+              "Get prompt help when engorgement prevents a deep latch."
+            ],
+            sources: ["cdcBreastfeedingTransition", "cdcBreastfeedingBasics"]
+          },
+          {
+            key: "week-2",
+            at: { weeks: 2 },
+            label: "2 weeks",
+            title: "Persistent pain needs help",
+            summary: "Some early tenderness can occur, but breastfeeding should not remain painful with a good latch. Pain that is not improving deserves assessment.",
+            points: [
+              "Ask for help with cracks, bleeding, clicking, repeated unlatching, or misshapen nipples after feeds.",
+              "Seek medical care for breast pain with fever or flu-like symptoms."
+            ],
+            sources: ["cdcBreastfeedingTransition", "aapBreastfeedingQuestions"]
+          }
+        ]
+      },
+      "bottle-feeding": {
+        heading: "Bottle feeding for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Let baby control the flow",
+            summary: "Responsive bottle feeding gives baby pauses and control. The amount left in the bottle is not the goal.",
+            points: [
+              "Hold baby close and keep the bottle angled so milk flows when baby sucks.",
+              "Pause when baby pauses; stop for turning away, closing the mouth, or relaxed hands.",
+              "Never prop a bottle or leave baby feeding unattended."
+            ],
+            sources: ["cdcBottleFeeding", "cdcHungerCues"]
+          },
+          {
+            key: "week-4",
+            at: { weeks: 4 },
+            label: "4 weeks",
+            title: "Optional bottle practice",
+            summary: "If baby feeds directly at the breast and nursing is going well, around 4 weeks can be a reasonable time to practice an occasional bottle. Feeding readiness—not the date—is the controlling condition.",
+            points: [
+              "Try when baby is calm, not extremely hungry or already full.",
+              "Another caregiver may have an easier first attempt.",
+              "Keep using slow, responsive pacing."
+            ],
+            sources: ["aapBreastfeedingQuestions", "cdcBottleFeeding"]
+          }
+        ]
+      },
+      "formula-preparation-and-storage": {
+        heading: "Formula safety for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Use exact mixing and time limits",
+            summary: "Powdered formula is not sterile, and dilution or storage errors can cause serious illness. Follow the container and safe-water guidance exactly.",
+            points: [
+              "Measure water first, then add the exact amount of powder.",
+              "Use prepared formula within 2 hours and within 1 hour after feeding starts; refrigerate untouched formula no longer than 24 hours.",
+              "Discard leftovers and never microwave formula."
+            ],
+            sources: ["cdcFormulaPrep"]
+          },
+          {
+            key: "month-2",
+            at: { months: 2 },
+            label: "2 months",
+            title: "Reassess the extra germ precautions",
+            summary: "For a healthy term baby, some special under-2-month powdered-formula and daily-sanitizing precautions may now ease. Prematurity or immune compromise keeps extra precautions active.",
+            points: [
+              "Continue thorough cleaning after every use regardless of age.",
+              "Follow the current CDC preparation method for powdered formula.",
+              "Use the clinician’s plan for a premature, ill, or immunocompromised baby."
+            ],
+            sources: ["cdcFormulaPrep", "cdcCleaning"]
+          }
+        ]
+      },
+      "getting-enough": {
+        heading: "Intake clues for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Small output is expected at first",
+            summary: "Intake and output begin small, especially before larger milk volumes arrive. The trend should rise each day.",
+            points: [
+              "Expect at least one wet diaper and one meconium stool on day 1.",
+              "Watch swallowing, alertness for feeds, and satisfaction afterward."
+            ],
+            sources: ["cdcBreastfeedingBasics"]
+          },
+          {
+            key: "day-3",
+            at: { days: 3 },
+            label: "Day 3",
+            title: "Look for the transition",
+            summary: "As intake rises, wet diapers become more frequent and stool should move away from black meconium toward brown, green, then yellow.",
+            points: [
+              "Stool getting lighter is one useful sign of milk transfer.",
+              "Weight loss over 10%, poor swallowing, or increasing sleepiness needs prompt help."
+            ],
+            sources: ["aapFirstWeekVisit", "cdcBreastfeedingBasics"]
+          },
+          {
+            key: "day-5",
+            at: { days: 5 },
+            label: "Day 5",
+            title: "Output should now be obvious",
+            summary: "By day 4–5, adequate intake commonly produces at least 6 clear wet diapers a day and yellow milk stools.",
+            points: [
+              "Dark meconium-like stool at day 5 is a reason to call.",
+              "Fewer than 6 wet diapers, worsening jaundice, or weak feeding warrants assessment."
+            ],
+            sources: ["aapFirstWeekVisit", "cdcBreastfeedingBasics"]
+          },
+          {
+            key: "week-2",
+            at: { weeks: 2 },
+            label: "2 weeks",
+            title: "Birth-weight checkpoint",
+            summary: "Birth weight is usually regained between days 7 and 14. Weight loss over 10% or failure to turn toward steady gain requires evaluation.",
+            points: [
+              "Use the clinician’s measured growth trend rather than a home impression.",
+              "Keep watching feeding effectiveness and output."
+            ],
+            sources: ["aapFirstWeekVisit"]
+          },
+          {
+            key: "week-6",
+            at: { weeks: 6 },
+            label: "6 weeks",
+            title: "Breastfed stool may become less frequent",
+            summary: "After about 6 weeks, some thriving breastfed babies stool much less often. Soft stool, normal wet diapers, comfortable feeding, and growth matter more than frequency alone.",
+            points: [
+              "Do not apply this reassurance to hard stools, illness, poor intake, or poor growth.",
+              "Wet-diaper expectations do not drop with stool frequency."
+            ],
+            sources: ["cdcBreastfeedingBasics"]
+          }
+        ]
+      },
+      "burping-gas-and-spit-up": {
+        heading: "Burping and spit-up for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Pause for air, not a perfect burp",
+            summary: "Young babies can swallow air while feeding, especially from a bottle. Some breastfed babies need little or no burping.",
+            points: [
+              "Try at natural pauses, after 2–3 bottle ounces, or when switching breasts.",
+              "If baby fusses while feeding, pause before more air is swallowed.",
+              "Passing gas is normal and does not explain every crying spell."
+            ],
+            sources: ["aapBurping", "aapCryingUnder3"]
+          },
+          {
+            key: "week-2",
+            at: { weeks: 2 },
+            label: "2 weeks",
+            title: "Spit-up may become noticeable",
+            summary: "Normal infant reflux commonly begins around 2–3 weeks. A comfortable, growing baby who spits up is often called a happy spitter.",
+            points: [
+              "Avoid overfeeding and vigorous play for 20–30 minutes after feeds.",
+              "Burp at natural pauses rather than repeatedly interrupting an effective feed.",
+              "Back sleep on a flat surface remains safest; never incline the mattress for reflux."
+            ],
+            sources: ["aapReflux", "aapBurping"]
+          },
+          {
+            key: "month-3",
+            at: { months: 3 },
+            label: "3 months",
+            title: "It may increase before it improves",
+            summary: "Normal reflux often continues toward a later peak. Judge the pattern by comfort, feeding, hydration, and growth—not laundry volume.",
+            points: [
+              "Keep feeds responsive and avoid pressuring larger volumes.",
+              "Projectile, green, bloody, painful, or growth-limiting vomiting needs medical advice."
+            ],
+            sources: ["aapReflux"]
+          }
+        ]
+      },
+      "normal-newborn-sleep": {
+        heading: "Sleep expectations for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Sleep comes in short pieces",
+            summary: "Newborns may sleep about 16–17 total hours but only 1–2 hours at a time. Waking around the clock is developmentally normal.",
+            points: [
+              "Expect feeding, sleeping, and waking to overlap without a schedule.",
+              "Follow the current feeding-wake plan even when baby is sleepy."
+            ],
+            sources: ["aapSleep"]
+          },
+          {
+            key: "month-3",
+            at: { months: 3 },
+            label: "3 months",
+            title: "Longer stretches are possible, not required",
+            summary: "Some babies now have a longer night stretch, while others still wake frequently. Regular sleep cycles generally do not emerge until around 4 months.",
+            points: [
+              "Treat progress as baby-specific, not a sleeping-through deadline.",
+              "Keep daytime interaction and a calm nighttime pattern."
+            ],
+            sources: ["aapSleep", "nhsBabySleep"]
+          }
+        ]
+      },
+      "day-and-night": {
+        heading: "Day-and-night cues for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Show the difference from the start",
+            summary: "Newborns are not born knowing night from day. Repeated environmental cues can gradually support a developing body clock.",
+            points: [
+              "By day, open curtains, interact, and allow ordinary household sound.",
+              "At night, dim lights, use quiet voices, and keep feeds and changes calm."
+            ],
+            sources: ["nhsBabySleep"]
+          },
+          {
+            key: "month-2",
+            at: { months: 2 },
+            label: "2 months",
+            title: "The body clock may be organizing",
+            summary: "A clearer day-night pattern may be beginning, but it develops gradually and timing varies. Keep cues consistent without forcing wakefulness or delaying needed feeds.",
+            points: [
+              "Use a short, repeatable wind-down sequence.",
+              "Respond normally to nighttime hunger."
+            ],
+            sources: ["nhsBabySleep"]
+          },
+          {
+            key: "month-3",
+            at: { months: 3 },
+            label: "3 months",
+            title: "Notice the pattern baby actually has",
+            summary: "A day-night difference may be clearer now, but a predictable schedule is not required. Compare this week with last week, not with another baby.",
+            points: [
+              "Keep daytime light and interaction predictable.",
+              "Do not treat night waking as a behavior problem."
+            ],
+            sources: ["aapSleep", "nhsBabySleep"]
+          }
+        ]
+      },
+      "safe-sleep-setup": {
+        heading: "Safe-sleep checks for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Set up every sleep space",
+            summary: "The safest setup is a separate, firm, flat, level infant sleep surface in the caregiver’s room. The full safe-sleep rules remain fixed at every age.",
+            points: [
+              "Use only a fitted sheet; keep soft and weighted objects out.",
+              "Start every sleep on the back.",
+              "Move a sleeping baby out of a sitting device as soon as practical."
+            ],
+            sources: ["cdcSafeSleep", "aapSafeSleep"]
+          },
+          {
+            key: "month-2",
+            at: { months: 2 },
+            label: "2 months",
+            title: "Audit for unexpected mobility",
+            summary: "Some babies begin working toward rolling as early as 2 months. Recheck every caregiver and every place baby sleeps before movement surprises you.",
+            points: [
+              "Make sure the sleep space is still empty and product limits are followed.",
+              "Stop any arm- or body-compressing swaddle at the first rolling attempt.",
+              "Keep room-sharing without surface-sharing."
+            ],
+            sources: ["cdcSafeSleep", "aapSwaddle"]
+          }
+        ]
+      },
+      "swaddling-safely": {
+        heading: "Swaddling guidance for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Optional calming, with room to move",
+            summary: "Swaddling may calm some newborns but does not reduce SIDS risk. If used, it must fit within the permanent safe-sleep setup.",
+            points: [
+              "Place a swaddled baby only on the back.",
+              "Allow hips and knees to bend; avoid overheating and loose fabric.",
+              "Never use a weighted swaddle."
+            ],
+            sources: ["aapSwaddle"]
+          },
+          {
+            key: "week-6",
+            at: { weeks: 6 },
+            label: "6 weeks",
+            title: "Prepare for the rolling transition",
+            summary: "This is a recheck date, not an automatic stop date. Because rolling attempts can begin as early as 2 months, make sure every caregiver knows the first attempt ends swaddling.",
+            points: [
+              "Notice new side-to-side movement or attempts to turn over.",
+              "Have a non-compressing sleep sack ready before it is needed.",
+              "Stop immediately at a rolling attempt; do not wait for the 2-month card."
+            ],
+            sources: ["aapSwaddle", "nihSafeSleep"]
+          },
+          {
+            key: "month-2",
+            at: { months: 2 },
+            label: "2 months",
+            title: "Watch for the exit signal",
+            summary: "Some babies start attempting to roll as early as 2 months. The first sign of trying to roll—not a later birthday—is the stop point.",
+            points: [
+              "Move to a non-compressing sleep sack before or immediately at rolling attempts.",
+              "Arms-out swaddling is not a safe workaround once rolling begins.",
+              "Tell every caregiver that the transition has happened."
+            ],
+            sources: ["aapSwaddle", "nihSafeSleep"]
+          }
+        ]
+      },
+      "pacifiers": {
+        heading: "Pacifier guidance for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Food first, soothing second",
+            summary: "A pacifier can meet non-feeding sucking needs and may be offered for sleep when it will not disrupt direct breastfeeding.",
+            points: [
+              "If not directly breastfeeding, it may be offered from birth for naps and bedtime.",
+              "Never use it to delay a feeding or force baby to take it.",
+              "Do not attach it to clothing, blankets, toys, or the sleep space."
+            ],
+            sources: ["aapPacifier", "nihSafeSleep"]
+          },
+          {
+            key: "week-4",
+            at: { weeks: 4 },
+            label: "4 weeks",
+            title: "If breastfeeding is established",
+            summary: "Direct breastfeeding is often going well by about 3–4 weeks, but effective feeding and weight gain—not the date—control pacifier introduction.",
+            points: [
+              "Offer at naps and bedtime if desired.",
+              "If it falls out during sleep, there is no need to replace it.",
+              "Do not force it if baby refuses."
+            ],
+            sources: ["aapPacifier", "nihSafeSleep"]
+          }
+        ]
+      },
+      "skin-to-skin": {
+        heading: "Skin-to-skin ideas for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "The first hours",
+            summary: "For a medically stable parent and newborn, immediate skin-to-skin supports temperature, glucose stability, bonding, and breastfeeding initiation.",
+            points: [
+              "Place baby upright against a bare chest with the airway and face visible.",
+              "Continue through the first feed when possible.",
+              "Use staff help and monitoring after delivery."
+            ],
+            sources: ["cdcSkinToSkin"]
+          },
+          {
+            key: "after-day-1",
+            at: { days: 1 },
+            label: "After day 1",
+            title: "Keep it as a comfort tool",
+            summary: "After the first hours, skin-to-skin remains useful in the hospital or at home for closeness, calming, and feeding support; either caregiver can participate.",
+            points: [
+              "Try it after a bath, before a feed, or during a calm awake period.",
+              "The caregiver must be awake and alert.",
+              "If either person becomes sleepy, move baby to the usual safe-sleep surface."
+            ],
+            sources: ["aapSkinToSkin", "cdcSkinToSkin"]
+          }
+        ]
+      },
+      "crying-and-soothing": {
+        heading: "Crying and soothing for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Start with the basics",
+            summary: "Crying is communication, and newborn soothing is trial and repetition. Responsive comforting does not spoil a newborn.",
+            points: [
+              "Check hunger, diaper, temperature, tiredness, and overstimulation.",
+              "Try holding, rocking, quiet sound, sucking, or skin-to-skin.",
+              "Use the full urgent guide when baby looks or acts ill."
+            ],
+            sources: ["aapCryingUnder3"]
+          },
+          {
+            key: "week-2",
+            at: { weeks: 2 },
+            label: "2 weeks",
+            title: "Crying often starts to rise",
+            summary: "Many babies become noticeably fussier from about 2 weeks. This normal curve can be exhausting even when baby is healthy.",
+            points: [
+              "Repeat a simple soothing sequence instead of changing everything at once.",
+              "Trade off with another safe caregiver before frustration builds.",
+              "Place baby safely in the crib and step away briefly if overwhelmed."
+            ],
+            sources: ["aapCryingUnder3", "aapColic"]
+          },
+          {
+            key: "week-6",
+            at: { weeks: 6 },
+            label: "6 weeks",
+            title: "Near the usual peak",
+            summary: "Daily fussiness commonly peaks around 4–6 weeks, sometimes near 3 hours a day. Peaceful periods and normal feeding and growth are reassuring.",
+            points: [
+              "Protect caregiver breaks and sleep wherever possible.",
+              "Never shake a baby.",
+              "Nonstop inconsolable crying or abnormal behavior needs prompt guidance."
+            ],
+            sources: ["aapColic", "aapCryingUnder3"]
+          },
+          {
+            key: "month-2",
+            at: { months: 2 },
+            label: "2 months",
+            title: "The curve often starts turning",
+            summary: "Crying commonly begins improving after 2 months, although change is gradual rather than tied to one day.",
+            points: [
+              "Keep the soothing methods that work and drop those that add stimulation.",
+              "Stop swaddling at any sign of rolling."
+            ],
+            sources: ["aapCryingUnder3", "aapColic"]
+          },
+          {
+            key: "month-3",
+            at: { months: 3 },
+            label: "3 months",
+            title: "Usually easing",
+            summary: "By 3–4 months, typical fussiness often declines and colic commonly resolves. Ongoing or newly severe crying still deserves assessment.",
+            points: [
+              "Notice emerging social soothing through voice, face, holding, and predictable routines.",
+              "Do not dismiss a new abnormal cry as an old colic pattern."
+            ],
+            sources: ["aapColic", "aapCryingUnder3"]
+          }
+        ]
+      },
+      "tummy-time-and-awake-play": {
+        heading: "Awake play for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Start short and supervised",
+            summary: "Begin tummy time in the first days, only while baby is awake and an adult is watching. Very short repetitions count.",
+            points: [
+              "Try chest-to-chest, across a lap, or on a firm floor surface.",
+              "Use a face, voice, or high-contrast object for interest.",
+              "If baby becomes sleepy, move them to back sleep."
+            ],
+            sources: ["nihTummyTime"]
+          },
+          {
+            key: "week-7",
+            at: { weeks: 7 },
+            label: "7 weeks",
+            title: "Build the daily total",
+            summary: "Work gradually toward 15–30 total minutes a day by about 2 months, divided into sessions baby tolerates.",
+            points: [
+              "Add a minute or another session rather than forcing one long session.",
+              "Pair it with waking from a nap or a diaper change.",
+              "Vary head direction and carrying positions."
+            ],
+            sources: ["nihTummyTime", "aapTummyTime"]
+          },
+          {
+            key: "month-2",
+            at: { months: 2 },
+            label: "2 months",
+            title: "Watch head control emerge",
+            summary: "Holding the head up during tummy time is a CDC 2-month milestone. Milestones describe what most babies do by this age, not a pass/fail test.",
+            points: [
+              "Talk face-to-face and let baby watch you move.",
+              "Use short floor-play sessions throughout the day.",
+              "Use corrected age after prematurity, and share concerns or persistent asymmetry with the pediatrician."
+            ],
+            sources: ["cdcMilestones2", "aapCorrectedAge"]
+          },
+          {
+            key: "month-3",
+            at: { months: 3 },
+            label: "3 months",
+            title: "Make room for movement",
+            summary: "Awake floor play now helps prepare for stronger head control and rolling. Mobility may arrive unexpectedly.",
+            points: [
+              "Offer safe visual targets to each side.",
+              "Limit long awake periods confined in swings, seats, and carriers.",
+              "Keep a hand on baby on every elevated surface."
+            ],
+            sources: ["aapTummyTime", "cdcMilestones2"]
+          }
+        ]
+      },
+      "wet-diapers": {
+        heading: "Wet-diaper expectations for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "The first few diapers",
+            summary: "Wetness should rise quickly as intake increases. Early counts vary with feeding method and an individual care plan.",
+            points: [
+              "For a breastfed newborn, CDC lists at least 1 wet diaper on day 1 and 2 on day 2.",
+              "Count across 24 hours; an early disposable diaper may feel only slightly wet.",
+              "Also watch feeding effort, alertness, urine color, and the weight plan."
+            ],
+            sources: ["cdcBreastfeedingBasics"]
+          },
+          {
+            key: "day-3",
+            at: { days: 3 },
+            label: "Day 3",
+            title: "Wetness should be rising",
+            summary: "CDC’s breastfeeding guide lists at least 5 wet diapers on day 3 as intake builds. The trend and the whole feeding picture matter more than one isolated count.",
+            points: [
+              "Notice whether diapers are becoming easier to recognize as wet.",
+              "Call when output is not rising or baby is feeding poorly or unusually sleepy."
+            ],
+            sources: ["cdcBreastfeedingBasics", "aapDehydration"]
+          },
+          {
+            key: "day-4",
+            at: { days: 4 },
+            label: "Day 4",
+            title: "A steadier pattern",
+            summary: "By about day 4 or 5, look for at least 6 clear, dilute wet diapers in 24 hours. A low count matters more with poor feeding, dark urine, or unusual sleepiness.",
+            points: [
+              "Call promptly if the count is not rising toward this pattern.",
+              "A persistent pink or brick-red stain deserves a call, especially with low output."
+            ],
+            sources: ["aapFirstWeekVisit", "cdcBreastfeedingBasics"]
+          },
+          {
+            key: "week-1",
+            at: { weeks: 1 },
+            label: "1 week",
+            title: "Follow the full-day trend",
+            summary: "After the first week, diapers need not arrive at even intervals. The usual 24-hour count and any sudden drop are more useful than expecting one after every feed.",
+            points: [
+              "Use the whole pattern: feeding, wetness, urine color, alertness, and growth.",
+              "Call about a clear fall from usual output or signs of dehydration."
+            ],
+            sources: ["aapNewbornPoop", "aapDehydration"]
+          }
+        ]
+      },
+      "newborn-poop": {
+        heading: "Poop changes for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Meconium first",
+            summary: "The first poop is usually sticky black or dark-green meconium. Most newborns pass it during the first day or two.",
+            points: [
+              "Expect thick, tar-like diapers at first.",
+              "Contact the care team promptly if no meconium has passed by 48 hours."
+            ],
+            sources: ["aapCommonNewbornConditions", "aapNewbornPoop"]
+          },
+          {
+            key: "day-2",
+            at: { days: 2 },
+            label: "Day 2",
+            title: "Transition stools",
+            summary: "Over the next few days, poop should loosen and move through green or yellow-green as milk replaces meconium. A shift away from black is reassuring.",
+            points: [
+              "Track whether stools are becoming lighter and softer.",
+              "Call if poop is still meconium-dark by day 5, especially with low intake or output."
+            ],
+            sources: ["aapFirstWeekVisit", "aapNewbornPoop"]
+          },
+          {
+            key: "week-1",
+            at: { weeks: 1 },
+            label: "1 week",
+            title: "Milk stools settle in",
+            summary: "Breast-milk stools are commonly loose, yellow, and seedy; formula stools are often tan or yellow and soft-clay-like. Green can be normal with either feeding method.",
+            points: [
+              "Focus on soft texture, steady feeding, wet diapers, and a comfortable belly.",
+              "Red, white or chalky, or black tarry poop after meconium needs prompt advice."
+            ],
+            sources: ["aapNewbornPoop"]
+          },
+          {
+            key: "week-3",
+            at: { weeks: 3 },
+            label: "3 weeks",
+            title: "Frequency may vary more",
+            summary: "In the following weeks, some breastfed babies begin pooping less often. Soft stool and reassuring feeding and growth matter more than a perfect schedule.",
+            points: [
+              "Do not judge constipation by frequency alone; hard, dry, or pellet-like stool is more concerning.",
+              "Call about a sudden large increase in watery stools or illness signs."
+            ],
+            sources: ["cdcBreastfeedingBasics", "aapNewbornPoop"]
+          }
+        ]
+      },
+      "umbilical-cord-care": {
+        heading: "Cord care for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Keep the stump clean and dry",
+            summary: "A fresh stump may look shiny and yellowish, then become brown, gray, or nearly black as it dries. Simple dry care is usually all it needs.",
+            points: [
+              "Fold the diaper below it; clean contamination gently, then pat dry.",
+              "Do not pull, cover, or add alcohol, peroxide, ointment, powder, or oil unless instructed."
+            ],
+            sources: ["aapCord", "whoPostnatal"]
+          },
+          {
+            key: "week-1",
+            at: { weeks: 1 },
+            label: "1 week",
+            title: "Let separation happen naturally",
+            summary: "The stump commonly loosens and falls within 1–3 weeks. A few drops of blood can follow, but the center should become drier over the next several days.",
+            points: [
+              "Let it detach on its own, even if it hangs by a thread.",
+              "Keep the diaper edge below the healing navel."
+            ],
+            sources: ["aapCord"]
+          },
+          {
+            key: "week-3",
+            at: { weeks: 3 },
+            label: "3 weeks",
+            title: "Recheck a lingering or moist navel",
+            summary: "The AAP advises a visit if the stump is still attached at about 3 weeks. A persistent moist pink bump or drainage after separation can also need a clinician’s check.",
+            points: [
+              "Call about a stump still attached or a navel that is not becoming dry.",
+              "Get prompt help for spreading redness, foul drainage, tenderness, fever, or an unwell baby."
+            ],
+            sources: ["aapCord"]
+          }
+        ]
+      },
+      "bathing-a-newborn": {
+        heading: "Bathing setup for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Sponge baths while the cord heals",
+            summary: "Use sponge baths until the stump is off and the navel is dry and healed. Newborns do not need a daily bath.",
+            points: [
+              "Set out supplies first and keep one hand on baby.",
+              "Use warm water, gentle cleaning, and immediate drying and dressing."
+            ],
+            sources: ["aapBathing"]
+          },
+          {
+            key: "week-1",
+            at: { weeks: 1 },
+            label: "1 week",
+            title: "Look for tub readiness",
+            summary: "Many cords separate during weeks 1–3, but age alone does not decide when to start a tub. Continue sponge baths if the stump remains or the navel is moist or raw.",
+            points: [
+              "Use a dry, healed belly button—not a date—as the transition signal.",
+              "Call if the cord or navel is not following a reassuring drying pattern."
+            ],
+            sources: ["aapBathing", "aapCord"]
+          },
+          {
+            key: "week-3",
+            at: { weeks: 3 },
+            label: "3 weeks",
+            title: "Keep tub baths brief and hands-on",
+            summary: "Once the navel is healed, use a stable infant tub, shallow warm water, and continuous hands-on supervision. Increasing wiggles never change the supervision rule.",
+            points: [
+              "Support the head and neck, lower baby feet first, and keep the face above water.",
+              "Never step away or rely on a bath seat, even briefly."
+            ],
+            sources: ["aapBathing", "aapWaterSafety"]
+          }
+        ]
+      },
+      "newborn-skin": {
+        heading: "Skin changes for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Newborn skin can look unfamiliar",
+            summary: "Vernix, peeling, blotchy color, milia, fine hair, and birth-related marks can all be visible in the first days.",
+            points: [
+              "Do not scrub, peel, squeeze, or use acne products.",
+              "Check yellow color in bright white light and follow the bilirubin plan."
+            ],
+            sources: ["aapNewbornAppearance", "aapCommonNewbornConditions"]
+          },
+          {
+            key: "week-1",
+            at: { weeks: 1 },
+            label: "1 week",
+            title: "Common early changes begin settling",
+            summary: "Peeling may become more noticeable, while transient newborn rashes can come and go. Reassuring areas stay intact without spreading redness, drainage, swelling, or tenderness.",
+            points: [
+              "Use brief, infrequent baths and fragrance-free moisturizer if needed.",
+              "Call about a rash that keeps spreading or skin becoming raw, wet, or painful."
+            ],
+            sources: ["aapCommonNewbornConditions", "aapBathing"]
+          },
+          {
+            key: "week-2",
+            at: { weeks: 2 },
+            label: "2 weeks",
+            title: "Watch the trend over coming weeks",
+            summary: "Milia and fine body hair often fade gradually; some marks lighten more slowly, and a raised red birthmark may first become noticeable. These are broad patterns, not deadlines.",
+            points: [
+              "Photograph a new or changing mark in consistent light.",
+              "Ask the pediatrician to identify a newly raised or changing birthmark."
+            ],
+            sources: ["aapNewbornAppearance"]
+          }
+        ]
+      },
+      "diaper-rash": {
+        heading: "Diaper-rash care for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Extra caution in the first six weeks",
+            summary: "Most diaper rash is irritation from moisture, stool, or rubbing, but a new rash in a very young baby deserves a lower threshold for calling.",
+            points: [
+              "Change promptly, clean gently, air-dry, and use a plain barrier paste.",
+              "Contact the pediatrician about any diaper-area rash in the first 6 weeks.",
+              "Avoid cycling through medicines or antifungal creams without guidance."
+            ],
+            sources: ["aapDiaperRash", "medlineDiaperRash"]
+          },
+          {
+            key: "week-6",
+            at: { weeks: 6 },
+            label: "6 weeks",
+            title: "Judge ordinary irritation by its trend",
+            summary: "A typical contact-area rash should begin looking less red, raw, or uncomfortable within 2–3 days of gentle care. Fold involvement, nearby bumps, crusts, or oozing need assessment.",
+            points: [
+              "Call if there is no clear improvement within 2–3 days or the rash worsens.",
+              "The under-3-month fever rule remains unchanged."
+            ],
+            sources: ["aapDiaperRash", "medlineDiaperRash"]
+          }
+        ]
+      },
+      "clothing-and-room-temperature": {
+        heading: "Clothing checks for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Dress lightly and check the chest",
+            summary: "After the first hours following birth, an indoor hat is not routine. Start with no more than one light layer beyond what an adult finds comfortable.",
+            points: [
+              "Use a warm, dry chest—not cool hands or feet—as the better comfort check.",
+              "Keep the head uncovered for sleep and use fitted sleep clothing instead of loose bedding.",
+              "Remove a layer if the chest is hot or baby is sweating."
+            ],
+            sources: ["aapSafeSleep", "aapFirstMonthGrowth"]
+          },
+          {
+            key: "month-1",
+            at: { months: 1 },
+            label: "1 month",
+            title: "Recheck fit as baby grows",
+            summary: "The warmth guidance is unchanged; this is a fit reminder. Clothes and wearable blankets should stay clear of the face and within their stated size and weight ranges.",
+            points: [
+              "Move up a size before necklines ride up or fabric bunches around the face.",
+              "Recheck the chest whenever the room, weather, car, or activity changes."
+            ],
+            sources: ["aapSafeSleep"]
+          },
+          {
+            key: "month-2",
+            at: { months: 2 },
+            label: "2 months",
+            title: "Watch for the swaddling transition",
+            summary: "This date is only a reminder to look for growth and movement changes. Stop swaddling at the first sign of trying to roll, whenever it happens.",
+            points: [
+              "Use non-weighted sleepwear that leaves the arms and body free once swaddling stops.",
+              "Keep the back-first, bare-sleep-space rules unchanged."
+            ],
+            sources: ["aapSwaddle", "aapSafeSleep"]
+          }
+        ]
+      },
+      "when-to-get-medical-help": {
+        heading: "Warning signs for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "First week: changes can be subtle",
+            summary: "Notice feeding effort, wakefulness, breathing, color, movement, temperature, and output. A newborn who cannot be woken, is struggling to breathe, or turns blue or gray needs emergency help.",
+            points: [
+              "Call promptly for a sudden weak suck, inability to finish feeds, or newly abnormal behavior.",
+              "A rectal temperature of 100.4°F (38°C) or higher needs immediate medical attention."
+            ],
+            sources: ["aapNewbornIllness", "aapFever"]
+          },
+          {
+            key: "week-1",
+            at: { weeks: 1 },
+            label: "1 week",
+            title: "Keep a low threshold through the first month",
+            summary: "You will know more of baby’s usual pattern, so a sudden departure becomes useful information. Promptly contact the pediatrician when a baby under 1 month looks or acts abnormal.",
+            points: [
+              "Compare with baby’s own usual feeding, alertness, breathing, and output.",
+              "Do not wait for several symptoms when a newborn seems newly unwell."
+            ],
+            sources: ["aapNewbornIllness"]
+          },
+          {
+            key: "month-1",
+            at: { months: 1 },
+            label: "1 month",
+            title: "Keep watching the whole pattern",
+            summary: "Emergency signs and the young-infant fever threshold remain important. Feeding, wet diapers, alertness, breathing effort, and color work best as a cluster.",
+            points: [
+              "Call immediately for a rectal temperature of 100.4°F (38°C) or higher.",
+              "Get help sooner for a sudden change or caregiver concern, even without fever."
+            ],
+            sources: ["aapFever", "aapMedicalHelp"]
+          },
+          {
+            key: "month-3",
+            at: { months: 3 },
+            label: "3 months",
+            title: "Keep the fever rule while updating the plan",
+            summary: "At and around the third-month boundary, keep treating a rectal temperature of 100.4°F (38°C) or higher as an immediate call until the pediatrician gives a new age-specific plan.",
+            points: [
+              "Emergency breathing, color, responsiveness, and seizure signs do not change.",
+              "Save the pediatrician’s updated after-hours instructions."
+            ],
+            sources: ["aapFever", "aapMedicalHelp"]
+          }
+        ]
+      },
+      "fever-and-temperature": {
+        heading: "Fever guidance for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth through 3 months",
+            title: "One fever rule through three months",
+            summary: "For a baby 3 months old or younger, one rectal temperature of 100.4°F (38°C) or higher needs immediate medical attention, even if baby seems well.",
+            points: [
+              "Write down the exact number, time, and measurement location.",
+              "Call immediately; do not wait for another reading or give medicine first.",
+              "A rectal reading is the most reliable at this age."
+            ],
+            sources: ["aapFever", "aapTemperature"]
+          },
+          {
+            key: "after-month-3",
+            at: { months: 3 },
+            label: "3 months",
+            title: "Keep calling while you confirm the next rule",
+            summary: "At and around this boundary, continue to call immediately for a rectal temperature of 100.4°F (38°C) or higher. Ask the pediatrician when a different age-based plan begins.",
+            points: [
+              "Continue using a digital thermometer and recording the exact result.",
+              "Do not use an ear thermometer before about 6 months."
+            ],
+            sources: ["aapFever", "aapTemperature"]
+          }
+        ]
+      },
+      "jaundice": {
+        heading: "Jaundice priorities for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Measure—do not judge by color alone",
+            summary: "Every newborn needs a bilirubin measurement before discharge. Yellow color during the first 24 hours needs prompt measurement and assessment.",
+            points: [
+              "Know the bilirubin result and the next-check date.",
+              "Keep follow-up even when yellow color looks mild.",
+              "Do not use sunlight as treatment."
+            ],
+            sources: ["aapJaundice"]
+          },
+          {
+            key: "day-3",
+            at: { days: 3 },
+            label: "Day 3",
+            title: "The common peak window",
+            summary: "Jaundice related to low milk intake often becomes most important around days 3–5. Feeding, weight, diapers, wakefulness, and the measured bilirubin trend matter more than a visual guess.",
+            points: [
+              "Keep scheduled feeding, weight, and bilirubin checks.",
+              "Call for deepening or spreading yellow color, poor feeding, or difficulty waking."
+            ],
+            sources: ["aapJaundice", "cdcBreastfeedingBasics"]
+          },
+          {
+            key: "week-1",
+            at: { weeks: 1 },
+            label: "1 week",
+            title: "Follow the measured trend",
+            summary: "The bilirubin plan should now show whether jaundice is improving or needs more follow-up. Color alone cannot replace the measurement and feeding trend.",
+            points: [
+              "Keep every scheduled bilirubin, feeding, and weight check.",
+              "Call for deepening yellow color, poor feeding, unusual sleepiness, pale stool, or dark urine."
+            ],
+            sources: ["aapJaundice", "aapFirstWeekVisit"]
+          },
+          {
+            key: "week-2",
+            at: { weeks: 2 },
+            label: "2 weeks",
+            title: "Recheck jaundice that remains",
+            summary: "Jaundice clears in many babies during the first two weeks. The AAP advises calling if it persists beyond 2 weeks in a formula-fed baby.",
+            points: [
+              "Call now for pale or chalky stool, dark urine, poor feeding, or an unwell baby.",
+              "Do not stop breastfeeding solely because yellow color remains; follow the clinician’s plan."
+            ],
+            sources: ["aapJaundice"]
+          },
+          {
+            key: "week-4",
+            at: { weeks: 4 },
+            label: "4 weeks",
+            title: "Persistent breastfed jaundice needs review",
+            summary: "A primarily breastfed baby who remains jaundiced beyond 4 weeks should be assessed. Persistence is a reason to check, not proof that something is wrong.",
+            points: [
+              "Arrange the recommended clinician review.",
+              "Continue watching stool color, urine, feeding, growth, and alertness."
+            ],
+            sources: ["aapJaundice"]
+          }
+        ]
+      },
+      "breathing-and-congestion": {
+        heading: "Breathing checks for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Noisy can still be comfortable",
+            summary: "Newborn breathing can speed up, slow down, pause for under 10 seconds while baby stays comfortable and normally colored, and sound snuffly. Effort, color, feeding, and alertness matter more than volume.",
+            points: [
+              "Watch while baby is calm; brief pauses can be periodic breathing.",
+              "Retractions, repeated grunting, head bobbing, or blue or gray color are not ordinary congestion.",
+              "Use plain saline and gentle suction only when blockage interferes with feeding."
+            ],
+            sources: ["aapNewbornBehavior", "aapBreathingTrouble"]
+          },
+          {
+            key: "month-1",
+            at: { months: 1 },
+            label: "1 month",
+            title: "Baby’s usual pattern is clearer",
+            summary: "You may recognize normal newborn sounds more easily now, but a new cough or congestion can still become serious quickly in a young infant.",
+            points: [
+              "Keep judging breathing effort, color, feeding, wet diapers, and alertness.",
+              "Call promptly for new illness signs rather than waiting for a cold timeline."
+            ],
+            sources: ["aapNewbornBehavior", "aapBreathingTrouble"]
+          }
+        ]
+      },
+      "car-seat-safety": {
+        heading: "Car-seat checks for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Set up the first ride",
+            summary: "Use a correctly fitted rear-facing seat in the back seat for every trip. Correct recline, a tight installation, and a snug harness matter more than brand or price.",
+            points: [
+              "Test movement at the belt path: no more than 1 inch side-to-side or front-to-back.",
+              "Keep straps at or below the shoulders and the chest clip at armpit level.",
+              "Put nothing bulky under the harness."
+            ],
+            sources: ["nhtsaRearFacing", "aapCarSeat"]
+          },
+          {
+            key: "month-1",
+            at: { months: 1 },
+            label: "1 month",
+            title: "Do a growth-fit check",
+            summary: "This is a reminder, not an age-triggered seat change. As shoulders rise and clothing sizes change, recheck every adjustable part against the manual.",
+            points: [
+              "Recheck harness slots, headrest, crotch buckle, infant inserts, and recline indicator.",
+              "Repeat the snug-harness and carrier or base-lock checks before every ride."
+            ],
+            sources: ["nhtsaRearFacing", "aapCarSeat"]
+          },
+          {
+            key: "month-3",
+            at: { months: 3 },
+            label: "3 months",
+            title: "Growth—not a birthday—controls changes",
+            summary: "Keep the seat rear-facing and follow its height and weight limits. Change recline, padding, harness position, or seat type only when the manuals and fit limits say to.",
+            points: [
+              "Use another appropriate rear-facing seat only when the current one is outgrown or no longer suits the trip.",
+              "Move a sleeping baby to a firm, flat sleep space when travel ends."
+            ],
+            sources: ["aapCarSeat", "aapSafeSleep"]
+          }
+        ]
+      },
+      "rest-of-the-first-week": {
+        heading: "First-week guidance for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Birth through the first 48 hours",
+            summary: "Expect short cycles of feeding, sleep, and diaper changes with no dependable schedule. Follow the discharge feeding and waking plan.",
+            points: [
+              "Keep the newborn follow-up date and bilirubin result easy to find.",
+              "Use back, firm, flat, bare sleep for every sleep."
+            ],
+            sources: ["aapFirstWeekVisit", "nihSafeSleep"]
+          },
+          {
+            key: "day-2",
+            at: { days: 2 },
+            label: "Day 2",
+            title: "Intake is building",
+            summary: "Feeds may cluster and baby may still need gentle waking. Wet diapers should begin increasing and stool should start becoming less black and sticky.",
+            points: [
+              "Notice active drinking and swallowing, not only time at breast or bottle.",
+              "Call if baby is much harder to wake or feeding becomes weaker."
+            ],
+            sources: ["cdcBreastfeedingBasics"]
+          },
+          {
+            key: "day-3",
+            at: { days: 3 },
+            label: "Day 3",
+            title: "Watch feeding and jaundice together",
+            summary: "Milk intake and swallowing often become easier to notice, stool lightens, and jaundice may become more visible. The newborn visit checks the whole picture.",
+            points: [
+              "Keep scheduled feeding, weight, and bilirubin follow-up.",
+              "Call for deepening yellow color with poor feeding or unusual sleepiness."
+            ],
+            sources: ["aapFirstWeekVisit", "aapJaundice"]
+          },
+          {
+            key: "day-5",
+            at: { days: 5 },
+            label: "Day 5",
+            title: "Look for a rising trend",
+            summary: "By day 5, CDC breastfeeding guidance lists at least 6 wet diapers and 3 stools in 24 hours; another feeding plan may differ. Weight should stop falling.",
+            points: [
+              "Use output, feeding, wakefulness, and weight as a cluster.",
+              "Call about continued weight loss, falling output, or a wet, red, or foul-smelling cord."
+            ],
+            sources: ["cdcBreastfeedingBasics", "aapCord"]
+          },
+          {
+            key: "week-1",
+            at: { weeks: 1 },
+            label: "1 week",
+            title: "The first week is complete",
+            summary: "Feeding and sleep can remain irregular, but output and intake should now have an established trend. The weeks 2–4 guide becomes the useful next view.",
+            points: [
+              "Bring unresolved feeding, weight, jaundice, or cord questions to the pediatrician.",
+              "Expect continued newborn rhythms, not a schedule."
+            ],
+            sources: ["aapFirstWeekVisit", "aapSleep"]
+          }
+        ]
+      },
+      "weeks-two-to-four": {
+        heading: "Weeks 2–4 for the date you choose",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Before week 2",
+            title: "Coming up after the first week",
+            summary: "Until this guide becomes current, use the first-week feeding, diaper, weight, jaundice, and follow-up plan. Longer alert moments are previews, not newborn requirements.",
+            points: [
+              "Keep first-week appointments and output checks.",
+              "Do not expect a predictable routine."
+            ],
+            sources: ["aapFirstWeekVisit"]
+          },
+          {
+            key: "week-2",
+            at: { weeks: 2 },
+            label: "2 weeks",
+            title: "Check the growth trend",
+            summary: "Weight should generally be moving back toward birth weight by about 2 weeks, with almost all babies there by 3 weeks. The cord may also separate in this window.",
+            points: [
+              "Use repeat clinical weights rather than judging one feed or diaper.",
+              "Let the cord separate naturally and call about infection signs."
+            ],
+            sources: ["aapFirstMonthGrowth", "aapCord"]
+          },
+          {
+            key: "week-3",
+            at: { weeks: 3 },
+            label: "3 weeks",
+            title: "More looking, often more crying",
+            summary: "Quiet-alert moments may lengthen, while crying can increase from around 2 weeks without meaning a caregiver is doing something wrong.",
+            points: [
+              "Offer close faces, voices, cuddling, and brief awake play without testing baby.",
+              "Use a safe handoff or safe-sleep-space break when crying overwhelms a caregiver."
+            ],
+            sources: ["aapFirstMonthDevelopment", "aapCryingSupport"]
+          },
+          {
+            key: "week-4",
+            at: { weeks: 4 },
+            label: "4 weeks",
+            title: "First-month progress",
+            summary: "Many babies are more alert and responsive, react to sound, and focus best at close range. These are guides, not deadlines.",
+            points: [
+              "Look for a cluster of growing responses rather than one performance.",
+              "Bring feeding, growth, movement, hearing, or alertness concerns to the next visit.",
+              "If baby was born more than 3 weeks early, use corrected age with the care team."
+            ],
+            sources: ["aapFirstMonthDevelopment", "aapFirstMonthGrowth", "aapCorrectedAge"]
+          }
+        ]
+      },
+      "two-month-milestones": {
+        heading: "Development for the date you choose",
+        description: "Choose a date to shift the developmental focus. If baby was born more than 3 weeks early, use corrected age with the care team.",
+        stages: [
+          {
+            key: "birth",
+            at: { days: 0 },
+            label: "Birth · day 0",
+            title: "Early signs may be brief",
+            summary: "Quiet-alert moments are short, movements can be reflexive, and the head still needs support. A glance, voice response, or brief head lift is practice—not a test.",
+            points: [
+              "Talk or sing during calm awake moments, then pause for any response.",
+              "Offer short, supervised tummy-time tries."
+            ],
+            sources: ["aapFirstMonthDevelopment", "nihTummyTime"]
+          },
+          {
+            key: "month-1",
+            at: { months: 1 },
+            label: "1 month",
+            title: "Social responses may become clearer",
+            summary: "During the second month, baby may watch and listen longer, begin smiling in response, calm to a familiar voice or touch, and make sounds besides crying.",
+            points: [
+              "Notice repeated responses during ordinary interactions.",
+              "Let baby look away or rest instead of repeatedly trying to produce a skill."
+            ],
+            sources: ["aapFirstMonthDevelopment", "cdcMilestones2"]
+          },
+          {
+            key: "month-2",
+            at: { months: 2 },
+            label: "2 months",
+            title: "Review the 2-month checklist",
+            summary: "CDC milestones describe what at least 75% of children do by this age. They are conversation prompts, not a daily score or a screening test.",
+            points: [
+              "Notice face-looking, non-crying sounds, reactions to sound, movement of both sides, and head lifting on the tummy.",
+              "Use the checklist to prepare examples and questions for the 2-month visit.",
+              "Share a missing or lost skill, or any concern about seeing, hearing, response, or movement."
+            ],
+            sources: ["cdcMilestones2", "aapCorrectedAge"]
+          },
+          {
+            key: "month-3",
+            at: { months: 3 },
+            label: "3 months",
+            title: "Look ahead without a 3-month checklist",
+            summary: "There is no CDC 3-month checklist. Use 2-month skills as a reference and preview the 4-month list as what comes next—not as expectations for today.",
+            points: [
+              "Notice growing social, sound, visual, and movement responses across ordinary days.",
+              "Keep offering face-to-face interaction and supervised tummy time.",
+              "Contact the pediatrician promptly for lost skills or a persistent concern."
+            ],
+            sources: ["cdcMilestones2", "cdcMilestones4", "aapCorrectedAge"]
+          }
+        ]
+      }
+    }
+  };
+});

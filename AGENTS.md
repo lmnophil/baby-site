@@ -1,7 +1,7 @@
 # Project Rules
 
 - Keep the site dependency-free unless the user explicitly requests otherwise.
-- Do not collect, publish, or hard-code private baby or family data. The sole exception is the birth date in `.agents/skills/write-page/references/site-context.md`; use it only to calculate age for authoring context and never include it in website HTML or CSS.
+- Do not collect or publish private baby or family data. The user has explicitly approved the birth date as public timeline configuration; keep its single website copy in `timeline-data.js`, do not repeat it in HTML or CSS, and do not add names, health records, or other family details.
 - Cite clear, trustworthy sources for factual milestone guidance.
 - Keep content lightweight and accessible.
 - Use plain HTML and CSS unless the user explicitly changes the project scope.
