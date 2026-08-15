@@ -521,40 +521,6 @@
     });
   }
 
-  function enhanceAllGuides() {
-    const allGuides = document.querySelector("#all-guides");
-    if (!allGuides || allGuides.dataset.enhanced) {
-      return;
-    }
-
-    allGuides.dataset.enhanced = "true";
-    allGuides.open = false;
-
-    function openForHash() {
-      if (!window.location.hash) {
-        return;
-      }
-
-      let target = null;
-      try {
-        target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
-      } catch (error) {
-        return;
-      }
-      if (target && allGuides.contains(target)) {
-        allGuides.open = true;
-      }
-    }
-
-    openForHash();
-    window.addEventListener("hashchange", openForHash);
-    document.querySelectorAll(".category-nav a[href^='#']").forEach(function (link) {
-      link.addEventListener("click", function () {
-        allGuides.open = true;
-      });
-    });
-  }
-
   function moveTopicLedeIntoFullGuide() {
     const lede = document.querySelector(".topic-header > .topic-lede");
     const fullGuideIntro = document.querySelector(".full-guide-intro");
@@ -705,7 +671,6 @@
     }
 
     moveTopicLedeIntoFullGuide();
-    enhanceAllGuides();
     render();
     refreshAtNextMidnight();
     window.addEventListener("popstate", function () {
