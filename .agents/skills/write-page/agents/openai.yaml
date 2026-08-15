@@ -1,6 +1,6 @@
 interface:
   display_name: "Write Baby Page"
-  short_description: "Research and complete one Baby Site topic"
-  default_prompt: "Use $write-page to research and complete the page named {page-name}."
+  short_description: "Research, write, or refresh one baby topic"
+  default_prompt: "Use $write-page to research and write or refresh the page named {page-name}."
 policy:
   allow_implicit_invocation: false

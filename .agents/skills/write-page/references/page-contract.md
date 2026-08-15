@@ -61,6 +61,8 @@ Adapt the timeline to the subject:
 - Cite important claims where they appear in the body.
 - End with a short source list containing the organization and descriptive page title.
 - Link to the specific guidance page, not merely an organization homepage.
+- Include only sources that directly support material page content; omit unused, redundant, or merely background reading.
+- Make the page's most consequential guidance traceable to the source responsible for that recommendation.
 
 ## Writing and presentation standards
 
