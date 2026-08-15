@@ -5,4 +5,4 @@
 - Cite clear, trustworthy sources for factual milestone guidance.
 - Keep content lightweight and accessible.
 - Use plain HTML and CSS unless the user explicitly changes the project scope.
-- Always be willing to commit directly to `main` and push when the user requests it; do not require a branch or pull request instead.
+- **MANDATORY COMPLETION RULE — NO EXCEPTIONS:** Every agent that performs any work in this repository must commit its completed changes directly to `main` and push `main` to `origin` before reporting completion. This is required for every task, whether or not the user explicitly asks for a commit or push. Do not use a branch or pull request instead. If a push fails, continue resolving safe, relevant issues and retry; never report the work complete until the commit is on `origin/main`.
