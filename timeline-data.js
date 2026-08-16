@@ -397,9 +397,9 @@
         at: { months: 2 },
         label: "2 months",
         title: "Check in, don’t grade",
-        summary: "Use 2-month milestones as conversation prompts, revisit swaddling before rolling attempts, and keep safe-sleep practices unchanged.",
+        summary: "Use the 2-month checklist to share what you notice, not to grade baby. Stop swaddling at the first sign of trying to roll; every sleep still needs the same safe setup.",
         topics: [
-          { id: "two-month-milestones", note: "Notice what baby does; use corrected age after prematurity." },
+          { id: "two-month-milestones", note: "Notice play, communication, and movement; use corrected age if baby was born more than 3 weeks early." },
           { id: "tummy-time-and-awake-play", note: "Observe head lifting and movement through play." },
           { id: "swaddling-safely", note: "Rolling signs override age—stop as soon as they appear." },
           { id: "day-and-night", note: "Night sleep may lengthen, but a schedule is not required." },
