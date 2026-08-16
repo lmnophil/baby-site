@@ -621,12 +621,12 @@
             key: "birth",
             at: { days: 0 },
             label: "Birth · day 0",
-            title: "Pause for air, not a perfect burp",
-            summary: "Young babies can swallow air while feeding, especially from a bottle. Some breastfed babies need little or no burping.",
+            title: "Burp at natural pauses",
+            summary: "Young babies can swallow air while feeding, especially from a bottle. Some breastfed babies swallow little air and may need little or no burping.",
             points: [
-              "Try at natural pauses, after 2–3 bottle ounces, or when switching breasts.",
+              "For a bottle, try after 2–3 ounces (60–90 mL); while nursing, try when switching breasts.",
               "If baby fusses while feeding, pause before more air is swallowed.",
-              "Passing gas is normal and does not explain every crying spell."
+              "Passing gas is normal, but it is not a reliable explanation for a crying spell."
             ],
             sources: ["aapBurping", "aapCryingUnder3"]
           },
@@ -635,11 +635,11 @@
             at: { weeks: 2 },
             label: "2 weeks",
             title: "Spit-up may become noticeable",
-            summary: "Normal infant reflux commonly begins around 2–3 weeks. A comfortable, growing baby who spits up is often called a happy spitter.",
+            summary: "Normal infant reflux commonly begins around 2–3 weeks. An easy, comfortable spit-up in a baby who is feeding and growing is often called a happy spitter.",
             points: [
-              "Avoid overfeeding and vigorous play for 20–30 minutes after feeds.",
+              "Follow hunger and fullness cues rather than pressuring a bigger feed.",
+              "Keep baby upright and closely supervised for a while after feeding; sleep is still flat and on the back.",
               "Burp at natural pauses rather than repeatedly interrupting an effective feed.",
-              "Back sleep on a flat surface remains safest; never incline the mattress for reflux."
             ],
             sources: ["aapReflux", "aapBurping"]
           },
@@ -647,10 +647,10 @@
             key: "month-3",
             at: { months: 3 },
             label: "3 months",
-            title: "It may increase before it improves",
-            summary: "Normal reflux often continues toward a later peak. Judge the pattern by comfort, feeding, hydration, and growth—not laundry volume.",
+            title: "Reflux may still be building",
+            summary: "Normal reflux often peaks around 4–5 months. Judge the pattern by comfort, feeding, diapers, and growth—not laundry volume.",
             points: [
-              "Keep feeds responsive and avoid pressuring larger volumes.",
+              "A later peak does not make pain, feeding refusal, or poor growth expected.",
               "Projectile, green, bloody, painful, or growth-limiting vomiting needs medical advice."
             ],
             sources: ["aapReflux"]
