@@ -1074,11 +1074,11 @@
             key: "day-2",
             at: { days: 2 },
             label: "Day 2",
-            title: "Transition stools",
-            summary: "Over the next few days, poop should loosen and move through green or yellow-green as milk replaces meconium. A shift away from black is reassuring.",
+            title: "Watch the milk-stool transition",
+            summary: "As milk intake increases, stools should loosen and move from black through brown and green toward yellow. By day 4 or 5, yellow, seedy stools are a useful intake clue for a breastfed newborn.",
             points: [
-              "Track whether stools are becoming lighter and softer.",
-              "Call if poop is still meconium-dark by day 5, especially with low intake or output."
+              "Track the color change with feeding, wet diapers, alertness, and the weight plan—not as a stand-alone test.",
+              "Contact the care team promptly if stools are not becoming lighter by day 4 or 5, especially with feeding or output concerns."
             ],
             sources: ["aapFirstWeekVisit", "aapNewbornPoop"]
           },
@@ -1099,9 +1099,9 @@
             at: { weeks: 3 },
             label: "3 weeks",
             title: "Frequency may vary more",
-            summary: "In the following weeks, some breastfed babies begin pooping less often. Soft stool and reassuring feeding and growth matter more than a perfect schedule.",
+            summary: "Some breastfed babies begin pooping less often around 3–6 weeks, while others still poop frequently. Soft stools, regular feeding, and steady growth matter more than a perfect schedule.",
             points: [
-              "Do not judge constipation by frequency alone; hard, dry, or pellet-like stool is more concerning.",
+              "Do not judge constipation by frequency alone; hard, dry, or pellet-like stools are more concerning.",
               "Call about a sudden large increase in watery stools or illness signs."
             ],
             sources: ["cdcBreastfeedingBasics", "aapNewbornPoop"]
