@@ -665,22 +665,24 @@
             at: { days: 0 },
             label: "Birth · day 0",
             title: "Sleep comes in short pieces",
-            summary: "Newborns may sleep about 16–17 total hours but only 1–2 hours at a time. Waking around the clock is developmentally normal.",
+            summary: "Newborns sleep about 16–17 hours a day on average, often only one or two hours at a time. Waking around the clock is expected.",
             points: [
               "Expect feeding, sleeping, and waking to overlap without a schedule.",
-              "Follow the current feeding-wake plan even when baby is sleepy."
+              "Follow the feeding-wake plan from your care team, even when baby is sleepy.",
+              "Start every sleep on the back in baby's own firm, flat sleep space."
             ],
-            sources: ["aapSleep"]
+            sources: ["aapSleep", "aapSafeSleep"]
           },
           {
             key: "month-3",
             at: { months: 3 },
             label: "3 months",
-            title: "Longer stretches are possible, not required",
-            summary: "Some babies now have a longer night stretch, while others still wake frequently. Regular sleep cycles generally do not emerge until around 4 months.",
+            title: "Notice the pattern, not a deadline",
+            summary: "A longer nighttime stretch may be emerging, while frequent waking can still be normal. Regular sleep cycles generally do not develop until about 4 months.",
             points: [
-              "Treat progress as baby-specific, not a sleeping-through deadline.",
-              "Keep daytime interaction and a calm nighttime pattern."
+              "Compare this week with last week, not with another baby's sleep.",
+              "Keep daytime interaction and nighttime feeds calm and low-stimulation.",
+              "Continue the same safe-sleep setup for every nap and night sleep."
             ],
             sources: ["aapSleep", "nhsBabySleep"]
           }
