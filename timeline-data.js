@@ -1009,47 +1009,47 @@
             at: { days: 0 },
             label: "Birth · day 0",
             title: "The first few diapers",
-            summary: "Wetness should rise quickly as intake increases. Early counts vary with feeding method and an individual care plan.",
+            summary: "Wetness should rise as intake increases. The first day or two can look different with breastfeeding, formula feeding, prematurity, or an individual care plan.",
             points: [
-              "For a breastfed newborn, CDC lists at least 1 wet diaper on day 1 and 2 on day 2.",
+              "For a breastfed newborn, CDC lists at least 1 wet diaper on day 1 and 2 on day 2; a formula-fed newborn taking the bottle well may wet more earlier.",
               "Count across 24 hours; an early disposable diaper may feel only slightly wet.",
-              "Also watch feeding effort, alertness, urine color, and the weight plan."
+              "Use the count with feeding, alertness, urine color, and the care team's weight plan."
             ],
-            sources: ["cdcBreastfeedingBasics"]
+            sources: ["cdcBreastfeedingBasics", "aapFirstWeekVisit"]
           },
           {
             key: "day-3",
             at: { days: 3 },
             label: "Day 3",
             title: "Wetness should be rising",
-            summary: "CDC’s breastfeeding guide lists at least 5 wet diapers on day 3 as intake builds. The trend and the whole feeding picture matter more than one isolated count.",
+            summary: "CDC's breastfeeding guide lists at least 5 wet diapers on day 3 as intake builds. A count that is not rising needs attention in the context of feeding and how baby seems.",
             points: [
               "Notice whether diapers are becoming easier to recognize as wet.",
-              "Call when output is not rising or baby is feeding poorly or unusually sleepy."
+              "Get medical advice promptly for no urine for more than 8 hours, very dark urine, a very dry mouth, or unusual sleepiness."
             ],
-            sources: ["cdcBreastfeedingBasics", "aapDehydration"]
+            sources: ["cdcBreastfeedingBasics", "aapDehydration", "aapBreastfeedingQuestions"]
           },
           {
             key: "day-4",
             at: { days: 4 },
             label: "Day 4",
             title: "A steadier pattern",
-            summary: "By about day 4 or 5, look for at least 6 clear, dilute wet diapers in 24 hours. A low count matters more with poor feeding, dark urine, or unusual sleepiness.",
+            summary: "By about day 4 or 5, AAP says a newborn should pass 6 or more clear, dilute urines each day. A lower count alongside poor feeding, dark urine, or unusual sleepiness needs prompt advice.",
             points: [
-              "Call promptly if the count is not rising toward this pattern.",
-              "A persistent pink or brick-red stain deserves a call, especially with low output."
+              "CDC also lists at least 6 wet diapers daily for a breastfed newborn from day 4 onward.",
+              "A pink or brick-red stain can occur in the first week; call if it persists or output is low."
             ],
-            sources: ["aapFirstWeekVisit", "cdcBreastfeedingBasics"]
+            sources: ["aapFirstWeekVisit", "cdcBreastfeedingBasics", "aapNewbornPoop"]
           },
           {
             key: "week-1",
             at: { weeks: 1 },
             label: "1 week",
             title: "Follow the full-day trend",
-            summary: "After the first week, diapers need not arrive at even intervals. The usual 24-hour count and any sudden drop are more useful than expecting one after every feed.",
+            summary: "After the first week, diapers need not arrive at even intervals. The usual 24-hour pattern and a sudden drop are more useful than expecting one after every feed.",
             points: [
-              "Use the whole pattern: feeding, wetness, urine color, alertness, and growth.",
-              "Call about a clear fall from usual output or signs of dehydration."
+              "Use the whole picture: feeding, wetness, urine color, alertness, and growth.",
+              "Call promptly about a clear fall from usual output, fewer than 6 wet diapers a day, or signs of dehydration."
             ],
             sources: ["aapNewbornPoop", "aapDehydration"]
           }
