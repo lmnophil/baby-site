@@ -1568,11 +1568,11 @@
             key: "birth",
             at: { days: 0 },
             label: "Birth · day 0",
-            title: "Birth through the first 48 hours",
-            summary: "Expect short cycles of feeding, sleep, and diaper changes with no dependable schedule. Follow the discharge feeding and waking plan.",
+            title: "First 48 hours: keep the plan close",
+            summary: "Feeding, sleep, and diapers are often uneven. Follow the discharge feeding and waking plan, and keep the bilirubin result and follow-up date handy.",
             points: [
-              "Keep the newborn follow-up date and bilirubin result easy to find.",
-              "Use back, firm, flat, bare sleep for every sleep."
+              "Before discharge, make sure you know whether more bilirubin testing or an earlier visit is planned.",
+              "For every sleep, start baby on the back on a firm, flat, level surface with only a fitted sheet."
             ],
             sources: ["aapFirstWeekVisit", "nihSafeSleep"]
           },
@@ -1581,10 +1581,10 @@
             at: { days: 2 },
             label: "Day 2",
             title: "Intake is building",
-            summary: "Feeds may cluster and baby may still need gentle waking. Wet diapers should begin increasing and stool should start becoming less black and sticky.",
+            summary: "Feeds may cluster and baby may still need gentle waking. For a breastfed newborn, CDC lists at least 2 wet diapers and 3 stools on day 2; other feeding plans can differ.",
             points: [
-              "Notice active drinking and swallowing, not only time at breast or bottle.",
-              "Call if baby is much harder to wake or feeding becomes weaker."
+              "Watch for active drinking or swallowing, not only time at the breast or bottle.",
+              "Call promptly if feeding weakens, baby cannot finish feeds, or baby is much harder to wake."
             ],
             sources: ["cdcBreastfeedingBasics"]
           },
@@ -1593,10 +1593,10 @@
             at: { days: 3 },
             label: "Day 3",
             title: "Watch feeding and jaundice together",
-            summary: "Milk intake and swallowing often become easier to notice, stool lightens, and jaundice may become more visible. The newborn visit checks the whole picture.",
+            summary: "Stool can begin moving away from black meconium, and jaundice may become more visible. Feeding, weight, output, wakefulness, and the bilirubin plan belong in the same check-in.",
             points: [
-              "Keep scheduled feeding, weight, and bilirubin follow-up.",
-              "Call for deepening yellow color with poor feeding or unusual sleepiness."
+              "Keep the scheduled feeding, weight, and bilirubin follow-up; babies discharged before 48 hours are commonly seen within 2 days.",
+              "Call for deepening or spreading yellow color, poor feeding, or unusual sleepiness."
             ],
             sources: ["aapFirstWeekVisit", "aapJaundice"]
           },
@@ -1605,10 +1605,10 @@
             at: { days: 5 },
             label: "Day 5",
             title: "Look for a rising trend",
-            summary: "By day 5, CDC breastfeeding guidance lists at least 6 wet diapers and 3 stools in 24 hours; another feeding plan may differ. Weight should stop falling.",
+            summary: "For a breastfed newborn, CDC lists at least 6 wet diapers and 3 stools in 24 hours by day 5. Continued weight loss after day 5 or a falling output trend needs prompt advice.",
             points: [
-              "Use output, feeding, wakefulness, and weight as a cluster.",
-              "Call about continued weight loss, falling output, or a wet, red, or foul-smelling cord."
+              "Use output, feeding, wakefulness, and the measured weight trend as a cluster; a different feeding plan may use different output targets.",
+              "Keep the cord clean and dry with the diaper folded below it; call for redness, foul-smelling discharge, pain when touched, or active bleeding."
             ],
             sources: ["cdcBreastfeedingBasics", "aapCord"]
           },
@@ -1616,11 +1616,11 @@
             key: "week-1",
             at: { weeks: 1 },
             label: "1 week",
-            title: "The first week is complete",
-            summary: "Feeding and sleep can remain irregular, but output and intake should now have an established trend. The weeks 2–4 guide becomes the useful next view.",
+            title: "Carry the first-week plan forward",
+            summary: "Feeding and sleep can still be irregular. Use the weeks 2–4 guide for what changes next, but let any feeding, weight, jaundice, cord, or illness concern override the calendar.",
             points: [
-              "Bring unresolved feeding, weight, jaundice, or cord questions to the pediatrician.",
-              "Expect continued newborn rhythms, not a schedule."
+              "Bring unresolved feeding, weight, jaundice, or cord questions to the pediatrician rather than waiting for a later card.",
+              "Expect continued newborn rhythms, not a dependable schedule."
             ],
             sources: ["aapFirstWeekVisit", "aapSleep"]
           }
