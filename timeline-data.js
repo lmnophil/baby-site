@@ -169,6 +169,10 @@
         title: "CDC: How to Clean, Sanitize, and Store Infant Feeding Items",
         url: "https://www.cdc.gov/hygiene/faq/"
       },
+      cdcBottleCleaning: {
+        title: "CDC: How to Clean, Sanitize, and Store Infant Feeding Items",
+        url: "https://www.cdc.gov/hygiene/about/clean-sanitize-store-infant-feeding-items.html"
+      },
       cdcFormulaPrep: {
         title: "CDC: Infant Formula Preparation and Storage",
         url: "https://www.cdc.gov/infant-toddler-nutrition/formula-feeding/preparation-and-storage.html"
@@ -490,25 +494,25 @@
             key: "birth",
             at: { days: 0 },
             label: "Birth · day 0",
-            title: "Let baby control the flow",
-            summary: "Responsive bottle feeding gives baby pauses and control. The amount left in the bottle is not the goal.",
+            title: "Follow cues and hold every bottle",
+            summary: "Feed responsively: let sucking control the flow, allow breaks, and stop at fullness cues. The amount left in the bottle is not the goal.",
             points: [
-              "Hold baby close and keep the bottle angled so milk flows when baby sucks.",
-              "Pause when baby pauses; stop for turning away, closing the mouth, or relaxed hands.",
-              "Never prop a bottle or leave baby feeding unattended."
+              "Hold baby close and angle the bottle so milk flows only when baby sucks.",
+              "Pause when baby pauses; stop for a closed mouth, turning away, or relaxed hands—even if milk remains.",
+              "Never prop or leave a bottle in baby’s mouth; clean all bottle parts after every feed."
             ],
-            sources: ["cdcBottleFeeding", "cdcHungerCues"]
+            sources: ["cdcBottleFeeding", "cdcHungerCues", "cdcBottleCleaning"]
           },
           {
             key: "week-4",
             at: { weeks: 4 },
             label: "4 weeks",
-            title: "Optional bottle practice",
-            summary: "If baby feeds directly at the breast and nursing is going well, around 4 weeks can be a reasonable time to practice an occasional bottle. Feeding readiness—not the date—is the controlling condition.",
+            title: "Practice a bottle if nursing is established",
+            summary: "For a baby nursing well at the breast, the AAP suggests offering a small bottle of expressed milk at about 4 weeks. A feeding or growth concern overrides the date.",
             points: [
               "Try when baby is calm, not extremely hungry or already full.",
               "Another caregiver may have an easier first attempt.",
-              "Keep using slow, responsive pacing."
+              "Use the same cue-led pacing; ask the care team before changing a feeding plan."
             ],
             sources: ["aapBreastfeedingQuestions", "cdcBottleFeeding"]
           }
