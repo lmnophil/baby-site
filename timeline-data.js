@@ -526,7 +526,7 @@
             at: { days: 0 },
             label: "Birth · day 0",
             title: "Use exact mixing and time limits",
-            summary: "Powdered formula is not sterile, and dilution or storage errors can cause serious illness. Follow the container and safe-water guidance exactly.",
+            summary: "Powdered formula is not sterile. Follow the container exactly, use safe water, and keep the preparation and storage clocks visible.",
             points: [
               "Measure water first, then add the exact amount of powder.",
               "Use prepared formula within 2 hours and within 1 hour after feeding starts; refrigerate untouched formula no longer than 24 hours.",
@@ -538,14 +538,14 @@
             key: "month-2",
             at: { months: 2 },
             label: "2 months",
-            title: "Reassess the extra germ precautions",
-            summary: "For a healthy term baby, some special under-2-month powdered-formula and daily-sanitizing precautions may now ease. Prematurity or immune compromise keeps extra precautions active.",
+            title: "Keep cleaning; reassess daily sanitizing",
+            summary: "After 2 months, daily sanitizing may no longer be needed for a healthy baby when items are carefully cleaned after every use. Prematurity or immune compromise keeps extra precautions active.",
             points: [
-              "Continue thorough cleaning after every use regardless of age.",
-              "Follow the current CDC preparation method for powdered formula.",
-              "Use the clinician’s plan for a premature, ill, or immunocompromised baby."
+              "Take apart and clean bottles and all parts after every feeding, then air-dry them completely.",
+              "Continue using safe water, exact label directions, and every storage limit for powdered formula.",
+              "For a baby born prematurely or with a weakened immune system, keep the extra powdered-formula and daily-sanitizing precautions; use the clinician’s plan."
             ],
-            sources: ["cdcFormulaPrep", "cdcCleaning"]
+            sources: ["cdcFormulaPrep", "cdcBottleCleaning"]
           }
         ]
       },
