@@ -403,37 +403,38 @@
             key: "birth",
             at: { days: 0 },
             label: "Birth · day 0",
-            title: "Feed around the clock",
-            summary: "Newborn stomachs are small, and frequent feeding builds intake and milk supply. A sleepy newborn may need waking according to the discharge or pediatric plan.",
+            title: "Feed around the clock, by cues and plan",
+            summary: "Newborn stomachs are small, so frequent feeds are expected. Offer milk at early cues; until intake and growth are reassuring, wake a sleepy baby on the discharge or clinician plan.",
             points: [
-              "Breastfed newborns commonly feed 8–12 times in 24 hours, sometimes every 1–3 hours.",
-              "Formula-fed newborns commonly start with 1–2 ounces every 2–3 hours, led by cues.",
-              "Count from the start of one feed to the start of the next."
+              "Breastfed babies commonly feed 8–12 times in 24 hours and may want to eat every 1–3 hours.",
+              "If using only formula, start by offering 1–2 ounces every 2–3 hours; offer more when baby shows hunger cues.",
+              "Patting, stroking, a diaper change, or undressing can help wake a sleepy baby for a feed."
             ],
-            sources: ["cdcBreastfeedingFrequency", "cdcFormulaFrequency"]
+            sources: ["cdcBreastfeedingFrequency", "cdcFormulaFrequency", "cdcBreastfeedingBasics"]
           },
           {
             key: "week-2",
             at: { weeks: 2 },
             label: "2 weeks",
-            title: "Check growth before changing the plan",
-            summary: "Many babies regain birth weight within 7–14 days. Confirmation of effective feeding and weight gain—not age alone—should control whether scheduled waking continues.",
+            title: "Let the weight check set the waking plan",
+            summary: "Birth weight is often regained by 7–14 days, but the feeding, diaper, jaundice, and weight trends belong together. Do not lengthen a waking interval from the calendar alone.",
             points: [
-              "Keep the current waking plan until weight recovery is confirmed.",
-              "Call for poor intake, difficult waking, falling output, or continued weight loss."
+              "Keep the discharge or clinician plan until the care team says intake and growth are reassuring.",
+              "Ask at the follow-up weight check what the longest gap should be, including overnight.",
+              "Call promptly for poor intake, difficult waking, falling output, worsening yellow color, or continued weight loss."
             ],
-            sources: ["aapFirstWeekVisit"]
+            sources: ["aapFirstWeekVisit", "cdcBreastfeedingBasics"]
           },
           {
             key: "month-1",
             at: { months: 1 },
             label: "1 month",
-            title: "Intervals may begin to stretch",
-            summary: "Breastfed babies may average every 2–4 hours with cluster feeding; formula-fed babies may move toward every 3–4 hours. Variation remains normal.",
+            title: "Expect variation as some gaps stretch",
+            summary: "Some gaps may lengthen gradually, while cluster feeding and night feeds can still be normal. Feed responsively; growth and the clinician’s advice decide whether a scheduled wake-up can change.",
             points: [
-              "Continue feeding by hunger and fullness cues.",
-              "If growth is good, ask whether overnight waking is still needed.",
-              "Do not force a longer interval or a larger feed."
+              "Exclusively breastfed babies average every 2–4 hours, though some feeds may be hourly or a sleep gap may reach 4–5 hours.",
+              "Formula-fed babies commonly feed about every 3–4 hours in the first weeks and months.",
+              "Do not force a longer interval or larger feed; ask the clinician before changing a waking plan."
             ],
             sources: ["cdcBreastfeedingFrequency", "cdcFormulaFrequency"]
           }
