@@ -101,6 +101,10 @@
         title: "American Academy of Pediatrics: First Week Visit (3 to 5 Days)",
         url: "https://www.aap.org/en/patient-care/newborn-infant-and-early-childhood-nutrition/newborn-and-infant-health-assessment-and-promotion/first-office-visit-3-5-days/"
       },
+      aapHyperbilirubinemia: {
+        title: "American Academy of Pediatrics: Clinical Practice Guideline Revision—Management of Hyperbilirubinemia in the Newborn Infant 35 or More Weeks of Gestation",
+        url: "https://publications.aap.org/pediatrics/article/150/3/e2022058859/188726/Clinical-Practice-Guideline-Revision-Management-of"
+      },
       aapJaundice: {
         title: "American Academy of Pediatrics: Jaundice in Newborns",
         url: "https://www.healthychildren.org/English/ages-stages/baby/Pages/jaundice.aspx"
@@ -200,6 +204,10 @@
       cdcHungerCues: {
         title: "CDC: Signs Your Child Is Hungry or Full",
         url: "https://www.cdc.gov/infant-toddler-nutrition/mealtime/signs-your-child-is-hungry-or-full.html"
+      },
+      cdcJaundice: {
+        title: "CDC: Jaundice and Breastfeeding",
+        url: "https://www.cdc.gov/breastfeeding-special-circumstances/hcp/illnesses-conditions/jaundice.html"
       },
       cdcInfantsHeat: {
         title: "CDC: Infants and Children and Heat",
@@ -1414,19 +1422,19 @@
               "Keep follow-up even when yellow color looks mild.",
               "Do not use sunlight as treatment."
             ],
-            sources: ["aapJaundice"]
+            sources: ["aapJaundice", "aapHyperbilirubinemia"]
           },
           {
             key: "day-3",
             at: { days: 3 },
             label: "Day 3",
             title: "The common peak window",
-            summary: "Jaundice related to low milk intake often becomes most important around days 3–5. Feeding, weight, diapers, wakefulness, and the measured bilirubin trend matter more than a visual guess.",
+            summary: "Jaundice related to suboptimal milk intake commonly peaks around days 3–5. Feeding, weight, diapers, wakefulness, and the measured bilirubin trend matter more than a visual guess.",
             points: [
               "Keep scheduled feeding, weight, and bilirubin checks.",
               "Call for deepening or spreading yellow color, poor feeding, or difficulty waking."
             ],
-            sources: ["aapJaundice", "cdcBreastfeedingBasics"]
+            sources: ["aapHyperbilirubinemia", "cdcJaundice"]
           },
           {
             key: "week-1",
@@ -1445,24 +1453,24 @@
             at: { weeks: 2 },
             label: "2 weeks",
             title: "Recheck jaundice that remains",
-            summary: "Jaundice clears in many babies during the first two weeks. The AAP advises calling if it persists beyond 2 weeks in a formula-fed baby.",
+            summary: "Jaundice clears by 2 weeks for many babies. If a formula-fed baby is still jaundiced now, the AAP recommends measuring total and direct or conjugated bilirubin.",
             points: [
               "Call now for pale or chalky stool, dark urine, poor feeding, or an unwell baby.",
               "Do not stop breastfeeding solely because yellow color remains; follow the clinician’s plan."
             ],
-            sources: ["aapJaundice"]
+            sources: ["aapHyperbilirubinemia", "cdcJaundice"]
           },
           {
-            key: "week-4",
-            at: { weeks: 4 },
-            label: "4 weeks",
-            title: "Persistent breastfed jaundice needs review",
-            summary: "A primarily breastfed baby who remains jaundiced beyond 4 weeks should be assessed. Persistence is a reason to check, not proof that something is wrong.",
+            key: "week-3",
+            at: { weeks: 3 },
+            label: "3 weeks",
+            title: "Persistent breastfed jaundice needs a check",
+            summary: "For a breastfed baby still jaundiced at 3–4 weeks, the AAP recommends total and direct or conjugated bilirubin testing. Persistence is a reason to check, not proof that something is wrong.",
             points: [
               "Arrange the recommended clinician review.",
-              "Continue watching stool color, urine, feeding, growth, and alertness."
+              "Call promptly for pale or chalky stool, dark urine, poor feeding, or unusual sleepiness."
             ],
-            sources: ["aapJaundice"]
+            sources: ["aapHyperbilirubinemia", "aapJaundice"]
           }
         ]
       },
