@@ -292,17 +292,18 @@
         key: "birth",
         at: { days: 0 },
         label: "Birth · day 0",
-        title: "Start with the essentials",
-        summary: "Feed responsively, keep baby warm and close, and set up every sleep safely. Early patterns change quickly.",
+        title: "The first-day essentials",
+        summary: "Keep baby close while awake, feed at early cues under the discharge plan, and use a firm, flat, bare sleep space for every sleep. Feeding or alertness concerns override the calendar.",
         topics: [
-          { id: "skin-to-skin", note: "Warmth, calm, connection, and early feeding support." },
-          { id: "feeding-frequency-and-waking", note: "Frequent feeds and an individualized waking plan." },
-          { id: "hunger-and-fullness-cues", note: "Respond to early cues before crying begins." },
-          { id: "breastfeeding-and-latch", note: "Get help early when latch or milk transfer hurts or worries you." },
-          { id: "bottle-feeding", note: "Use responsive positioning and pacing when a bottle is used." },
-          { id: "formula-preparation-and-storage", note: "If formula is used, prepare and store it safely from the first bottle." },
-          { id: "clothing-and-room-temperature", note: "Balance newborn warmth with avoiding overheating." },
-          { id: "car-seat-safety", note: "Check the setup before the first trip home." }
+          { id: "skin-to-skin", note: "Use observed, awake skin-to-skin for warmth, calming, and feeding support." },
+          { id: "feeding-frequency-and-waking", note: "Frequent feeds and the discharge waking plan come before a one-size-fits-all timer." },
+          { id: "hunger-and-fullness-cues", note: "Offer milk at early cues, before crying makes feeding harder." },
+          { id: "breastfeeding-and-latch", note: "Get hands-on help early if latch or milk transfer hurts or worries you." },
+          { id: "bottle-feeding", note: "Hold every bottle and pause or stop for baby's cues." },
+          { id: "formula-preparation-and-storage", note: "If using formula, follow the label exactly and start the safety clocks with the first bottle." },
+          { id: "safe-sleep-setup", note: "Back, firm, flat, level, and bare: set up the sleep space before the first sleep." },
+          { id: "clothing-and-room-temperature", note: "Keep sleep clothing simple; overheating and loose bedding both add risk." },
+          { id: "car-seat-safety", note: "Set up the rear-facing seat and read both manuals before the first trip home." }
         ],
         sources: ["cdcBreastfeedingFrequency", "cdcHungerCues", "aapSafeSleep", "cdcFormulaPrep"]
       },
