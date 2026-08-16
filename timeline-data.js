@@ -217,6 +217,10 @@
         title: "NIH Safe to Sleep: Tummy Time for a Healthy Baby",
         url: "https://safetosleep.nichd.nih.gov/reduce-risk/tummy-time"
       },
+      nationalAcademiesSleepPhysiology: {
+        title: "National Academies: Sleep Physiology and Infant Sleep Patterns",
+        url: "https://www.ncbi.nlm.nih.gov/books/NBK19956/"
+      },
       nhsBabySleep: {
         title: "NHS: Helping Your Baby to Sleep",
         url: "https://www.nhs.uk/baby/caring-for-a-newborn/helping-your-baby-to-sleep/"
@@ -695,35 +699,38 @@
             key: "birth",
             at: { days: 0 },
             label: "Birth · day 0",
-            title: "Show the difference from the start",
-            summary: "Newborns are not born knowing night from day. Repeated environmental cues can gradually support a developing body clock.",
+            title: "Make day and night feel different",
+            summary: "Newborn sleep is spread across 24 hours. Gentle, repeated light and activity cues can introduce a difference without expecting a schedule.",
             points: [
-              "By day, open curtains, interact, and allow ordinary household sound.",
-              "At night, dim lights, use quiet voices, and keep feeds and changes calm."
+              "By day, open curtains and use ordinary household sound, conversation, and play when baby is awake.",
+              "At night, keep lights low and feeds and needed changes quiet and low-key.",
+              "Feed or wake baby as the care team advises; a longer night is not the goal yet."
             ],
-            sources: ["nhsBabySleep"]
+            sources: ["aapSleep", "nhsBabySleep", "cdcBreastfeedingFrequency"]
           },
           {
             key: "month-2",
             at: { months: 2 },
             label: "2 months",
-            title: "The body clock may be organizing",
-            summary: "A clearer day-night pattern may be beginning, but it develops gradually and timing varies. Keep cues consistent without forcing wakefulness or delaying needed feeds.",
+            title: "A pattern may be emerging",
+            summary: "Daytime wakefulness and longer nighttime sleep may gradually become easier to notice around 2–3 months. Variation is still normal.",
             points: [
-              "Use a short, repeatable wind-down sequence.",
-              "Respond normally to nighttime hunger."
+              "Keep the same simple daytime and nighttime cues rather than chasing a precise schedule.",
+              "A short, calm wind-down can be useful, but nighttime hunger and the feeding plan still lead.",
+              "Look for a trend over several days, not one unusually good or hard night."
             ],
-            sources: ["nhsBabySleep"]
+            sources: ["nationalAcademiesSleepPhysiology", "aapSleep", "nhsBabySleep"]
           },
           {
             key: "month-3",
             at: { months: 3 },
             label: "3 months",
-            title: "Notice the pattern baby actually has",
-            summary: "A day-night difference may be clearer now, but a predictable schedule is not required. Compare this week with last week, not with another baby.",
+            title: "Keep cues; skip the deadline",
+            summary: "The day-night difference may be clearer, but regular sleep cycles generally do not develop until about 4 months. A reliable schedule is not required.",
             points: [
-              "Keep daytime light and interaction predictable.",
-              "Do not treat night waking as a behavior problem."
+              "Keep daytime interaction and nighttime care calm and low-stimulation.",
+              "Do not treat a night waking as a behavior problem; respond to feeding, diaper, illness, or comfort needs.",
+              "Check with the clinician before changing a plan to wake for feeds."
             ],
             sources: ["aapSleep", "nhsBabySleep"]
           }
