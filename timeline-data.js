@@ -777,37 +777,24 @@
             title: "Optional calming, with room to move",
             summary: "Swaddling may calm some newborns but does not reduce SIDS risk. If used, it must fit within the permanent safe-sleep setup.",
             points: [
-              "Place a swaddled baby only on the back.",
-              "Allow hips and knees to bend; avoid overheating and loose fabric.",
-              "Never use a weighted swaddle."
+              "Place baby on the back for every nap and nighttime sleep, on a firm, flat, bare sleep surface.",
+              "Keep the wrap secure and away from the face; let hips and knees bend up and out.",
+              "Avoid overheating and never use a weighted swaddle or blanket."
             ],
-            sources: ["aapSwaddle"]
-          },
-          {
-            key: "week-6",
-            at: { weeks: 6 },
-            label: "6 weeks",
-            title: "Prepare for the rolling transition",
-            summary: "This is a recheck date, not an automatic stop date. Because rolling attempts can begin as early as 2 months, make sure every caregiver knows the first attempt ends swaddling.",
-            points: [
-              "Notice new side-to-side movement or attempts to turn over.",
-              "Have a non-compressing sleep sack ready before it is needed.",
-              "Stop immediately at a rolling attempt; do not wait for the 2-month card."
-            ],
-            sources: ["aapSwaddle", "nihSafeSleep"]
+            sources: ["aapSwaddle", "aapSafeSleep"]
           },
           {
             key: "month-2",
             at: { months: 2 },
             label: "2 months",
             title: "Watch for the exit signal",
-            summary: "Some babies start attempting to roll as early as 2 months. The first sign of trying to roll—not a later birthday—is the stop point.",
+            summary: "Some babies start trying to roll as early as 2 months. The first sign of trying—not a later birthday—is the stop point for swaddling.",
             points: [
-              "Move to a non-compressing sleep sack before or immediately at rolling attempts.",
-              "Arms-out swaddling is not a safe workaround once rolling begins.",
-              "Tell every caregiver that the transition has happened."
+              "Stop every blanket swaddle and wearable product that compresses the arms, chest, or body when baby starts trying to roll.",
+              "Use fitted sleep clothing or a non-weighted sleep sack that lets baby move freely.",
+              "Tell every caregiver; continue starting every sleep on the back."
             ],
-            sources: ["aapSwaddle", "nihSafeSleep"]
+            sources: ["aapSwaddle", "nihSafeSleep", "aapSafeSleep"]
           }
         ]
       },
