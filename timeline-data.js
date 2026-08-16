@@ -249,6 +249,10 @@
         title: "NHTSA: How to Install Rear-Facing Car Seats",
         url: "https://www.nhtsa.gov/car-seats-and-booster-seats/how-install-rear-facing-car-seats"
       },
+      nhtsaUsedSeat: {
+        title: "NHTSA: Used Car Seat Safety Checklist",
+        url: "https://www.nhtsa.gov/car-seats-and-booster-seats/used-car-seat-safety-checklist"
+      },
       nihSafeSleep: {
         title: "NIH Safe to Sleep: Ways to Reduce Baby’s Risk",
         url: "https://safetosleep.nichd.nih.gov/reduce-risk/reduce"
@@ -1520,12 +1524,12 @@
             key: "birth",
             at: { days: 0 },
             label: "Birth · day 0",
-            title: "Set up the first ride",
-            summary: "Use a correctly fitted rear-facing seat in the back seat for every trip. Correct recline, a tight installation, and a snug harness matter more than brand or price.",
+            title: "Set up every first ride",
+            summary: "Use a rear-facing seat in the back seat for every trip. Read both manuals; correct recline, a tight installation, and a snug harness are the essential checks.",
             points: [
               "Test movement at the belt path: no more than 1 inch side-to-side or front-to-back.",
               "Keep straps at or below the shoulders and the chest clip at armpit level.",
-              "Put nothing bulky under the harness."
+              "Buckle over thin clothing; put blankets or coats over the harness, never underneath it."
             ],
             sources: ["nhtsaRearFacing", "aapCarSeat"]
           },
@@ -1533,10 +1537,11 @@
             key: "month-1",
             at: { months: 1 },
             label: "1 month",
-            title: "Do a growth-fit check",
-            summary: "This is a reminder, not an age-triggered seat change. As shoulders rise and clothing sizes change, recheck every adjustable part against the manual.",
+            title: "Let fit trigger a recheck",
+            summary: "This is a reminder, not an age-triggered seat change. Recheck the manual whenever growth, clothing, or a changed ride makes the fit look different.",
             points: [
               "Recheck harness slots, headrest, crotch buckle, infant inserts, and recline indicator.",
+              "Use either the locked seat belt or lower anchors unless both manuals explicitly allow both systems together.",
               "Repeat the snug-harness and carrier or base-lock checks before every ride."
             ],
             sources: ["nhtsaRearFacing", "aapCarSeat"]
@@ -1545,13 +1550,14 @@
             key: "month-3",
             at: { months: 3 },
             label: "3 months",
-            title: "Growth—not a birthday—controls changes",
-            summary: "Keep the seat rear-facing and follow its height and weight limits. Change recline, padding, harness position, or seat type only when the manuals and fit limits say to.",
+            title: "Keep rear-facing; let limits decide",
+            summary: "A birthday does not signal a turn forward. Keep rear-facing until the seat's top rear-facing height or weight limit, and use the manuals for every fit or recline change.",
             points: [
-              "Use another appropriate rear-facing seat only when the current one is outgrown or no longer suits the trip.",
-              "Move a sleeping baby to a firm, flat sleep space when travel ends."
+              "When a rear-facing-only seat is outgrown, move to a convertible or all-in-one seat used rear-facing.",
+              "Move a sleeping baby to a firm, flat sleep space on their back as soon as possible after travel.",
+              "For a second-hand seat, confirm its history, labels, instructions, parts, and recall status before use."
             ],
-            sources: ["aapCarSeat", "aapSafeSleep"]
+            sources: ["aapCarSeat", "aapSafeSleep", "nhtsaUsedSeat"]
           }
         ]
       },
