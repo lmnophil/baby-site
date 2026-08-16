@@ -114,7 +114,7 @@
         url: "https://www.healthychildren.org/English/ages-stages/baby/Pages/Babys-First-Days-Bowel-Movements-and-Urination.aspx"
       },
       aapPacifier: {
-        title: "American Academy of Pediatrics: Pacifiers and Thumb Sucking",
+        title: "American Academy of Pediatrics: Baby Pacifiers & Thumb Sucking—What Parents Need to Know",
         url: "https://www.healthychildren.org/English/ages-stages/baby/crying-colic/Pages/Pacifiers-and-Thumb-Sucking.aspx?lang=en"
       },
       aapReflux: {
@@ -805,12 +805,12 @@
             key: "birth",
             at: { days: 0 },
             label: "Birth · day 0",
-            title: "Food first, soothing second",
-            summary: "A pacifier can meet non-feeding sucking needs and may be offered for sleep when it will not disrupt direct breastfeeding.",
+            title: "Feed first; soothe after",
+            summary: "A pacifier is optional. Offer it for naps and bedtime only when you are sure baby is not hungry.",
             points: [
-              "If not directly breastfeeding, it may be offered from birth for naps and bedtime.",
+              "If feeding human milk by direct breastfeeding, wait until feeding is well established; if not breastfeeding, offer one whenever you like.",
               "Never use it to delay a feeding or force baby to take it.",
-              "Do not attach it to clothing, blankets, toys, or the sleep space."
+              "Do not attach it to clothing, blankets, toys, or anything in the sleep space."
             ],
             sources: ["aapPacifier", "nihSafeSleep"]
           },
@@ -818,12 +818,12 @@
             key: "week-4",
             at: { weeks: 4 },
             label: "4 weeks",
-            title: "If breastfeeding is established",
-            summary: "Direct breastfeeding is often going well by about 3–4 weeks, but effective feeding and weight gain—not the date—control pacifier introduction.",
+            title: "Use feeding, not the date, as the signal",
+            summary: "Three to four weeks is a common time for direct breastfeeding to be established, but comfort, enough milk, and weight gain matter more than the calendar.",
             points: [
-              "Offer at naps and bedtime if desired.",
+              "If feeding is going well, offer it at naps and bedtime if desired; ask the pediatrician or lactation professional if you are unsure.",
               "If it falls out during sleep, there is no need to replace it.",
-              "Do not force it if baby refuses."
+              "It is fine if baby refuses it; do not force it."
             ],
             sources: ["aapPacifier", "nihSafeSleep"]
           }
