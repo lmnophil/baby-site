@@ -33,6 +33,10 @@
         title: "American Academy of Pediatrics: Breathing Trouble",
         url: "https://www.healthychildren.org/English/tips-tools/Symptom-Checker/Pages/symptomviewer.aspx?symptom=Breathing%2BTrouble"
       },
+      aapCongestedSleep: {
+        title: "American Academy of Pediatrics: My Baby Has a Stuffy Nose—How Can I Help Them Sleep Safely?",
+        url: "https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/my-baby-has-a-stuffy-nose-how-can-i-help-them-sleep-safely.aspx"
+      },
       aapBurping: {
         title: "American Academy of Pediatrics: Baby Burping, Hiccups & Spit-Up",
         url: "https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/baby-burping-hiccups-and-spit-up.aspx"
@@ -136,6 +140,10 @@
       aapReflux: {
         title: "American Academy of Pediatrics: Gastroesophageal Reflux in Infants",
         url: "https://www.healthychildren.org/English/health-issues/conditions/abdominal/Pages/GERD-Reflux.aspx"
+      },
+      aapRsv: {
+        title: "American Academy of Pediatrics: RSV—When It’s More Than Just a Cold",
+        url: "https://www.healthychildren.org/English/health-issues/conditions/chest-lungs/Pages/RSV-When-Its-More-Than-Just-a-Cold.aspx"
       },
       aapSafeSleep: {
         title: "American Academy of Pediatrics: How to Keep Your Sleeping Baby Safe",
@@ -1481,26 +1489,27 @@
             key: "birth",
             at: { days: 0 },
             label: "Birth · day 0",
-            title: "Noisy can still be comfortable",
-            summary: "Newborn breathing can speed up, slow down, pause for under 10 seconds while baby stays comfortable and normally colored, and sound snuffly. Effort, color, feeding, and alertness matter more than volume.",
+            title: "Check comfort, not noise",
+            summary: "In the first month, newborn breathing may be irregular, briefly pause for under 10 seconds, or sound snuffly while baby stays comfortable and their usual color. Effort, color, feeding, and alertness matter more than volume.",
             points: [
-              "Watch while baby is calm; brief pauses can be periodic breathing.",
-              "Retractions, repeated grunting, head bobbing, or blue or gray color are not ordinary congestion.",
-              "Use plain saline and gentle suction only when blockage interferes with feeding."
+              "Watch while baby is calm: a resting rate under 60 breaths per minute and a brief pause followed by catch-up breaths can be normal.",
+              "Retractions, nostril flaring, head bobbing, repeated grunting, or blue or gray color are not ordinary congestion.",
+              "Use plain saline and gentle suction when a blocked nose interferes with feeding; keep every sleep flat and firm, never inclined."
             ],
-            sources: ["aapNewbornBehavior", "aapBreathingTrouble"]
+            sources: ["aapNewbornBehavior", "aapBreathingTrouble", "aapCongestedSleep"]
           },
           {
             key: "month-1",
             at: { months: 1 },
             label: "1 month",
-            title: "Baby’s usual pattern is clearer",
-            summary: "You may recognize normal newborn sounds more easily now, but a new cough or congestion can still become serious quickly in a young infant.",
+            title: "Illness cues override the calendar",
+            summary: "Periodic breathing is often less noticeable by about 1 month. New congestion or cough can still worsen over several days, so judge it by breathing work, feeding, wet diapers, color, and alertness—not by a cold timeline.",
             points: [
-              "Keep judging breathing effort, color, feeding, wet diapers, and alertness.",
-              "Call promptly for new illness signs rather than waiting for a cold timeline."
+              "Call promptly for pauses or difficulty breathing, fewer than one wet diaper in 8 hours, or a clear drop in activity or alertness.",
+              "For a rectal temperature of 100.4°F (38°C) or higher before 12 weeks, call the pediatrician immediately.",
+              "Call 911 for severe struggle with every breath, a weak or absent cry, or blue or gray lips, tongue, or face."
             ],
-            sources: ["aapNewbornBehavior", "aapBreathingTrouble"]
+            sources: ["aapNewbornBehavior", "aapRsv", "aapFever"]
           }
         ]
       },
