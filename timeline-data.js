@@ -81,6 +81,10 @@
         title: "American Academy of Pediatrics: Common Diaper Rashes & Treatments",
         url: "https://www.healthychildren.org/English/ages-stages/baby/diapers-clothing/Pages/Diaper-Rash.aspx"
       },
+      aapDiaperRashSymptomChecker: {
+        title: "American Academy of Pediatrics: Diaper Rash Symptom Checker",
+        url: "https://www.healthychildren.org/English/tips-tools/Symptom-Checker/Pages/symptomviewer.aspx?symptom=Diaper+Rash"
+      },
       aapFever: {
         title: "American Academy of Pediatrics: Fever and Your Baby",
         url: "https://www.healthychildren.org/English/health-issues/conditions/fever/Pages/Fever-and-Your-Baby.aspx"
@@ -1247,9 +1251,9 @@
             points: [
               "Change promptly, clean gently, air-dry, and use a plain barrier paste.",
               "Contact the pediatrician about any diaper-area rash in the first 6 weeks.",
-              "Avoid cycling through medicines or antifungal creams without guidance."
+              "For a baby under 1 month, grouped tiny blisters or pimples, yellow crusts, spreading redness, or unusual behavior need care now."
             ],
-            sources: ["aapDiaperRash", "medlineDiaperRash"]
+            sources: ["aapDiaperRash", "aapDiaperRashSymptomChecker", "medlineDiaperRash"]
           },
           {
             key: "week-6",
@@ -1259,9 +1263,9 @@
             summary: "A typical contact-area rash should begin looking less red, raw, or uncomfortable within 2–3 days of gentle care. Fold involvement, nearby bumps, crusts, or oozing need assessment.",
             points: [
               "Call if there is no clear improvement within 2–3 days or the rash worsens.",
-              "The under-3-month fever rule remains unchanged."
+              "Pimples, blisters, yellow crusts, pus, or an especially painful rash need a clinician rather than another cream."
             ],
-            sources: ["aapDiaperRash", "medlineDiaperRash"]
+            sources: ["aapDiaperRash", "aapDiaperRashSymptomChecker", "medlineDiaperRash"]
           }
         ]
       },
