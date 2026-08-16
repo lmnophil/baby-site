@@ -201,6 +201,10 @@
         title: "CDC: Safety in Maternity Care",
         url: "https://www.cdc.gov/breastfeeding/php/guidelines-recommendations/safety-in-maternity-care.html"
       },
+      cdcMpinCSupportingEvidence: {
+        title: "CDC: mPINC Survey Supporting Evidence",
+        url: "https://www.cdc.gov/breastfeeding-data/mpinc/supporting-evidence.html"
+      },
       medlineDiaperRash: {
         title: "MedlinePlus: Diaper Rash",
         url: "https://medlineplus.gov/ency/article/000964.htm"
@@ -212,6 +216,10 @@
       nihSafeSleep: {
         title: "NIH Safe to Sleep: Ways to Reduce Baby’s Risk",
         url: "https://safetosleep.nichd.nih.gov/reduce-risk/reduce"
+      },
+      nihSafeSleepEnvironment: {
+        title: "NIH Safe to Sleep: Safe Sleep Environment for Baby",
+        url: "https://safetosleep.nichd.nih.gov/reduce-risk/safe-sleep-environment"
       },
       nihTummyTime: {
         title: "NIH Safe to Sleep: Tummy Time for a Healthy Baby",
@@ -836,27 +844,27 @@
             key: "birth",
             at: { days: 0 },
             label: "Birth · day 0",
-            title: "The first hours",
-            summary: "For a medically stable parent and newborn, immediate skin-to-skin supports temperature, glucose stability, bonding, and breastfeeding initiation.",
+            title: "An observed first hour",
+            summary: "For medically stable newborns and caregivers, start skin-to-skin as soon as possible after birth. The first hour or first feed is a useful protected window, with staff observation.",
             points: [
-              "Place baby upright against a bare chest with the airway and face visible.",
-              "Continue through the first feed when possible.",
-              "Use staff help and monitoring after delivery."
+              "Keep baby upright on a bare chest, with the face visible and the airway clear.",
+              "If feeding at the breast, let baby stay through the first feed when possible; it also benefits babies fed another way.",
+              "Ask staff for help if either of you needs care; after a cesarean, begin when the caregiver is responsive and alert."
             ],
-            sources: ["cdcSkinToSkin"]
+            sources: ["cdcSkinToSkin", "cdcMpinCSupportingEvidence"]
           },
           {
             key: "after-day-1",
             at: { days: 1 },
             label: "After day 1",
-            title: "Keep it as a comfort tool",
-            summary: "After the first hours, skin-to-skin remains useful in the hospital or at home for closeness, calming, and feeding support; either caregiver can participate.",
+            title: "Comfort and feeding support—awake only",
+            summary: "Keep skin-to-skin as a flexible tool for closeness, calming, and feeding support at home or in the hospital. Either parent or another caregiver can participate while fully alert.",
             points: [
-              "Try it after a bath, before a feed, or during a calm awake period.",
-              "The caregiver must be awake and alert.",
-              "If either person becomes sleepy, move baby to the usual safe-sleep surface."
+              "Try it when baby is showing early feeding cues, needs calming, or after a bath; there is no home-session quota.",
+              "Keep checking baby’s face, breathing, color, movement, and warmth—not only whether they seem quiet.",
+              "If the caregiver becomes sleepy, move baby onto their back in their own firm, flat, level sleep space."
             ],
-            sources: ["aapSkinToSkin", "cdcSkinToSkin"]
+            sources: ["aapSkinToSkin", "cdcSkinToSkin", "nihSafeSleepEnvironment"]
           }
         ]
       },
