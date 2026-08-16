@@ -328,16 +328,16 @@
         key: "week-1",
         at: { days: 7 },
         label: "Week 1 · day 7",
-        title: "One week together",
-        summary: "Review feeding and follow-up, care for the cord and skin, and expect sleep to remain fragmented.",
+        title: "One week: follow the trend",
+        summary: "Keep the feeding, weight, and bilirubin plan; the cord may still be attached, and newborn sleep is still short and irregular.",
         topics: [
-          { id: "jaundice", note: "Keep following the measured bilirubin and feeding plan." },
-          { id: "umbilical-cord-care", note: "The stump is drying but may normally remain attached." },
-          { id: "bathing-a-newborn", note: "Bathing guidance still depends on cord healing." },
-          { id: "newborn-skin", note: "Peeling, spots, and transient rashes prompt common questions." },
-          { id: "normal-newborn-sleep", note: "Short, irregular sleep is expected—not a schedule problem." },
-          { id: "getting-enough", note: "Review feeding, output, and the weight trend." },
-          { id: "wet-diapers", note: "Output remains a practical clue to hydration and intake." }
+          { id: "jaundice", note: "Follow the measured bilirubin, feeding, and weight plan—not color alone." },
+          { id: "umbilical-cord-care", note: "Dry care continues; the stump can normally remain attached through this week." },
+          { id: "bathing-a-newborn", note: "Use sponge baths until the stump is off and the navel is dry and healed." },
+          { id: "newborn-skin", note: "Peeling and temporary rashes are common; blister-like rashes need evaluation." },
+          { id: "normal-newborn-sleep", note: "Short, irregular sleep is expected; keep night feeds and care calm and simple." },
+          { id: "getting-enough", note: "Use feeding, output, alertness, and measured weight together." },
+          { id: "wet-diapers", note: "Track the 24-hour pattern; a sudden change from usual output needs attention." }
         ],
         sources: ["aapCord", "aapBathing", "aapSleep", "cdcBreastfeedingBasics", "aapJaundice"]
       },
