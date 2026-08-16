@@ -951,25 +951,25 @@
             key: "birth",
             at: { days: 0 },
             label: "Birth · day 0",
-            title: "Start short and supervised",
-            summary: "Begin tummy time in the first days, only while baby is awake and an adult is watching. Very short repetitions count.",
+            title: "Start short, awake, and watched",
+            summary: "Most babies can start tummy time a day or two after birth. Keep every try awake and supervised; very short repetitions count.",
             points: [
-              "Try chest-to-chest, across a lap, or on a firm floor surface.",
-              "Use a face, voice, or high-contrast object for interest.",
-              "If baby becomes sleepy, move them to back sleep."
+              "Try two or three short 3–5 minute sessions, then stop sooner if baby needs a break.",
+              "A clear floor, tummy-to-tummy, or a supported lap position can make the first tries easier.",
+              "If baby gets sleepy or you need to step away, place them on their back in a safe sleep space."
             ],
-            sources: ["nihTummyTime"]
+            sources: ["nihTummyTime", "aapTummyTime"]
           },
           {
             key: "week-7",
             at: { weeks: 7 },
             label: "7 weeks",
             title: "Build the daily total",
-            summary: "Work gradually toward 15–30 total minutes a day by about 2 months, divided into sessions baby tolerates.",
+            summary: "AAP advises working gradually toward 15–30 total minutes a day by 7 weeks; NIH describes the same target as about 2 months. Split it into manageable sessions.",
             points: [
               "Add a minute or another session rather than forcing one long session.",
               "Pair it with waking from a nap or a diaper change.",
-              "Vary head direction and carrying positions."
+              "Vary awake positions and limit long stretches in swings, bouncers, car seats, and carriers."
             ],
             sources: ["nihTummyTime", "aapTummyTime"]
           },
@@ -978,11 +978,11 @@
             at: { months: 2 },
             label: "2 months",
             title: "Watch head control emerge",
-            summary: "Holding the head up during tummy time is a CDC 2-month milestone. Milestones describe what most babies do by this age, not a pass/fail test.",
+            summary: "Holding the head up on the tummy and moving both arms and legs are CDC 2-month milestones. They describe what most babies do by this age, not a pass/fail test.",
             points: [
               "Talk face-to-face and let baby watch you move.",
               "Use short floor-play sessions throughout the day.",
-              "Use corrected age after prematurity, and share concerns or persistent asymmetry with the pediatrician."
+              "For a baby born more than 3 weeks early, use corrected age for developmental timing and discuss concerns with the pediatrician."
             ],
             sources: ["cdcMilestones2", "aapCorrectedAge"]
           },
@@ -991,11 +991,11 @@
             at: { months: 3 },
             label: "3 months",
             title: "Make room for movement",
-            summary: "Awake floor play now helps prepare for stronger head control and rolling. Mobility may arrive unexpectedly.",
+            summary: "Longer awake floor-play sessions can offer more chances to look, reach, and practice head control. Follow baby’s cues rather than testing a skill.",
             points: [
-              "Offer safe visual targets to each side.",
-              "Limit long awake periods confined in swings, seats, and carriers.",
-              "Keep a hand on baby on every elevated surface."
+              "Put your face or a toy within reach, and offer visual interest on either side.",
+              "Continue varying awake positions and limiting time in sitting devices.",
+              "Keep play on the floor; never leave baby unattended on a bed, sofa, or other elevated surface."
             ],
             sources: ["aapTummyTime", "cdcMilestones2"]
           }
