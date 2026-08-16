@@ -345,16 +345,16 @@
         key: "week-2",
         at: { days: 14 },
         label: "Week 2 · day 14",
-        title: "New patterns are showing up",
-        summary: "Review birth-weight recovery and jaundice while crying, spit-up, and soothing needs become more noticeable. Normal ranges remain broad.",
+        title: "Two-week check-in: patterns, not schedules",
+        summary: "Review the measured weight and jaundice plan. Crying and easy spit-up often begin increasing now; keep the same safety basics while you learn what helps.",
         topics: [
-          { id: "weeks-two-to-four", note: "Frame the next stretch without expecting a fixed schedule." },
-          { id: "crying-and-soothing", note: "Crying often begins increasing during the early weeks." },
-          { id: "burping-gas-and-spit-up", note: "Spit-up and feeding discomfort may become more apparent." },
-          { id: "umbilical-cord-care", note: "Many cords separate around now, but timing varies." },
-          { id: "getting-enough", note: "Use the measured trend to confirm birth-weight recovery." },
-          { id: "swaddling-safely", note: "Reinforce safe technique and back sleeping." },
-          { id: "jaundice", note: "Persistent yellowing now has feeding-method-specific follow-up points." }
+          { id: "weeks-two-to-four", note: "Keep the next stretch flexible; feeding, output, alertness, and illness concerns still lead." },
+          { id: "crying-and-soothing", note: "Many babies begin crying more around 2 weeks; make a safe handoff plan before frustration builds." },
+          { id: "burping-gas-and-spit-up", note: "Easy spit-up often begins around 2–3 weeks; force, pain, or poor feeding is different." },
+          { id: "umbilical-cord-care", note: "Keep the stump clean and dry; it can still be attached, but needs a call if it remains past 3 weeks." },
+          { id: "getting-enough", note: "Birth weight is often regained by days 7–14; the measured trend guides feeding or waking changes." },
+          { id: "swaddling-safely", note: "Every sleep stays back and bare; stop swaddling at the first rolling attempt, whatever the date." },
+          { id: "jaundice", note: "Call if a formula-fed baby is still jaundiced at 2 weeks; feeding or illness concerns need attention sooner." }
         ],
         sources: ["aapFirstWeekVisit", "aapJaundice", "aapCryingSupport", "aapReflux"]
       },
