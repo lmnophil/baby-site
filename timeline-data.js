@@ -1161,10 +1161,10 @@
             at: { days: 0 },
             label: "Birth · day 0",
             title: "Sponge baths while the cord heals",
-            summary: "Use sponge baths until the stump is off and the navel is dry and healed. Newborns do not need a daily bath.",
+            summary: "Use sponge baths until the stump is off and the navel is dry and healed. Newborns do not need a daily bath; about three baths a week is usually enough.",
             points: [
-              "Set out supplies first and keep one hand on baby.",
-              "Use warm water, gentle cleaning, and immediate drying and dressing."
+              "Set out supplies first; on a raised surface, use its strap or keep one hand on baby.",
+              "Use warm water, gentle cleaning, then dry and dress baby promptly."
             ],
             sources: ["aapBathing"]
           },
@@ -1173,10 +1173,10 @@
             at: { weeks: 1 },
             label: "1 week",
             title: "Look for tub readiness",
-            summary: "Many cords separate during weeks 1–3, but age alone does not decide when to start a tub. Continue sponge baths if the stump remains or the navel is moist or raw.",
+            summary: "The stump often separates around 1–2 weeks, but age alone does not decide when to start a tub. Continue sponge baths while it remains and until the navel is dry and healed.",
             points: [
-              "Use a dry, healed belly button—not a date—as the transition signal.",
-              "Call if the cord or navel is not following a reassuring drying pattern."
+              "Use a dry, healed belly button—not a date—as the transition signal; a few extra sponge-bath days are fine.",
+              "Keep the stump clean and dry, with the diaper folded below it; do not pull it off."
             ],
             sources: ["aapBathing", "aapCord"]
           },
@@ -1184,11 +1184,11 @@
             key: "week-3",
             at: { weeks: 3 },
             label: "3 weeks",
-            title: "Keep tub baths brief and hands-on",
-            summary: "Once the navel is healed, use a stable infant tub, shallow warm water, and continuous hands-on supervision. Increasing wiggles never change the supervision rule.",
+            title: "Check a lingering cord; keep baths hands-on",
+            summary: "If the stump is still attached beyond 3 weeks, arrange a doctor’s visit. If the navel is healed, use a stable infant tub, shallow warm water, and continuous hands-on supervision.",
             points: [
-              "Support the head and neck, lower baby feet first, and keep the face above water.",
-              "Never step away or rely on a bath seat, even briefly."
+              "Support the head and neck, lower baby feet first, and keep the face well above the water.",
+              "Never step away or rely on a bath seat or infant tub for supervision, even briefly."
             ],
             sources: ["aapBathing", "aapWaterSafety"]
           }
