@@ -1201,23 +1201,23 @@
             key: "birth",
             at: { days: 0 },
             label: "Birth · day 0",
-            title: "Newborn skin can look unfamiliar",
-            summary: "Vernix, peeling, blotchy color, milia, fine hair, and birth-related marks can all be visible in the first days.",
+            title: "Leave common newborn changes alone",
+            summary: "Vernix, peeling, tiny milia, fine hair, cool-air mottling, and birthmarks can all be normal at birth. Most need time, not a treatment.",
             points: [
-              "Do not scrub, peel, squeeze, or use acne products.",
-              "Check yellow color in bright white light and follow the bilirubin plan."
+              "Leave vernix on for a while when possible; do not scrub flakes, squeeze milia, or use acne products.",
+              "In white light, watch for increasing yellow color and follow the bilirubin and follow-up plan."
             ],
-            sources: ["aapNewbornAppearance", "aapCommonNewbornConditions"]
+            sources: ["aapNewbornAppearance", "aapBathing", "aapJaundice"]
           },
           {
             key: "week-1",
             at: { weeks: 1 },
             label: "1 week",
-            title: "Common early changes begin settling",
-            summary: "Peeling may become more noticeable, while transient newborn rashes can come and go. Reassuring areas stay intact without spreading redness, drainage, swelling, or tenderness.",
+            title: "A temporary rash may come and go",
+            summary: "Erythema toxicum can appear as red splotches with pale centers, move around, and usually clear in about a week. Peeling and intact skin can still look dramatic but need gentle care.",
             points: [
-              "Use brief, infrequent baths and fragrance-free moisturizer if needed.",
-              "Call about a rash that keeps spreading or skin becoming raw, wet, or painful."
+              "Keep baths brief and infrequent; use mild, fragrance-free cleanser only where needed and moisturizer after bathing if skin is dry.",
+              "Have any blister-like rash evaluated, even if baby otherwise seems well."
             ],
             sources: ["aapCommonNewbornConditions", "aapBathing"]
           },
@@ -1225,11 +1225,11 @@
             key: "week-2",
             at: { weeks: 2 },
             label: "2 weeks",
-            title: "Watch the trend over coming weeks",
-            summary: "Milia and fine body hair often fade gradually; some marks lighten more slowly, and a raised red birthmark may first become noticeable. These are broad patterns, not deadlines.",
+            title: "Look for a gradual settling trend",
+            summary: "Milia often clears by 2–3 weeks and fine body hair may take a couple of weeks to fade. Some flat marks lighten more slowly; a raised red birthmark can become clearer after the first week.",
             points: [
-              "Photograph a new or changing mark in consistent light.",
-              "Ask the pediatrician to identify a newly raised or changing birthmark."
+              "Compare a mark in consistent light; a photo can make a gradual change easier to show at a visit.",
+              "Ask the pediatrician to identify a newly raised red mark or any mark that is changing."
             ],
             sources: ["aapNewbornAppearance"]
           }
