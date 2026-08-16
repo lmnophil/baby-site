@@ -744,11 +744,11 @@
             at: { days: 0 },
             label: "Birth · day 0",
             title: "Set up every sleep space",
-            summary: "The safest setup is a separate, firm, flat, level infant sleep surface in the caregiver’s room. The full safe-sleep rules remain fixed at every age.",
+            summary: "For every nap and nighttime sleep, use a separate, firm, flat, level infant sleep surface in the caregiver’s room. These basics continue through the first year.",
             points: [
-              "Use only a fitted sheet; keep soft and weighted objects out.",
-              "Start every sleep on the back.",
-              "Move a sleeping baby out of a sitting device as soon as practical."
+              "Use a mattress made for that sleep space and only its fitted sheet; keep soft and weighted objects out.",
+              "Start every sleep on the back, including with spit-up or reflux unless the care team gives different instructions.",
+              "After travel, move a sleeping baby from a sitting or carrying device to their regular sleep space as soon as possible."
             ],
             sources: ["cdcSafeSleep", "aapSafeSleep"]
           },
@@ -756,14 +756,14 @@
             key: "month-2",
             at: { months: 2 },
             label: "2 months",
-            title: "Audit for unexpected mobility",
-            summary: "Some babies begin working toward rolling as early as 2 months. Recheck every caregiver and every place baby sleeps before movement surprises you.",
+            title: "Let rolling set the change",
+            summary: "Some babies start working toward rolling as early as 2 months. Recheck now, but an attempt to roll—not a birthday—is the signal to stop swaddling.",
             points: [
-              "Make sure the sleep space is still empty and product limits are followed.",
-              "Stop any arm- or body-compressing swaddle at the first rolling attempt.",
-              "Keep room-sharing without surface-sharing."
+              "Make sure every caregiver keeps the sleep space empty and follows the product’s limits and instructions.",
+              "Stop a swaddle or a sleep sack that compresses the arms, chest, or body at the first sign of trying to roll.",
+              "A non-swaddling sleep sack that lets baby move freely can still be used if it fits and is used as directed."
             ],
-            sources: ["cdcSafeSleep", "aapSwaddle"]
+            sources: ["aapSwaddle", "aapSafeSleep"]
           }
         ]
       },
