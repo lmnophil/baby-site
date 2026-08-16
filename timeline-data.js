@@ -448,11 +448,11 @@
             at: { days: 0 },
             label: "Birth · day 0",
             title: "Build a deep, comfortable latch",
-            summary: "Breastfeeding is a learned skill for parent and baby. A deep latch improves milk transfer and should become comfortable after the initial attachment.",
+            summary: "Breastfeeding is a learning process. A deep latch helps milk transfer and should feel like tugging, not ongoing pain or pinching.",
             points: [
-              "Look for a wide mouth, lips turned out, chin against the breast, and straight head and body.",
-              "Listen or watch for regular swallowing.",
-              "If it pinches or hurts, break suction gently and relatch."
+              "Look for a wide mouth over the areola, lips turned out, chin on the breast, and head and body in line.",
+              "Watch or listen for regular swallowing; early colostrum swallows can be quiet.",
+              "If it pinches or hurts, gently break suction and relatch; get hands-on help early if it keeps happening."
             ],
             sources: ["cdcBreastfeedingBasics"]
           },
@@ -460,12 +460,12 @@
             key: "day-3",
             at: { days: 3 },
             label: "Day 3",
-            title: "Milk volume is changing",
-            summary: "Colostrum gives way to larger milk volumes over the first several days. Frequent effective removal and a comfortable latch matter more than timing a feed.",
+            title: "Expect milk volume to rise",
+            summary: "For most parents, thinner, whiter milk comes in by about day 3, though it can take longer. Frequent feeding and milk removal help build supply.",
             points: [
-              "Feed often and listen for swallowing.",
-              "Use diaper and weight trends—not breast fullness alone—to judge intake.",
-              "Get prompt help when engorgement prevents a deep latch."
+              "Full, warm breasts and more obvious swallowing can appear; feed often rather than relying on a clock alone.",
+              "Use swallowing plus diaper and weight trends—not breast fullness alone—to judge transfer.",
+              "Ask for help promptly if severe fullness makes it hard for baby to attach."
             ],
             sources: ["cdcBreastfeedingTransition", "cdcBreastfeedingBasics"]
           },
@@ -474,10 +474,10 @@
             at: { weeks: 2 },
             label: "2 weeks",
             title: "Persistent pain needs help",
-            summary: "Some early tenderness can occur, but breastfeeding should not remain painful with a good latch. Pain that is not improving deserves assessment.",
+            summary: "Early nipple tenderness can happen, but breastfeeding should not stay painful with a good latch. Pain that has not improved over 1–2 weeks needs assessment.",
             points: [
-              "Ask for help with cracks, bleeding, clicking, repeated unlatching, or misshapen nipples after feeds.",
-              "Seek medical care for breast pain with fever or flu-like symptoms."
+              "Get help with cracked or bleeding nipples, clicking, repeated unlatching, or a nipple that looks flattened after feeds.",
+              "Call a clinician for breast pain with fever, or if baby is not back to birth weight or is not gaining as expected."
             ],
             sources: ["cdcBreastfeedingTransition", "aapBreastfeedingQuestions"]
           }
