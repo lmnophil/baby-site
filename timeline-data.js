@@ -362,16 +362,16 @@
         key: "month-1",
         at: { months: 1 },
         label: "1 month",
-        title: "More awake, still unpredictable",
-        summary: "Baby may be more alert and interactive while sleep and crying remain irregular. Offer connection and play without testing performance.",
+        title: "More awake, still flexible",
+        summary: "Baby may spend more time alert, watching faces, and responding to sound. Feeding, sleep, and crying can still be irregular, so offer short connection and play without expecting a schedule.",
         topics: [
           { id: "feeding-frequency-and-waking", note: "Intervals may shift, but cues and the growth plan still lead." },
           { id: "tummy-time-and-awake-play", note: "Expand short, supervised play as alert time grows." },
           { id: "crying-and-soothing", note: "Crying may still be increasing; caregiver support matters." },
           { id: "day-and-night", note: "Use gentle light and activity cues, without expecting a schedule." },
           { id: "newborn-skin", note: "Baby acne and other benign changes may appear now." },
-          { id: "pacifiers", note: "Use can be reconsidered once feeding is going well." },
-          { id: "jaundice", note: "Yellowing that remains at 4 weeks needs a feeding-specific review." }
+          { id: "pacifiers", note: "If direct breastfeeding is well established, an optional pacifier can be offered for naps and bedtime." },
+          { id: "jaundice", note: "Yellow color still present now needs a clinician review; the needed testing depends on how baby is fed." }
         ],
         sources: ["aapFirstMonthDevelopment", "nihTummyTime", "aapCryingSupport", "cdcBreastfeedingFrequency", "aapJaundice"]
       },
