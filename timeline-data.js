@@ -1324,10 +1324,10 @@
             at: { days: 0 },
             label: "Birth · day 0",
             title: "First week: changes can be subtle",
-            summary: "Notice feeding effort, wakefulness, breathing, color, movement, temperature, and output. A newborn who cannot be woken, is struggling to breathe, or turns blue or gray needs emergency help.",
+            summary: "Notice feeding effort, wakefulness, breathing, color, movement, temperature, and output. A newborn who cannot be woken, is not moving or very weak, struggles for each breath, or has blue or gray lips, tongue, or face needs emergency help.",
             points: [
-              "Call promptly for a sudden weak suck, inability to finish feeds, or newly abnormal behavior.",
-              "A rectal temperature of 100.4°F (38°C) or higher needs immediate medical attention."
+              "Call the pediatrician now for a sudden weak suck, feeds baby cannot finish, or any newly abnormal behavior.",
+              "A rectal temperature of 100.4°F (38°C) or higher needs an immediate call, even if baby otherwise seems well."
             ],
             sources: ["aapNewbornIllness", "aapFever"]
           },
@@ -1336,10 +1336,10 @@
             at: { weeks: 1 },
             label: "1 week",
             title: "Keep a low threshold through the first month",
-            summary: "You will know more of baby’s usual pattern, so a sudden departure becomes useful information. Promptly contact the pediatrician when a baby under 1 month looks or acts abnormal.",
+            summary: "The first 7 days are especially important, but serious illness can still be subtle at any point in the first month. As baby’s usual pattern becomes clearer, a sudden departure is useful information.",
             points: [
-              "Compare with baby’s own usual feeding, alertness, breathing, and output.",
-              "Do not wait for several symptoms when a newborn seems newly unwell."
+              "Call the pediatrician now when a baby under 1 month looks or acts abnormal, especially with a feeding change.",
+              "Do not wait for several symptoms: compare feeding, alertness, breathing, color, movement, and output with baby’s usual pattern."
             ],
             sources: ["aapNewbornIllness"]
           },
@@ -1347,23 +1347,23 @@
             key: "month-1",
             at: { months: 1 },
             label: "1 month",
-            title: "Keep watching the whole pattern",
-            summary: "Emergency signs and the young-infant fever threshold remain important. Feeding, wet diapers, alertness, breathing effort, and color work best as a cluster.",
+            title: "Keep the core red flags in view",
+            summary: "Emergency breathing, color, movement, and responsiveness signs do not expire at 1 month. For the next two months, the young-infant fever threshold remains especially important; use the whole pattern for other concerns.",
             points: [
-              "Call immediately for a rectal temperature of 100.4°F (38°C) or higher.",
-              "Get help sooner for a sudden change or caregiver concern, even without fever."
+              "For a baby 3 months or younger, call immediately for a rectal temperature of 100.4°F (38°C) or higher.",
+              "Get emergency help for severe breathing effort, blue or gray lips, tongue, or face, or a baby who is hard to wake."
             ],
-            sources: ["aapFever", "aapMedicalHelp"]
+            sources: ["aapFever", "aapMedicalHelp", "aapBreathingTrouble"]
           },
           {
             key: "month-3",
             at: { months: 3 },
             label: "3 months",
-            title: "Keep the fever rule while updating the plan",
-            summary: "At and around the third-month boundary, keep treating a rectal temperature of 100.4°F (38°C) or higher as an immediate call until the pediatrician gives a new age-specific plan.",
+            title: "Ask before changing the fever plan",
+            summary: "AAP guidance still calls for an immediate call for a rectal temperature of 100.4°F (38°C) or higher in a baby 3 months or younger. Confirm the next age-specific plan with the pediatrician rather than guessing at this boundary.",
             points: [
-              "Emergency breathing, color, responsiveness, and seizure signs do not change.",
-              "Save the pediatrician’s updated after-hours instructions."
+              "Emergency breathing, color, movement, and responsiveness signs still need immediate action, whatever baby’s age.",
+              "Save the pediatrician’s updated daytime and after-hours instructions before the next illness."
             ],
             sources: ["aapFever", "aapMedicalHelp"]
           }

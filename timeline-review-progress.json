@@ -110,6 +110,11 @@
       "id": "topic/clothing-and-room-temperature",
       "reviewedOn": "2026-08-15",
       "result": "updated"
+    },
+    {
+      "id": "topic/when-to-get-medical-help",
+      "reviewedOn": "2026-08-15",
+      "result": "updated"
     }
   ]
 }
