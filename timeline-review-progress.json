@@ -115,6 +115,11 @@
       "id": "topic/when-to-get-medical-help",
       "reviewedOn": "2026-08-15",
       "result": "updated"
+    },
+    {
+      "id": "topic/fever-and-temperature",
+      "reviewedOn": "2026-08-15",
+      "result": "updated"
     }
   ]
 }

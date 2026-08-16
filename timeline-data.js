@@ -1375,13 +1375,13 @@
           {
             key: "birth",
             at: { days: 0 },
-            label: "Birth through 3 months",
-            title: "One fever rule through three months",
-            summary: "For a baby 3 months old or younger, one rectal temperature of 100.4°F (38°C) or higher needs immediate medical attention, even if baby seems well.",
+            label: "Birth to 3 months",
+            title: "A fever needs an immediate call",
+            summary: "For a baby 3 months old or younger, a rectal temperature of 100.4°F (38°C) or higher means calling the pediatrician immediately, even if baby seems well.",
             points: [
-              "Write down the exact number, time, and measurement location.",
-              "Call immediately; do not wait for another reading or give medicine first.",
-              "A rectal reading is the most reliable at this age."
+              "Use a digital thermometer; a rectal reading is the most reliable for infants, especially before 3 months.",
+              "Write down the exact number, time, and measurement site, then call—do not wait for another reading or give medicine first.",
+              "Fever is one sign of illness: breathing trouble, hard-to-wake behavior, or a seizure needs emergency help now."
             ],
             sources: ["aapFever", "aapTemperature"]
           },
@@ -1389,11 +1389,12 @@
             key: "after-month-3",
             at: { months: 3 },
             label: "3 months",
-            title: "Keep calling while you confirm the next rule",
-            summary: "At and around this boundary, continue to call immediately for a rectal temperature of 100.4°F (38°C) or higher. Ask the pediatrician when a different age-based plan begins.",
+            title: "At 3 months, confirm the fever plan",
+            summary: "AAP fever guidance still says to call immediately at 100.4°F (38°C) or higher for a baby 3 months or younger. Its thermometer guidance uses a 2-month cutoff, so treat this boundary as an immediate call and confirm your pediatrician’s plan.",
             points: [
-              "Continue using a digital thermometer and recording the exact result.",
-              "Do not use an ear thermometer before about 6 months."
+              "Keep using a digital thermometer and share the exact result, time, and measurement site when you call.",
+              "Do not use an ear thermometer before 6 months; young ear canals make it unreliable.",
+              "A serious-looking baby needs urgent help regardless of the number or age cutoff."
             ],
             sources: ["aapFever", "aapTemperature"]
           }
