@@ -380,17 +380,17 @@
         at: { days: 42 },
         label: "Week 6 · day 42",
         title: "The fussy stretch",
-        summary: "Crying is often near its high period around 4–6 weeks. Build in caregiver relief, keep play gentle, and prepare for the 2-month check-in.",
+        summary: "Crying often peaks around 6 weeks. Make a safe handoff plan, build short supervised tummy-time sessions, and note questions for the 2-month check-in.",
         topics: [
-          { id: "crying-and-soothing", note: "This is a common high-crying window, not a guaranteed peak." },
-          { id: "tummy-time-and-awake-play", note: "Gradually increase supervised play as baby tolerates it." },
-          { id: "swaddling-safely", note: "Rolling signs—not this date—are the stop signal; recheck now." },
-          { id: "two-month-milestones", note: "Preview observations to discuss with the pediatrician." },
-          { id: "getting-enough", note: "Breastfed stool frequency may change while wet-diaper expectations do not." },
-          { id: "burping-gas-and-spit-up", note: "Reflux and spit-up commonly continue." },
-          { id: "normal-newborn-sleep", note: "Frequent waking remains normal." }
+          { id: "crying-and-soothing", note: "Crying often peaks around 6 weeks; a safe handoff gives an overwhelmed caregiver time to reset." },
+          { id: "tummy-time-and-awake-play", note: "Build short, awake, supervised sessions toward 15–30 total minutes a day by about 2 months." },
+          { id: "swaddling-safely", note: "Stop at the first sign of trying to roll—some babies start as early as 2 months." },
+          { id: "two-month-milestones", note: "Note what baby does and any concerns; the checklist supports a conversation, not a score." },
+          { id: "getting-enough", note: "After about 6 weeks, exclusively breastfed babies may poop less often; feeding, wet diapers, and growth still matter." },
+          { id: "burping-gas-and-spit-up", note: "Easy spit-up may continue; force, pain, or poor feeding needs medical advice." },
+          { id: "normal-newborn-sleep", note: "Frequent waking and no predictable night are still normal; keep every sleep space safe." }
         ],
-        sources: ["aapColic", "nihTummyTime", "cdcMilestones2", "cdcBreastfeedingBasics", "aapSwaddle"]
+        sources: ["aapColic", "nihTummyTime", "cdcMilestones2", "aapSwaddle"]
       },
       {
         key: "month-2",
