@@ -413,17 +413,16 @@
         key: "month-3",
         at: { months: 3 },
         label: "3 months",
-        title: "Rhythms may be emerging",
-        summary: "Longer alert periods and clearer day-night patterns may appear, while feeding, reflux, crying, and sleep still vary widely.",
+        title: "More awake time, still no timetable",
+        summary: "Play and the day-night difference may be easier to notice, and crying may ease. Feeding, sleep, and spit-up still vary, so follow baby's cues and care plan rather than a schedule.",
         topics: [
-          { id: "tummy-time-and-awake-play", note: "Floor play can grow with stamina while staying supervised." },
-          { id: "day-and-night", note: "A day-night rhythm may be clearer without being dependable." },
-          { id: "normal-newborn-sleep", note: "Regular sleep cycles generally remain a later development." },
-          { id: "burping-gas-and-spit-up", note: "Normal reflux may continue and can increase beyond 3 months." },
-          { id: "crying-and-soothing", note: "Many babies ease, but continued crying is not automatically abnormal." },
-          { id: "two-month-milestones", note: "Review progress and preview what comes next without grading." },
-          { id: "hunger-and-fullness-cues", note: "Keep changing feed size and spacing led by baby’s cues." },
-          { id: "car-seat-safety", note: "Recheck fit as length, weight, and head control change." }
+          { id: "tummy-time-and-awake-play", note: "Let supervised floor play grow with stamina; follow baby's interest, not a timer." },
+          { id: "day-and-night", note: "The difference may be clearer, but regular sleep cycles generally come later." },
+          { id: "burping-gas-and-spit-up", note: "Comfortable spit-up can continue; reflux often peaks later, around 4–5 months." },
+          { id: "crying-and-soothing", note: "Fussiness often eases by 3–4 months; a new or concerning cry still needs attention." },
+          { id: "two-month-milestones", note: "Keep noticing ordinary progress; the 4-month checklist is a look ahead, not today's test." },
+          { id: "hunger-and-fullness-cues", note: "Keep feed size and spacing cue-led as baby's signals change." },
+          { id: "car-seat-safety", note: "Recheck fit as baby grows; stay rear-facing until the seat's limits say otherwise." }
         ],
         sources: ["aapSleep", "aapColic", "cdcMilestones4", "aapReflux", "aapCarSeat", "cdcHungerCues"]
       }
