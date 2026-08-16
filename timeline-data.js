@@ -61,6 +61,10 @@
         title: "American Academy of Pediatrics: How to Cope With Challenges of Being a New Parent",
         url: "https://www.healthychildren.org/English/ages-stages/baby/Pages/Challenges-of-Being-a-New-Mom.aspx"
       },
+      aapRespondingToCries: {
+        title: "American Academy of Pediatrics: Responding to Your Baby’s Cries",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/crying-colic/Pages/Responding-to-Your-Babys-Cries.aspx"
+      },
       aapCryingUnder3: {
         title: "American Academy of Pediatrics: Crying Baby—Before 3 Months Old",
         url: "https://www.healthychildren.org/English/tips-tools/Symptom-Checker/Pages/symptomviewer.aspx?symptom=Crying+Baby+-+Before+3+Months+Old"
@@ -168,6 +172,10 @@
       cdcCleaning: {
         title: "CDC: How to Clean, Sanitize, and Store Infant Feeding Items",
         url: "https://www.cdc.gov/hygiene/faq/"
+      },
+      cdcAbusiveHeadTrauma: {
+        title: "CDC: About Abusive Head Trauma",
+        url: "https://www.cdc.gov/child-abuse-neglect/about/about-abusive-head-trauma.html"
       },
       cdcBottleCleaning: {
         title: "CDC: How to Clean, Sanitize, and Store Infant Feeding Items",
@@ -875,62 +883,62 @@
             key: "birth",
             at: { days: 0 },
             label: "Birth · day 0",
-            title: "Start with the basics",
-            summary: "Crying is communication, and newborn soothing is trial and repetition. Responsive comforting does not spoil a newborn.",
+            title: "Respond and work through the basics",
+            summary: "Crying is communication. In the first months, prompt, calm comforting does not spoil a baby; it helps you learn what they need.",
             points: [
-              "Check hunger, diaper, temperature, tiredness, and overstimulation.",
-              "Try holding, rocking, quiet sound, sucking, or skin-to-skin.",
-              "Use the full urgent guide when baby looks or acts ill."
+              "Check hunger, a wet or soiled diaper, temperature, tiredness, and anything uncomfortable such as tight clothing or a hair around a toe.",
+              "When baby seems well but keeps crying, try one or two calm options—holding, gentle rocking, a quiet voice, sucking, or skin-to-skin—then reassess.",
+              "If soothing becomes sleep, use the usual safe sleep space; illness signs override every soothing plan."
             ],
-            sources: ["aapCryingUnder3"]
+            sources: ["aapRespondingToCries", "aapCryingUnder3"]
           },
           {
             key: "week-2",
             at: { weeks: 2 },
             label: "2 weeks",
             title: "Crying often starts to rise",
-            summary: "Many babies become noticeably fussier from about 2 weeks. This normal curve can be exhausting even when baby is healthy.",
+            summary: "Many babies begin crying more around 2 weeks and may keep doing so for about 2 months. A hard stretch can still be a normal pattern, but support matters.",
             points: [
-              "Repeat a simple soothing sequence instead of changing everything at once.",
-              "Trade off with another safe caregiver before frustration builds.",
-              "Place baby safely in the crib and step away briefly if overwhelmed."
+              "Use a repeatable sequence: meet the most pressing need, lower stimulation, try a comfort method, then pause before changing course.",
+              "Plan a handoff or a check-in with another calm adult before frustration builds.",
+              "If overwhelmed, put baby on their back in an empty safe sleep space and take a brief reset; never shake, throw, hit, or jerk a baby."
             ],
-            sources: ["aapCryingUnder3", "aapColic"]
+            sources: ["aapCryingSupport", "cdcAbusiveHeadTrauma"]
           },
           {
             key: "week-6",
             at: { weeks: 6 },
             label: "6 weeks",
-            title: "Near the usual peak",
-            summary: "Daily fussiness commonly peaks around 4–6 weeks, sometimes near 3 hours a day. Peaceful periods and normal feeding and growth are reassuring.",
+            title: "Near a common high-crying window",
+            summary: "Regular fussiness often peaks around 4–6 weeks, sometimes near 3 hours a day. Calm periods, usual feeding, and normal growth are reassuring signs.",
             points: [
-              "Protect caregiver breaks and sleep wherever possible.",
-              "Never shake a baby.",
-              "Nonstop inconsolable crying or abnormal behavior needs prompt guidance."
+              "A predictable late-day fussy spell can be common; keep the response calm rather than trying many stimulating techniques at once.",
+              "Protect caregiver breaks and sleep—crying can be especially intense in the first few months.",
+              "Nonstop crying for more than 2 hours when baby cannot be consoled, or any abnormal behavior, needs prompt medical advice."
             ],
-            sources: ["aapColic", "aapCryingUnder3"]
+            sources: ["aapColic", "aapCryingUnder3", "cdcAbusiveHeadTrauma"]
           },
           {
             key: "month-2",
             at: { months: 2 },
             label: "2 months",
-            title: "The curve often starts turning",
-            summary: "Crying commonly begins improving after 2 months, although change is gradual rather than tied to one day.",
+            title: "The curve may start turning",
+            summary: "Crying often begins to improve after 2 months, but the change is gradual and each baby’s pattern differs.",
             points: [
-              "Keep the soothing methods that work and drop those that add stimulation.",
-              "Stop swaddling at any sign of rolling."
+              "Keep the low-stimulation methods that work for your baby, and let ordinary feeds and sleep—not the clock—guide the routine.",
+              "If you swaddle for comfort, stop at the first sign of trying to roll; keep back-sleep and a clear, firm sleep surface for every sleep."
             ],
-            sources: ["aapCryingUnder3", "aapColic"]
+            sources: ["aapCryingUnder3", "aapSafeSleep"]
           },
           {
             key: "month-3",
             at: { months: 3 },
             label: "3 months",
-            title: "Usually easing",
-            summary: "By 3–4 months, typical fussiness often declines and colic commonly resolves. Ongoing or newly severe crying still deserves assessment.",
+            title: "Often easing, never something to ignore",
+            summary: "By 3–4 months, regular fussiness often drops to 1–2 hours a day and colicky crying commonly resolves. A new, worsening, or concerning cry still needs assessment.",
             points: [
-              "Notice emerging social soothing through voice, face, holding, and predictable routines.",
-              "Do not dismiss a new abnormal cry as an old colic pattern."
+              "You may notice longer calm periods and more response to familiar voice, face, and routines; those are observations, not a deadline.",
+              "Do not assume pain, illness, poor feeding, or a changed cry is ‘just colic’—the pattern, not the birthday, decides what to do."
             ],
             sources: ["aapColic", "aapCryingUnder3"]
           }
