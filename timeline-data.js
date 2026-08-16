@@ -97,6 +97,14 @@
         title: "American Academy of Pediatrics: Developmental Milestones at 1 Month Old",
         url: "https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones-1-Month.aspx"
       },
+      aapDevelopment1To4Months: {
+        title: "American Academy of Pediatrics: Developmental Milestones—1–4 Months Old",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones-3-Months.aspx"
+      },
+      aapSocialDevelopmentBirth3Months: {
+        title: "American Academy of Pediatrics: Emotional & Social Development—Birth Through 3 Months",
+        url: "https://www.healthychildren.org/English/ages-stages/baby/pages/Emotional-and-Social-Development-Birth-to-3-Months.aspx"
+      },
       aapFirstMonthGrowth: {
         title: "American Academy of Pediatrics: Your Baby’s First Month—Growth & Physical Appearance",
         url: "https://www.healthychildren.org/English/ages-stages/baby/Pages/First-Month-Physical-Appearance-and-Growth.aspx"
@@ -1688,11 +1696,11 @@
             key: "birth",
             at: { days: 0 },
             label: "Birth · day 0",
-            title: "Early signs may be brief",
-            summary: "Quiet-alert moments are short, movements can be reflexive, and the head still needs support. A glance, voice response, or brief head lift is practice—not a test.",
+            title: "Begin with brief, responsive play",
+            summary: "Quiet-alert moments may be short. Reflexive movements and a wobbly head are expected; a look toward a face or voice and a brief tummy-time head lift are chances to connect, not skills to test.",
             points: [
-              "Talk or sing during calm awake moments, then pause for any response.",
-              "Offer short, supervised tummy-time tries."
+              "During calm, awake moments, bring your face close, talk or sing, then pause and let baby look away when they need a break.",
+              "Start two or three short, awake, supervised tummy-time sessions; if baby gets sleepy, move them onto their back in their sleep space."
             ],
             sources: ["aapFirstMonthDevelopment", "nihTummyTime"]
           },
@@ -1700,13 +1708,13 @@
             key: "month-1",
             at: { months: 1 },
             label: "1 month",
-            title: "Social responses may become clearer",
-            summary: "During the second month, baby may watch and listen longer, begin smiling in response, calm to a familiar voice or touch, and make sounds besides crying.",
+            title: "Let social responses emerge",
+            summary: "In the second month, looking and listening may last longer. Smiles can become more clearly responsive, and baby may calm to your voice or touch or make sounds besides crying.",
             points: [
-              "Notice repeated responses during ordinary interactions.",
-              "Let baby look away or rest instead of repeatedly trying to produce a skill."
+              "Look for a pattern across ordinary interactions, rather than expecting the same response every time.",
+              "Keep conversations simple: respond warmly to a look or sound, then pause instead of trying repeatedly to produce a smile or coo."
             ],
-            sources: ["aapFirstMonthDevelopment", "cdcMilestones2"]
+            sources: ["aapDevelopment1To4Months", "aapSocialDevelopmentBirth3Months"]
           },
           {
             key: "month-2",
@@ -1715,7 +1723,7 @@
             title: "Review the 2-month checklist",
             summary: "CDC milestones describe what at least 75% of children do by this age. They are conversation prompts, not a daily score or a screening test.",
             points: [
-              "Notice face-looking, non-crying sounds, reactions to sound, movement of both sides, and head lifting on the tummy.",
+              "Notice face-looking, social smiles, non-crying sounds, reactions to loud sounds, movement of both sides, and head lifting on the tummy.",
               "Use the checklist to prepare examples and questions for the 2-month visit.",
               "Share a missing or lost skill, or any concern about seeing, hearing, response, or movement."
             ],
@@ -1726,7 +1734,7 @@
             at: { months: 3 },
             label: "3 months",
             title: "Look ahead without a 3-month checklist",
-            summary: "There is no CDC 3-month checklist. Use 2-month skills as a reference and preview the 4-month list as what comes next—not as expectations for today.",
+            summary: "There is no CDC 3-month checklist. Keep using the 2-month list as a conversation tool; the 4-month list is only a look ahead, not a set of expectations for today.",
             points: [
               "Notice growing social, sound, visual, and movement responses across ordinary days.",
               "Keep offering face-to-face interaction and supervised tummy time.",
