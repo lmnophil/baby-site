@@ -312,17 +312,17 @@
         at: { days: 3 },
         label: "Day 3",
         title: "Watch the first trends",
-        summary: "Milk, feeding, diapers, stool, and jaundice often shift now. Look at the whole pattern and ask early when something feels off.",
+        summary: "Feeding, diapers, stool, and yellowing can change quickly now. Use the whole pattern and the planned early check rather than judging one feed or diaper alone.",
         topics: [
-          { id: "getting-enough", note: "Judge intake through feeding, output, behavior, and weight together." },
-          { id: "wet-diapers", note: "The expected pattern rises quickly during the first days." },
-          { id: "newborn-poop", note: "Stool should begin changing away from dark meconium." },
-          { id: "jaundice", note: "Yellowing commonly becomes noticeable during the first few days." },
-          { id: "breastfeeding-and-latch", note: "Increasing milk volume may make transfer concerns clearer." },
-          { id: "formula-preparation-and-storage", note: "Correct mixing, handling, and storage reduce risk." },
-          { id: "rest-of-the-first-week", note: "Prepare for the 3–5 day check and the next few days." }
+          { id: "getting-enough", note: "Use feeding, output, alertness, and the planned weight check together." },
+          { id: "wet-diapers", note: "The day-by-day count should be rising; a whole-day pattern is more useful than one diaper." },
+          { id: "newborn-poop", note: "Stool should be moving away from dark meconium as milk intake increases." },
+          { id: "jaundice", note: "Yellowing often appears in the first few days; follow the bilirubin and follow-up plan." },
+          { id: "breastfeeding-and-latch", note: "If breastfeeding, rising milk volume can make swallowing and transfer easier to assess." },
+          { id: "formula-preparation-and-storage", note: "Keep following the label’s mixing and storage instructions at every feed." },
+          { id: "rest-of-the-first-week", note: "Use the clinician-directed 3–5-day visit to review feeding, weight, hydration, and jaundice." }
         ],
-        sources: ["aapFirstWeekVisit", "cdcBreastfeedingBasics", "aapJaundice", "cdcFormulaPrep"]
+        sources: ["aapFirstWeekVisit", "cdcBreastfeedingBasics", "aapJaundice"]
       },
       {
         key: "week-1",
