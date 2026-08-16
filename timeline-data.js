@@ -201,6 +201,10 @@
         title: "CDC: Signs Your Child Is Hungry or Full",
         url: "https://www.cdc.gov/infant-toddler-nutrition/mealtime/signs-your-child-is-hungry-or-full.html"
       },
+      cdcInfantsHeat: {
+        title: "CDC: Infants and Children and Heat",
+        url: "https://www.cdc.gov/heat-health/risk-factors/infants-and-children.html"
+      },
       cdcMilestones2: {
         title: "CDC: Milestones by 2 Months",
         url: "https://www.cdc.gov/act-early/milestones/2-months.html"
@@ -1276,24 +1280,24 @@
             key: "birth",
             at: { days: 0 },
             label: "Birth · day 0",
-            title: "Dress lightly and check the chest",
-            summary: "After the first hours following birth, an indoor hat is not routine. Start with no more than one light layer beyond what an adult finds comfortable.",
+            title: "Keep sleep clothing simple",
+            summary: "For sleep, use no more than one layer beyond what you wear in the same room. Once home from the hospital, an indoor hat is not routine.",
             points: [
-              "Use a warm, dry chest—not cool hands or feet—as the better comfort check.",
-              "Keep the head uncovered for sleep and use fitted sleep clothing instead of loose bedding.",
-              "Remove a layer if the chest is hot or baby is sweating."
+              "Cool hands or feet alone are common in newborns and do not automatically mean another layer is needed.",
+              "Use fitted sleep clothing or a correctly sized wearable blanket instead of loose bedding; keep the head uncovered.",
+              "Sweating, a hot chest, or flushed skin mean remove a layer; use loose, lightweight clothing in hot weather."
             ],
-            sources: ["aapSafeSleep", "aapFirstMonthGrowth"]
+            sources: ["aapSafeSleep", "aapFirstMonthGrowth", "cdcInfantsHeat"]
           },
           {
             key: "month-1",
             at: { months: 1 },
             label: "1 month",
-            title: "Recheck fit as baby grows",
-            summary: "The warmth guidance is unchanged; this is a fit reminder. Clothes and wearable blankets should stay clear of the face and within their stated size and weight ranges.",
+            title: "Recheck the sleep layer as baby grows",
+            summary: "The warmth guidance is unchanged. Recheck that sleep clothing or a wearable blanket is the right current size and cannot cover the head.",
             points: [
-              "Move up a size before necklines ride up or fabric bunches around the face.",
-              "Recheck the chest whenever the room, weather, car, or activity changes."
+              "Follow the product's stated size and weight guidance rather than relying on an outfit chart.",
+              "Reassess layers when the room, weather, or activity changes; remove a layer for overheating signs."
             ],
             sources: ["aapSafeSleep"]
           },
@@ -1302,9 +1306,10 @@
             at: { months: 2 },
             label: "2 months",
             title: "Watch for the swaddling transition",
-            summary: "This date is only a reminder to look for growth and movement changes. Stop swaddling at the first sign of trying to roll, whenever it happens.",
+            summary: "Some babies begin working on rolling as early as 2 months. Stop swaddling at the first sign of trying to roll, whenever it happens.",
             points: [
-              "Use non-weighted sleepwear that leaves the arms and body free once swaddling stops.",
+              "Once rolling attempts begin, stop any sleep sack that compresses the arms, chest, or body.",
+              "A non-swaddling sleep sack that allows free movement can still be used if it fits and is used as directed.",
               "Keep the back-first, bare-sleep-space rules unchanged."
             ],
             sources: ["aapSwaddle", "aapSafeSleep"]
