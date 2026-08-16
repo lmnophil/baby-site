@@ -372,12 +372,12 @@
             key: "birth",
             at: { days: 0 },
             label: "Birth · day 0",
-            title: "Catch the early cues",
-            summary: "Feeding is easier before crying, which is often a late hunger cue. Respond to the whole pattern rather than waiting for a schedule.",
+            title: "Catch cues while baby is calm",
+            summary: "Crying is often a late hunger cue. Offer the breast or bottle when early cues appear, while following any waking plan from the discharge or care team.",
             points: [
               "Hunger may look like hands to mouth, rooting, lip-smacking, or clenched hands.",
               "Fullness may look like a closed mouth, turning away, or relaxed hands.",
-              "Offer while baby is calm and stop when baby says they are done."
+              "Pause or stop for fullness cues; baby does not need to finish a bottle."
             ],
             sources: ["cdcHungerCues"]
           },
@@ -385,14 +385,14 @@
             key: "month-2",
             at: { months: 2 },
             label: "2 months",
-            title: "Not every cry means hunger",
-            summary: "Crying is often near its high point now, so first look for a cluster of feeding cues. Tiredness, a diaper, temperature, or overstimulation may be the need instead.",
+            title: "Let the rhythm keep changing",
+            summary: "Many babies gradually take more at a feed and some intervals lengthen, but the pattern still varies. Keep cues and the growth plan ahead of a clock.",
             points: [
-              "Consider when and how effectively baby last fed.",
-              "Look for rooting or lip-smacking rather than treating crying alone as proof.",
-              "Never pressure baby to finish a breast or bottle."
+              "Crying or sucking alone can also mean comfort, tiredness, a diaper, or a need for closeness.",
+              "Offer more after a bottle only if hunger cues return; do not pressure baby to finish.",
+              "Ask the clinician before changing a waking plan for a baby with feeding or growth concerns."
             ],
-            sources: ["cdcHungerCues", "aapCryingUnder3"]
+            sources: ["cdcHungerCues", "cdcBreastfeedingFrequency"]
           }
         ]
       },
