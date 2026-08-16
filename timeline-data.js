@@ -57,6 +57,10 @@
         title: "American Academy of Pediatrics: Umbilical Cord Care in Newborns",
         url: "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Umbilical-Cord-Care.aspx"
       },
+      medlineCord: {
+        title: "MedlinePlus: Umbilical Cord Care in Newborns",
+        url: "https://medlineplus.gov/ency/article/001926.htm"
+      },
       aapCryingSupport: {
         title: "American Academy of Pediatrics: How to Cope With Challenges of Being a New Parent",
         url: "https://www.healthychildren.org/English/ages-stages/baby/Pages/Challenges-of-Being-a-New-Mom.aspx"
@@ -242,8 +246,8 @@
         url: "https://www.nhs.uk/baby/caring-for-a-newborn/helping-your-baby-to-sleep/"
       },
       whoPostnatal: {
-        title: "World Health Organization: Recommendations on Maternal and Newborn Care",
-        url: "https://www.who.int/publications/i/item/9789240045989"
+        title: "World Health Organization: Caring for a Newborn",
+        url: "https://www.who.int/tools/your-life-your-health/life-phase/newborns-and-children-under-5-years/caring-for-newborns"
       }
     },
 
@@ -1127,8 +1131,8 @@
             key: "week-1",
             at: { weeks: 1 },
             label: "1 week",
-            title: "Let separation happen naturally",
-            summary: "The stump commonly loosens and falls within 1–3 weeks. A few drops of blood can follow, but the center should become drier over the next several days.",
+            title: "Keep letting it dry and separate",
+            summary: "Separation often happens during the first few weeks, but the date varies. A few drops of blood at separation can be normal; the center should then keep getting drier.",
             points: [
               "Let it detach on its own, even if it hangs by a thread.",
               "Keep the diaper edge below the healing navel."
@@ -1139,13 +1143,13 @@
             key: "week-3",
             at: { weeks: 3 },
             label: "3 weeks",
-            title: "Recheck a lingering or moist navel",
-            summary: "The AAP advises a visit if the stump is still attached at about 3 weeks. A persistent moist pink bump or drainage after separation can also need a clinician’s check.",
+            title: "Check a stump that has not separated",
+            summary: "The AAP advises a doctor’s visit if the stump is still attached beyond 3 weeks. A moist red or brown bump, ongoing drainage, or a navel that is not drying after separation also deserves a clinician’s check.",
             points: [
-              "Call about a stump still attached or a navel that is not becoming dry.",
-              "Get prompt help for spreading redness, foul drainage, tenderness, fever, or an unwell baby."
+              "Keep the navel clean and dry while you arrange advice; do not pull a lingering stump.",
+              "Get urgent help for spreading redness, foul drainage, tenderness, fever of 100.4°F (38°C) or higher, poor feeding, or an unusually sleepy or floppy baby."
             ],
-            sources: ["aapCord"]
+            sources: ["aapCord", "medlineCord"]
           }
         ]
       },
