@@ -1633,23 +1633,23 @@
             key: "birth",
             at: { days: 0 },
             label: "Before week 2",
-            title: "Coming up after the first week",
-            summary: "Until this guide becomes current, use the first-week feeding, diaper, weight, jaundice, and follow-up plan. Longer alert moments are previews, not newborn requirements.",
+            title: "Finish the first-week plan",
+            summary: "Before 2 weeks, feeding, diapers, jaundice, weight, and follow-up still lead. A calendar card never overrides a baby who feeds less, is hard to wake, or otherwise seems unwell.",
             points: [
-              "Keep first-week appointments and output checks.",
-              "Do not expect a predictable routine."
+              "Keep the planned weight, bilirubin, and feeding follow-up; do not expect a predictable routine.",
+              "Call promptly for a new change in feeding, alertness, color, movement, or breathing."
             ],
-            sources: ["aapFirstWeekVisit"]
+            sources: ["aapFirstWeekVisit", "aapNewbornIllness"]
           },
           {
             key: "week-2",
             at: { weeks: 2 },
             label: "2 weeks",
-            title: "Check the growth trend",
-            summary: "Weight should generally be moving back toward birth weight by about 2 weeks, with almost all babies there by 3 weeks. The cord may also separate in this window.",
+            title: "Check growth and cord healing",
+            summary: "Babies should generally be back at birth weight by about 2 weeks; almost all are there by 3 weeks. The cord normally dries and falls off during the first 3 weeks.",
             points: [
-              "Use repeat clinical weights rather than judging one feed or diaper.",
-              "Let the cord separate naturally and call about infection signs."
+              "Use repeat clinical weights and the feeding plan, not one feed or diaper, to judge the trend.",
+              "Let the cord separate on its own; call for foul drainage, redness at its base, or pain when touched."
             ],
             sources: ["aapFirstMonthGrowth", "aapCord"]
           },
@@ -1658,7 +1658,7 @@
             at: { weeks: 3 },
             label: "3 weeks",
             title: "More looking, often more crying",
-            summary: "Quiet-alert moments may lengthen, while crying can increase from around 2 weeks without meaning a caregiver is doing something wrong.",
+            summary: "Quiet-alert moments may gradually grow. Crying commonly increases from around 2 weeks and can continue for about 2 months; it is not a measure of caregiving.",
             points: [
               "Offer close faces, voices, cuddling, and brief awake play without testing baby.",
               "Use a safe handoff or safe-sleep-space break when crying overwhelms a caregiver."
@@ -1669,8 +1669,8 @@
             key: "week-4",
             at: { weeks: 4 },
             label: "4 weeks",
-            title: "First-month progress",
-            summary: "Many babies are more alert and responsive, react to sound, and focus best at close range. These are guides, not deadlines.",
+            title: "Notice first-month changes",
+            summary: "By the end of the first month, many babies are more alert and responsive, react to loud sounds, and focus 8–12 inches away. These are guides, not deadlines.",
             points: [
               "Look for a cluster of growing responses rather than one performance.",
               "Bring feeding, growth, movement, hearing, or alertness concerns to the next visit.",
