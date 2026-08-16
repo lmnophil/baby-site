@@ -568,11 +568,11 @@
             key: "day-3",
             at: { days: 3 },
             label: "Day 3",
-            title: "Look for the transition",
-            summary: "As intake rises, wet diapers become more frequent and stool should move away from black meconium toward brown, green, then yellow.",
+            title: "Counts should be climbing",
+            summary: "For a baby receiving breast milk, CDC guidance lists at least 5 wet diapers and 3 stools on day 3. Stool should be moving away from black meconium.",
             points: [
-              "Stool getting lighter is one useful sign of milk transfer.",
-              "Weight loss over 10%, poor swallowing, or increasing sleepiness needs prompt help."
+              "Look for active swallowing and a stool shift through brown or green toward yellow.",
+              "Poor feeding, unusual sleepiness, deepening yellow color, or a measured loss over 10% needs prompt assessment."
             ],
             sources: ["aapFirstWeekVisit", "cdcBreastfeedingBasics"]
           },
@@ -581,10 +581,10 @@
             at: { days: 5 },
             label: "Day 5",
             title: "Output should now be obvious",
-            summary: "By day 4–5, adequate intake commonly produces at least 6 clear wet diapers a day and yellow milk stools.",
+            summary: "By day 4–5, a newborn should pass 6 or more clear, dilute urines each day. With good human-milk intake, stool is usually yellow and seedy by now.",
             points: [
-              "Dark meconium-like stool at day 5 is a reason to call.",
-              "Fewer than 6 wet diapers, worsening jaundice, or weak feeding warrants assessment."
+              "Formula-fed stool may look different, so use feeding, wet diapers, alertness, and the weight trend together.",
+              "Call promptly for fewer than 6 wet diapers, continuing black stool, worsening yellow color, or weak feeding."
             ],
             sources: ["aapFirstWeekVisit", "cdcBreastfeedingBasics"]
           },
@@ -593,10 +593,10 @@
             at: { weeks: 2 },
             label: "2 weeks",
             title: "Birth-weight checkpoint",
-            summary: "Birth weight is usually regained between days 7 and 14. Weight loss over 10% or failure to turn toward steady gain requires evaluation.",
+            summary: "Birth weight is commonly regained by days 7–14. A measured loss over 10% needs evaluation; the clinician’s repeat weights answer whether gain is on track.",
             points: [
               "Use the clinician’s measured growth trend rather than a home impression.",
-              "Keep watching feeding effectiveness and output."
+              "Keep watching feeding effectiveness and output; feeding or jaundice concerns override the calendar."
             ],
             sources: ["aapFirstWeekVisit"]
           },
@@ -605,7 +605,7 @@
             at: { weeks: 6 },
             label: "6 weeks",
             title: "Breastfed stool may become less frequent",
-            summary: "After about 6 weeks, some thriving breastfed babies stool much less often. Soft stool, normal wet diapers, comfortable feeding, and growth matter more than frequency alone.",
+            summary: "After about 6 weeks, a baby receiving only breast milk may poop less often. Soft stool and reassuring feeding, wet diapers, and growth matter more than a perfect schedule.",
             points: [
               "Do not apply this reassurance to hard stools, illness, poor intake, or poor growth.",
               "Wet-diaper expectations do not drop with stool frequency."
